@@ -176,7 +176,7 @@ def pages():
     yield BOOK1, "text", dict(kicker="Welcome", title="You are not alone",
         html=PHOTO + """<div class="letter">
 <p class="hello">Dear Mama, dear Papa,</p>
-<p>If you are holding this book, I already know a little of your story — because it is my story too. <b>I am an autism mum.</b> I know the child who eats only three foods. The nights that don't end. The family members who say “just give him bread, he'll be fine.” The quiet ache when the words haven't come yet.</p>
+<p>If you are holding this book, I already know a little of your story — because it is my story too. <b>I am an autism mum.</b> I know the child who eats only three foods. The nights that don't end. The family members who say “just give them bread, they'll be fine.” The quiet ache when the words haven't come yet.</p>
 <p>When I changed what went on my child's plate — taking out gluten, dairy, corn and eggs, cooking real food from scratch, and adding a gentle detox drink each day — things began to change. Slowly at first. Then I saw a <b>real, significant improvement</b> in my child. I could not keep these recipes to myself.</p>
 <p>This book holds the meals, drinks and routines that helped my family. No long science. No fancy ingredients you can't find. Just real food from our homes — yam, plantain, okro, rice and beans — made safe, one day at a time.</p>
 <p>Every child is different, and food is not a replacement for your doctor. But it is a beautiful place to start — and you don't have to start alone.</p>
