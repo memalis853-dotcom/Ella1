@@ -6,14 +6,14 @@ from preview import AUTHOR, BOOK1, BRANDS, FREE, FREE_FROM_HTML, GUT_HTML, treat
 MARKS = {BOOK1: "plates"}
 
 HOW_TO_HTML = """
-<p class="lead">This book is made to be easy. No long science, no fancy equipment — just real food, one day at a time.</p>
+<p class="lead">This book is made to be easy. No long science, no fancy equipment - just real food, one day at a time.</p>
 <div class="step"><div class="n">1</div><div><h3>Read the short chapters first</h3><p>They explain <i>why</i> we cook this way — gut health, foods to enjoy, foods to leave out, and simple daily habits.</p></div></div>
 <div class="step"><div class="n">2</div><div><h3>Make the Kitchen Basics on a Sunday</h3><p>Seasoning mix, bread, flatbread and granola. They are used all month and save you hours.</p></div></div>
 <div class="step"><div class="n">3</div><div><h3>Shop once a week</h3><p>Each week starts with a tick-box shopping list. Cross off what you already have.</p></div></div>
-<div class="step"><div class="n">4</div><div><h3>Follow the day pages</h3><p>Every day has breakfast, lunch and dinner. Swap days around freely — just keep the foods safe.</p></div></div>
+<div class="step"><div class="n">4</div><div><h3>Follow the day pages</h3><p>Every day has breakfast, lunch and dinner. Swap days around freely - just keep the foods safe.</p></div></div>
 <div class="step"><div class="n">5</div><div><h3>Go gently</h3><p>Change is hard for children who love sameness. Keep one “safe” food on every plate and offer new foods next to it. No pressure, no battles.</p></div></div>
 <div class="callout gold"><div class="t">Every recipe in this book is free from</div>
-<p>""" + " · ".join(FREE) + """ — and baked, boiled or steamed instead of deep-fried. Recipes serve a family of 4 (2 adults, 2 children).</p></div>
+<p>""" + " · ".join(FREE) + """ - and baked, boiled or steamed instead of deep-fried. Recipes serve a family of 4 (2 adults, 2 children).</p></div>
 <p class="disclaimer">This book shares food and lifestyle ideas from one mother's experience. It is not medical advice and does not replace your doctor, dietitian or therapist. Always check with your child's doctor before making big diet changes or giving herbs or supplements, especially if your child takes medication.</p>
 """
 
@@ -23,7 +23,7 @@ OIL_HTML = "".join(f"""<div class="oil"><span class="on">{name}</span><span clas
                    for name, score in OILS)
 
 ENJOY_HTML = """
-<p class="lead">Healing food is not about what we take away — it's about what we add. Build every plate around these.</p>
+<p class="lead">Healing food is not about what we take away - it's about what we add. Build every plate around these.</p>
 <div class="grid2">
  <div class="box"><h3>1. Root vegetables first</h3><p>Squash, sweet potato, pumpkin and yam are the best carbs for our children. They are packed with plant nutrients, give slow natural sugars and fibre, and support the body's natural cleansing.</p></div>
  <div class="box"><h3>2. Green leafy vegetables</h3><p>Ugu, efo, kale, spinach and sukuma are full of anti-inflammatory goodness and help keep the body's elimination pathways open. <b>Broccoli sprouts are top of the list.</b></p></div>
@@ -51,11 +51,11 @@ AVOID_HTML = """
 <h2>Clean home checklist</h2>
 <div class="grid2">
  <div class="box"><ul class="ticks">
-  <li>Swap foil for parchment paper — foil can leach aluminium into food.</li>
+  <li>Swap foil for parchment paper - foil can leach aluminium into food.</li>
   <li>Replace scratched non-stick pans with stainless steel, cast iron or ceramic.</li>
   <li>Wash fruit and vegetables well to reduce pesticides.</li></ul></div>
  <div class="box"><ul class="ticks">
-  <li>Check make-up, deodorant and skin creams — some contain heavy metals.</li>
+  <li>Check make-up, deodorant and skin creams - some contain heavy metals.</li>
   <li>Choose fragrance-free, simple products for your child.</li>
   <li>Cook from scratch and cut down on over-processed food.</li></ul></div>
 </div>
@@ -70,10 +70,10 @@ HABITS_HTML = """
  <div class="box"><h3>Detox slowly</h3><ul><li>Go gently. Too much, too fast can make children feel worse.</li><li>See the Healing Sips bonus book for one gentle drink a day.</li></ul></div>
 </div>
 <h2>Energy &amp; recovery</h2>
-<p>Every cell has tiny “batteries” called mitochondria. When they are drained — by a heavy load on the body, missing nutrients, stress or toxins — children can struggle more.</p>
+<p>Every cell has tiny “batteries” called mitochondria. When they are drained - by a heavy load on the body, missing nutrients, stress or toxins - children can struggle more.</p>
 <div class="grid2">
  <div class="box"><h3>Signs of low energy reserves</h3><ul><li>Poor sleep</li><li>Bad reactions when detox is tried</li><li>Going backwards after an illness</li><li>Speech delay</li><li>Tiredness</li></ul></div>
- <div class="box"><h3>Recharge the batteries</h3><ul><li><b>Get out in the sun</b> every morning.</li><li><b>Keep them moving</b> — the trampoline is perfect.</li><li><b>Protect sleep</b> like gold.</li><li>Eat colourful, nutrient-rich food every day.</li></ul></div>
+ <div class="box"><h3>Recharge the batteries</h3><ul><li><b>Get out in the sun</b> every morning.</li><li><b>Keep them moving</b> - the trampoline is perfect.</li><li><b>Protect sleep</b> like gold.</li><li>Eat colourful, nutrient-rich food every day.</li></ul></div>
 </div>
 """
 
@@ -82,8 +82,8 @@ SPEECH_HTML = """
 <div class="step"><div class="n">1</div><div><h3>Change the plate</h3><p>Move towards more plant-based meals. Cut gluten, dairy, processed food and processed sugar.</p></div></div>
 <div class="step"><div class="n">2</div><div><h3>Add brain-friendly vegetables</h3><p>Squash, leafy greens, kale, cabbage and <b>broccoli sprouts</b> — rich in sulforaphane.</p></div></div>
 <div class="step"><div class="n">3</div><div><h3>Smart swaps</h3><p>Lentil pasta instead of wheat pasta. Buckwheat flour for bread.</p></div></div>
-<div class="step"><div class="n">4</div><div><h3>Gentle support</h3><p>The author used <b>lion's mane and spirulina</b>, and found them helpful once her child began to talk. For gut troubles, <b>sea moss with black seed oil</b> (½ tsp, 3 times a week, age 3+).</p></div></div>
-<div class="callout terra"><div class="t">Please keep working with your team</div>
+<div class="step"><div class="n">4</div><div><h3>Gentle support</h3><p>I used <b>lion's mane and spirulina</b>, and found them helpful once my child began to talk. For gut troubles, <b>sea moss with black seed oil</b> (½ tsp, 3 times a week, age 3+).</p></div></div>
+<div class="callout terra">
 <p>Food is a support, not a cure. Keep going with speech therapy, and always ask your child's doctor before starting any herb or supplement.</p></div>
 """
 
@@ -93,13 +93,13 @@ HERBS = [("Stimming (vocal, hand flapping, rocking)", "Lion's mane, brahmi, ashw
          ("Constipation / diarrhoea", "Black seed oil, sea moss, milk thistle"),
          ("Vomiting / reflux", "Brahmi, ashwagandha, sea moss"), ("Frequent infections", "Astragalus, black seed oil, sea moss"),
          ("Eczema", "Sea moss, black seed oil"), ("Mould detox", "Astragalus, spirulina, black seed oil, sea moss")]
-HERBS_HTML = """<p class="lead">Herbs many parents use alongside a healing diet. This is the author's personal guide.</p>
+HERBS_HTML = """<p class="lead">Herbs many parents use alongside a healing diet. This is my personal guide.</p>
 <table class="tbl"><tr><th style="width:42%">Symptom</th><th>Herbs parents commonly use</th></tr>""" + "".join(
     f"<tr><td>{a}</td><td>{b}</td></tr>" for a, b in HERBS) + """</table>
 <div class="callout terra"><div class="t">Safety first — please read</div>
 <ul><li>Talk to your child's doctor before giving any herb, especially if they take medication.</li>
 <li>Many herbs (like ashwagandha, licorice and milk thistle) are not well studied in young children.</li>
-<li>Sea moss is rich in iodine — check first if there is any thyroid condition.</li>
+<li>Sea moss is rich in iodine - check first if there is any thyroid condition.</li>
 <li>Start one herb at a time, with a small amount, and watch closely.</li></ul></div>"""
 
 TESTS = [("Ferritin & full blood count", "Tiredness, pale skin, clumsiness, developmental delay, frequent infections, picky eating, unexplained behaviour changes"),
@@ -165,7 +165,7 @@ def pages():
     add("toc", None)
     add("text", dict(kicker="Start here", title="How to use this book", html=HOW_TO_HTML), "How to use this book")
     add("divider", dict(kicker="Part 1", title="Understanding healing food",
-        text="Short, simple chapters on why we cook this way — from the author's own notes and experience."), None)
+        text="Short, simple chapters on why we cook this way - from the author's own notes and experience."), None)
     add("text", dict(kicker="Know before you shop", title="Where allergens hide", html=FREE_FROM_HTML), "Where allergens hide")
     add("text", dict(kicker="Restoring the gut", title="5 steps to healing the gut", html=GUT_HTML), "5 steps to healing the gut")
     add("text", dict(kicker="Build every plate", title="Foods to enjoy", html=ENJOY_HTML), "Foods to enjoy & the oil scorecard")

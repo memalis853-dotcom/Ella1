@@ -54,7 +54,7 @@ week1 = [
 ]
 
 FREE_FROM_HTML = """
-<p class="lead">Many “safe-looking” foods hide gluten, dairy, corn, caffeine or processed sugar. Here is where they hide — especially in our African kitchens.</p>
+<p class="lead">Many “safe-looking” foods hide gluten, dairy, corn, caffeine or processed sugar. Here is where they hide - especially in our African kitchens.</p>
 <table class="tbl">
 <tr><th style="width:24%">Avoid</th><th>Where it hides</th></tr>
 <tr><td>Gluten</td><td>Bread, semovita, wheat swallow, chin chin, puff-puff, meat pie, pasta, <b>Milo, Bournvita &amp; Ovaltine</b> (barley malt), soy sauce, many stock cubes</td></tr>
@@ -67,13 +67,13 @@ FREE_FROM_HTML = """
 <tr><td>Pork</td><td>Bacon, ham, sausages, lard, gelatine (sweets &amp; jelly), some suya</td></tr>
 </table>
 <div class="callout gold"><div class="t">The 10-second label rule</div>
-<p>Turn the pack over. Read the ingredients <b>every time</b> — brands change their recipes. If you can't pronounce it, or it says “may contain”, leave it on the shelf.</p></div>
+<p>Turn the pack over. Read the ingredients <b>every time</b> - brands change their recipes. If you can't pronounce it, or it says “may contain”, leave it on the shelf.</p></div>
 """
 
 GUT_HTML = """
-<p class="lead">When the gut is out of balance, everything feels harder — sleep, moods, toilet troubles and picky eating. These 5 steps are the heart of this book.</p>
+<p class="lead">When the gut is out of balance, everything feels harder - sleep, moods, toilet troubles and picky eating. These 5 steps are the heart of this book.</p>
 <div class="step"><div class="n">1</div><div><h3>Remove the irritants</h3>
-<p>Dairy, gluten, fried food, cookies, bread, processed food, processed sugar, corn, pap and garri. <b>Swap:</b> dairy → coconut; flour → tapioca, potato or buckwheat flour.</p></div></div>
+<p>Dairy, gluten, fried food, cookies, bread, processed food, processed sugar, corn and pap. <b>Swap:</b> dairy → coconut; flour → tapioca, potato or buckwheat flour.</p></div></div>
 <div class="step"><div class="n">2</div><div><h3>Support digestion with healing nutrients</h3>
 <p>Zinc and magnesium from leafy vegetables and pumpkin seeds.</p></div></div>
 <div class="step"><div class="n">3</div><div><h3>Repair the gut</h3>
@@ -177,10 +177,10 @@ def pages():
     yield BOOK1, "text", dict(kicker="Welcome", title="You are not alone",
         html=PHOTO + """<div class="letter">
 <p class="hello">Dear Mama, dear Papa,</p>
-<p>If you are holding this book, I already know a little of your story — because it is my story too. <b>I am an autism mum.</b> I know the child who eats only three foods. The nights that don't end. The family members who say “just give them bread, they'll be fine.” The quiet ache when the words haven't come yet.</p>
-<p>When I changed what went on my child's plate — taking out gluten, dairy, corn, eggs and processed sugar, cooking real food from scratch, and adding a gentle detox drink each day — things began to change. Slowly at first. Then I saw a <b>real, significant improvement</b> in my child. I could not keep these recipes to myself.</p>
-<p>This book holds the meals, drinks and routines that helped my family. No long science. No fancy ingredients you can't find. Just real food from our homes — yam, plantain, okro, rice and beans — made safe, one day at a time.</p>
-<p>Every child is different, and food is not a replacement for your doctor. But it is a beautiful place to start — and you don't have to start alone.</p>
+<p>If you are holding this book, I already know a little of your story - because it is my story too. <b>I am an autism mum.</b> I know the child who eats only three foods. The nights that don't end. The family members who say “just give them bread, they'll be fine.” The quiet ache when the words haven't come yet.</p>
+<p>When I changed what went on my child's plate - taking out gluten, dairy, corn, eggs and processed sugar, cooking real food from scratch, and adding a gentle detox drink each day - things began to change. Slowly at first. Then I saw a <b>real, significant improvement</b> in my child. I could not keep these recipes to myself.</p>
+<p>This book holds the meals, drinks and routines that helped my family. No long science. No fancy ingredients you can't find. Just real food from our homes - yam, plantain, okro, rice and beans - made safe, one day at a time.</p>
+<p>Every child is different, and food is not a replacement for your doctor. But it is a beautiful place to start - and you don't have to start alone.</p>
 <p class="heart">You don't have to be perfect. You just have to begin. ♥</p>
 <div class="sign">With love, Tris Eliverson</div><div class="role">Autism mum · Recipe creator</div></div>""")
     yield BOOK1, "text", dict(kicker="Know before you shop", title="Where allergens hide", html=FREE_FROM_HTML)
