@@ -159,3 +159,22 @@ Side note (top right): *Mould, yeast → spirulina; neuro → black seed oil* **
    - Add: more berries, licorice root, psyllium husk, marshmallow root, okro stew, egusi soup (as long as there is no tripe or intestine with it).
 4. **Knock down the pathogens** — add: garlic and onions, rosemary, thyme, black seed oil, sea moss, licorice root, potatoes, carrot, courgette, oats, pumpkin, coconut yogurt, green banana, ripe/unripe banana **[?]**.
 5. *(Step 5 not on this page — still to come?)*
+
+---
+
+## Gut Dysbiosis / Microbiome (page 11)
+
+- When the gut microbiome is out of balance, food might end up in the digestive tract for too long… it can cause autism, or autism can cause gut dysbiosis.
+- Picky eating can cause it.
+- Picky eating can be nervous system dysregulation.
+
+**Swap:** flour, pasta, bread, fried food → tapioca flour, potato flour.
+
+---
+
+## Food to Avoid — continued (page 12)
+
+- **Pork** — pork is very high in fat, carcinogenic compounds and nitrates, which inflame the system.
+- **Dairy** — it is very high in fat and sugar. Lactose is poorly absorbed and the protein is highly inflammatory on the gut and brain.
+- **Caffeine** — breakfast tea, matcha, green tea, Red Bull and Tenzing **[?]** are all caffeine sources that burden the adrenal glands and surge the brain with cortisol, which adds more fuel to the metals and generates more corrosive residue.
+- **Trout / Tuna** — fish higher up the food chain can be more toxic, because mercury gets concentrated from the ocean through the food chain. Season fish with coriander to offset the mercury load.
