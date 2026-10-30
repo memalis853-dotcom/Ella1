@@ -9,6 +9,7 @@ from pathlib import Path
 
 from jinja2 import Environment
 
+from logos import LOGOS
 from templates import DOC, MACROS, PAGES
 
 HERE = Path(__file__).parent
@@ -23,7 +24,8 @@ def render(module_name):
     n = {}
     for book, kind, data in mod.pages():
         n[book] = n.get(book, 0) + 1
-        html_pages.append(tpls[kind].render(p=data, book=book, n=n[book]))
+        mark = LOGOS[mod.MARKS[book]]
+        html_pages.append(tpls[kind].render(p=data, book=book, n=n[book], logos=LOGOS, mark=mark))
     doc = env.from_string(DOC).render(title=module_name, pages=html_pages, rendered=html_pages)
     out = HERE / f"{module_name}.html"
     out.write_text(doc, encoding="utf-8")

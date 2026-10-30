@@ -2,7 +2,7 @@
 
 MACROS = r"""
 {% macro footer(book, n) -%}
-<div class="footer"><span>{{ book }}</span><span class="pn">{{ n }}</span></div>
+<div class="footer"><span class="fl">{{ mark }}{{ book }} · Stella Efionayi</span><span class="pn">{{ n }}</span></div>
 {%- endmacro %}
 
 {% macro recipe(r, kind, label, big=False) -%}
@@ -10,7 +10,7 @@ MACROS = r"""
   <div class="rh">
     <span class="meal">{{ label }}</span>
     <span class="rn">{{ r.name }}</span>
-    <span class="meta">{% if r.region %}{{ r.region }}{% endif %}{% if r.time %}<br>{{ r.time }}{% endif %}</span>
+    <span class="meta">{% if r.region %}{{ r.region }}<br>{% endif %}{% if r.time %}{{ r.time }}{% endif %}</span>
   </div>
   <div class="rb">
     <div><div class="lbl">You need</div>
@@ -34,14 +34,14 @@ PAGES = {
   <div class="top"></div>
   {% if p.badge %}<div class="badge"><b>{{ p.badge[0] }}</b>{{ p.badge[1] }}</div>{% endif %}
   <div class="body">
-    <div class="series">{{ p.series }}</div>
     <h1>{{ p.title }}</h1>
+    <div class="series">{{ p.series }}</div>
     <p class="sub">{{ p.subtitle }}</p>
-    <div class="plate">{{ p.art }}</div>
+    <div class="plate">{{ logos[p.logo] }}</div>
     <div class="free">{% for f in p.free %}<span>{{ f }}-free</span>{% endfor %}</div>
-    <div class="regions">{{ p.regions }}</div>
+    {% if p.tagline %}<div class="tagline">{{ p.tagline }}</div>{% endif %}
   </div>
-  <div class="author">{{ p.author }}</div>
+  <div class="author"><small>by</small>{{ p.author }}</div>
 </section>""",
 
 "text": r"""

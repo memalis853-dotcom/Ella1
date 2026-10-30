@@ -1,24 +1,11 @@
 """Design preview: a handful of sample pages from each of the 3 books, for approval."""
 
-BOOK1 = "The Allergy-Free Family Table"
-BOOK2 = "The Allergy-Free Lunch Box"
-BOOK3 = "The Gentle 30-Day Detox"
-AUTHOR = "[ Author Name ]"
+BOOK1 = "Healing Plates"
+BOOK2 = "Healing Lunch Box"
+BOOK3 = "Healing Sips"
+AUTHOR = "Stella Efionayi"
+MARKS = {BOOK1: "plates", BOOK2: "box", BOOK3: "sips"}
 FREE = ["Gluten", "Dairy", "Corn", "Egg", "Caffeine", "Tuna", "Pork"]
-
-PLATE = """<svg viewBox="0 0 200 200" width="100%" height="100%">
-  <circle cx="100" cy="100" r="96" fill="#F4EBDD"/>
-  <circle cx="100" cy="100" r="80" fill="#FBF6EC" stroke="#E3D6C0" stroke-width="2"/>
-  <path d="M60 78c10-22 40-26 52-8-12 6-30 14-52 8z" fill="#6FA37A"/>
-  <path d="M70 72c14-6 28-6 40-2" stroke="#2E5E4E" stroke-width="2" fill="none"/>
-  <ellipse cx="128" cy="86" rx="22" ry="14" fill="#E3A12F" transform="rotate(-25 128 86)"/>
-  <ellipse cx="128" cy="86" rx="13" ry="7" fill="#F2C566" transform="rotate(-25 128 86)"/>
-  <circle cx="84" cy="124" r="20" fill="#C8643B"/>
-  <circle cx="84" cy="124" r="12" fill="#D9825D"/>
-  <circle cx="122" cy="128" r="9" fill="#2E5E4E"/><circle cx="136" cy="118" r="7" fill="#2E5E4E"/>
-  <circle cx="134" cy="136" r="6" fill="#6FA37A"/>
-  <path d="M100 150c8-4 18-4 26 0" stroke="#C8643B" stroke-width="3" fill="none" stroke-linecap="round"/>
-</svg>"""
 
 PHOTO = """<div style="width:52mm;height:52mm;border-radius:50%;margin:0 auto 4mm;border:2.5mm solid #E3A12F;
 background:#F2E6D2;display:flex;align-items:center;justify-content:center;text-align:center;color:#6E665B;
@@ -27,7 +14,7 @@ font-weight:800;font-size:10pt">YOUR PHOTO<br>GOES HERE</div>"""
 day1 = dict(
     week=1, day=1,
     quote="“Small changes, one plate at a time. You are doing better than you think.”",
-    b=dict(name="Boiled Yam with Ugu & Tomato Sauce", region="Nigeria", time="30 min",
+    b=dict(name="Boiled Yam with Ugu & Tomato Sauce", time="30 min",
            ing=["½ medium yam, peeled & sliced", "2 cups ugu (or spinach), chopped", "3 fresh tomatoes, chopped",
                 "1 onion, sliced", "2 tbsp unrefined red palm oil", "¼ tsp ground crayfish (optional)", "Pinch of salt"],
            steps=["Boil the yam in salted water for 15–20 min until soft.",
@@ -36,8 +23,8 @@ day1 = dict(
                   "Stir in the ugu, cook 2 min, then turn off the heat.",
                   "Spoon the sauce over the yam."],
            why="Yam gives slow, steady energy. Ugu is rich in iron and magnesium.",
-           tip="No yam? Use sweet potato. Kenya/SA: sukuma wiki or morogo. UK/US/Canada: spinach or kale."),
-    l=dict(name="Okro Soup with Chicken & Pounded Yam", region="Nigeria", time="40 min",
+           tip="No yam? Use sweet potato. No ugu? Use spinach, kale or sukuma wiki."),
+    l=dict(name="Okro Soup with Chicken & Pounded Yam", time="40 min",
            ing=["500 g chicken pieces", "15 fresh okro, chopped", "1 cup ugu or spinach", "1 onion, 2 ata rodo peppers",
                 "1 tbsp ground crayfish", "2 tbsp red palm oil, salt", "Pounded yam or amala, to serve"],
            steps=["Season chicken with onion and salt. Cook in 2 cups water for 20 min.",
@@ -47,7 +34,7 @@ day1 = dict(
                   "Serve with pounded yam."],
            why="Okro is soft and gentle on the gut and helps keep things moving.",
            tip="Picky eater? Blend the okro smooth so there are no “slimy bits” to see.", tip_label="Kid tip"),
-    d=dict(name="Coriander Pepper Fish & Green Plantain", region="All regions", time="35 min",
+    d=dict(name="Coriander Pepper Fish & Green Plantain", time="35 min",
            ing=["4 small mackerel (titus) or tilapia", "3 green (unripe) plantains", "1 handful fresh coriander",
                 "2 garlic cloves, 1 small onion", "1 scotch bonnet (skip for kids)", "1 tbsp olive oil, juice of 1 lemon, salt"],
            steps=["Blend coriander, garlic, onion, pepper, oil, lemon and salt to a paste.",
@@ -165,17 +152,18 @@ detox = [
 
 
 def pages():
-    yield BOOK1, "cover", dict(series="30-Day Family Meal Plan", title=BOOK1,
-        subtitle="90 easy breakfasts, lunches & dinners for families living with allergies, autism and special needs",
-        art=PLATE, free=FREE, badge=("90", "family<br>meals"),
-        regions="Nigeria · Ghana · Kenya · South Africa · UK · USA & Canada", author=AUTHOR)
+    yield BOOK1, "cover", dict(series="The 30-Day Allergy-Free Family Meal Plan", title=BOOK1, logo="plates",
+        subtitle="Breakfast, lunch & dinner free from gluten, dairy, corn, egg, caffeine & tuna",
+        tagline="Finally… food the whole family can eat.",
+        free=FREE, badge=("90", "family<br>meals"),
+        author=AUTHOR)
     yield BOOK1, "text", dict(kicker="Welcome", title="You are not alone",
         html=PHOTO + """<div class="letter">
 <p>If you are holding this book, I know a little of your story. The child who eats only three foods. The nights that don't end. The family members who say “just give him bread, he'll be fine.” The quiet worry when the words haven't come yet.</p>
 <p>I have stood in that kitchen too. <b>[ Your story goes here — a few lines in your own words. ]</b></p>
 <p>This book is the one I wish I had. No long science. No fancy ingredients you can't find. Just real food from our homes — yam, plantain, okro, rice, beans — made safe for your family, one day at a time.</p>
 <p>You don't have to be perfect. You just have to start.</p>
-<div class="sign">With love, [ Author Name ]</div></div>""")
+<div class="sign">With love, Stella Efionayi</div></div>""")
     yield BOOK1, "text", dict(kicker="Know before you shop", title="Where allergens hide", html=FREE_FROM_HTML)
     yield BOOK1, "text", dict(kicker="Restoring the gut", title="5 steps to healing the gut", html=GUT_HTML)
     yield BOOK1, "calendar", dict(kicker="Your month at a glance", title="Week 1",
@@ -191,13 +179,15 @@ def pages():
     yield BOOK1, "brands", dict(kicker="Make shopping easier", title="Allergy-friendly brands near you",
         intro="Always read the label — brands can change their recipes. Many gluten-free products still contain corn or egg.",
         regions=BRANDS)
-    yield BOOK2, "cover", dict(series="Bonus Book 1", title=BOOK2,
-        subtitle="30 days of school lunches & snacks kids will actually eat — nut-free and school-safe",
-        art=PLATE, free=FREE + ["Nut"], badge=("30", "lunch<br>boxes"),
-        regions="Nigeria · Ghana · Kenya · South Africa · UK · USA & Canada", author=AUTHOR)
+    yield BOOK2, "cover", dict(series="Bonus Book 1", title=BOOK2, logo="box",
+        subtitle="30 Days of Allergy-Free School Lunches & Snacks Kids Will Actually Eat",
+        tagline="Nut-free and school-safe.",
+        free=FREE + ["Nut"], badge=("30", "lunch<br>boxes"),
+        author=AUTHOR)
     yield BOOK2, "two", dict(kind="box", recipes=lunchboxes)
-    yield BOOK3, "cover", dict(series="Bonus Book 2", title=BOOK3,
-        subtitle="30 juices, smoothies & tonics for the whole family — what each one is good for, and how to go slowly",
-        art=PLATE, free=FREE, badge=("30", "detox<br>recipes"),
-        regions="Nigeria · Ghana · Kenya · South Africa · UK · USA & Canada", author=AUTHOR)
+    yield BOOK3, "cover", dict(series="Bonus Book 2", title=BOOK3, logo="sips",
+        subtitle="The 30-Day Gentle Detox & Juicing Plan for the Whole Family",
+        tagline="One gentle glass a day.",
+        free=FREE, badge=("30", "detox<br>recipes"),
+        author=AUTHOR)
     yield BOOK3, "two", dict(kind="detox", recipes=detox)

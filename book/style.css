@@ -139,23 +139,27 @@ table.tbl { width: 100%; border-collapse: separate; border-spacing: 0; font-size
       var(--gold) 0 8mm, var(--terra) 8mm 22mm, var(--cream) 22mm 24mm,
       var(--leaf) 24mm 38mm, var(--cream) 38mm 40mm, var(--terra) 40mm 54mm);
 }
-.cover .body { padding: 14mm 16mm 0; text-align: center; }
-.cover .series { font-size: 10pt; letter-spacing: .3em; text-transform: uppercase; color: var(--gold); font-weight: 900; }
-.cover h1 { color: #fff; font-size: 40pt; margin: 4mm 0 3mm; }
+.cover .body { padding: 16mm 16mm 0; text-align: center; }
+.cover .series { font-size: 9.5pt; margin-bottom: 3mm; letter-spacing: .3em; text-transform: uppercase; color: var(--gold); font-weight: 900; }
+.cover h1 { color: #fff; font-size: 50pt; margin: 2mm 0 3mm; }
 .cover .sub { font-size: 14pt; color: #F4EBDD; line-height: 1.4; margin: 0 auto; max-width: 160mm; }
-.cover .plate { margin: 9mm auto 7mm; width: 98mm; height: 98mm; }
+.cover .plate { margin: 9mm auto 9mm; width: 92mm; height: 92mm; }
 .cover .free { display: flex; flex-wrap: wrap; justify-content: center; gap: 2mm; max-width: 170mm; margin: 0 auto; }
 .cover .free span {
   border: 1.4px solid rgba(255,255,255,.55); border-radius: 99px; padding: 1.2mm 3.6mm;
   font-weight: 800; font-size: 9.5pt; letter-spacing: .03em;
 }
-.cover .regions { margin-top: 6mm; font-size: 10pt; color: #DCE8DF; }
+.cover .logo { width: 24mm; height: 24mm; margin: 0 auto 2mm; }
+.cover .tagline { margin-top: 6mm; font-family: 'Fraunces', serif; font-weight: 600; font-style: italic; font-size: 15pt; color: var(--gold); }
+.cover .author small { display: block; font-family: 'Nunito', sans-serif; font-size: 9pt; letter-spacing: .25em; text-transform: uppercase; color: #DCE8DF; margin-bottom: 1mm; }
+.footer .fl { display: flex; align-items: center; gap: 2mm; }
+.footer .fl svg { width: 5mm; height: 5mm; }
 .cover .author {
   position: absolute; left: 0; right: 0; bottom: 14mm; text-align: center;
-  font-family: 'Fraunces', serif; font-size: 14pt; font-weight: 600; color: var(--gold);
+  font-family: 'Fraunces', serif; font-size: 22pt; font-weight: 800; color: #fff;
 }
 .cover .badge {
-  position: absolute; right: 12mm; top: 118mm; width: 30mm; height: 30mm; border-radius: 50%;
+  position: absolute; right: 14mm; top: 128mm; width: 30mm; height: 30mm; border-radius: 50%;
   background: var(--gold); color: var(--green); display: flex; flex-direction: column;
   align-items: center; justify-content: center; text-align: center; transform: rotate(10deg);
   font-weight: 900; line-height: 1.05; font-size: 9pt; box-shadow: 0 2mm 5mm rgba(0,0,0,.2);
