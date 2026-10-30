@@ -7,9 +7,7 @@ AUTHOR = "Tris Eliverson"
 MARKS = {BOOK1: "plates", BOOK2: "box", BOOK3: "sips"}
 FREE = ["Gluten", "Dairy", "Corn", "Egg", "Caffeine", "Tuna", "Pork"]
 
-PHOTO = """<div style="width:52mm;height:52mm;border-radius:50%;margin:0 auto 4mm;border:2.5mm solid #E3A12F;
-background:#F2E6D2;display:flex;align-items:center;justify-content:center;text-align:center;color:#6E665B;
-font-weight:800;font-size:10pt">YOUR PHOTO<br>GOES HERE</div>"""
+PHOTO = """<div class="author-photo"><img src="img/author.webp" alt="Tris Eliverson"></div>"""
 
 day1 = dict(
     week=1, day=1,
@@ -81,8 +79,8 @@ GUT_HTML = """
 <p>Keep the gut hydrated and nourished: berries, psyllium husk, okro stew, egusi soup (no tripe or intestine).</p></div></div>
 <div class="step"><div class="n">4</div><div><h3>Knock down the bad bugs</h3>
 <p>Garlic, onions, rosemary, thyme, potatoes, carrots, courgette, pumpkin, coconut yogurt, green banana and gluten-free oats.</p></div></div>
-<div class="step"><div class="n">5</div><div><h3>[ Step 5 — waiting for your notes ]</h3>
-<p class="muted">Send me the fifth step and it goes here.</p></div></div>
+<div class="step"><div class="n">5</div><div><h3>Rebuild &amp; protect — keep the good going</h3>
+<p>Feed the good bacteria every day: green banana, plantain, onions, garlic, beans and gluten-free oats, plus a spoon of coconut yogurt. Eat at regular times, drink water, sleep well and keep moving. Bring foods back <b>one at a time</b>, and keep a simple food &amp; mood diary so you can see what helps. Ask your doctor whether a probiotic is right for your child.</p></div></div>
 <div class="callout terra"><div class="t">Picky eating is not bad behaviour</div>
 <p>A child who eats only three foods is often a child whose nervous system feels unsafe. Go gently. One new food at a time, next to a food they already love.</p></div>
 """
@@ -113,6 +111,24 @@ BRANDS = [
                                     ("Dairy-free", "So Delicious, Cocojune, Daiya, Earth's Own"),
                                     ("Snacks", "Enjoy Life, MadeGood"),
                                     ("Shops", "Whole Foods, Loblaws (PC Free From), Thrive Market")]),
+]
+
+treats = [
+    dict(label="Sweet treat", name="Coconut Mango Ice Pops", region="No refined sugar", time="10 min + freezing",
+         ing=["2 ripe mangoes, peeled & chopped", "1 cup coconut milk", "Juice of ½ lime",
+              "1 tbsp honey (optional — not for babies under 1)"],
+         steps=["Blend everything until smooth.", "Pour into ice-pop moulds or small cups.",
+                "Freeze for 6 hours or overnight.", "Run the mould under warm water for 10 seconds to pop out."],
+         why="A sweet, cold treat with no dairy, no refined sugar and a big dose of vitamin C.",
+         tip="Let your child pour the mix into the moulds — helping makes them want to taste.", tip_label="Sweet moment"),
+    dict(label="Sweet treat", name="Banana Blueberry “Nice-Cream”", region="No refined sugar", time="5 min",
+         ing=["3 ripe bananas, sliced and frozen", "3 tbsp coconut milk", "Handful of blueberries",
+              "Sprinkle of pumpkin seeds (optional)"],
+         steps=["Blend the frozen banana and coconut milk until thick and creamy.",
+                "Add the blueberries and pulse a few times for purple swirls.",
+                "Scoop into bowls and top with pumpkin seeds. Eat straight away."],
+         why="Tastes like ice cream, but it's just fruit. Blueberries are rich in antioxidants.",
+         tip="Freeze sliced bananas every time they get spotty — instant dessert, no waste.", tip_label="Sweet moment"),
 ]
 
 lunchboxes = [
@@ -159,11 +175,13 @@ def pages():
         author=AUTHOR)
     yield BOOK1, "text", dict(kicker="Welcome", title="You are not alone",
         html=PHOTO + """<div class="letter">
-<p>If you are holding this book, I know a little of your story. The child who eats only three foods. The nights that don't end. The family members who say “just give him bread, he'll be fine.” The quiet worry when the words haven't come yet.</p>
-<p>I have stood in that kitchen too. <b>[ Your story goes here — a few lines in your own words. ]</b></p>
-<p>This book is the one I wish I had. No long science. No fancy ingredients you can't find. Just real food from our homes — yam, plantain, okro, rice, beans — made safe for your family, one day at a time.</p>
-<p>You don't have to be perfect. You just have to start.</p>
-<div class="sign">With love, Tris Eliverson</div></div>""")
+<p class="hello">Dear Mama, dear Papa,</p>
+<p>If you are holding this book, I already know a little of your story — because it is my story too. <b>I am an autism mum.</b> I know the child who eats only three foods. The nights that don't end. The family members who say “just give him bread, he'll be fine.” The quiet ache when the words haven't come yet.</p>
+<p>When I changed what went on my child's plate — taking out gluten, dairy, corn and eggs, cooking real food from scratch, and adding a gentle detox drink each day — things began to change. Slowly at first. Then I saw a <b>real, significant improvement</b> in my child. I could not keep these recipes to myself.</p>
+<p>This book holds the meals, drinks and routines that helped my family. No long science. No fancy ingredients you can't find. Just real food from our homes — yam, plantain, okro, rice and beans — made safe, one day at a time.</p>
+<p>Every child is different, and food is not a replacement for your doctor. But it is a beautiful place to start — and you don't have to start alone.</p>
+<p class="heart">You don't have to be perfect. You just have to begin. ♥</p>
+<div class="sign">With love, Tris Eliverson</div><div class="role">Autism mum · Recipe creator</div></div>""")
     yield BOOK1, "text", dict(kicker="Know before you shop", title="Where allergens hide", html=FREE_FROM_HTML)
     yield BOOK1, "text", dict(kicker="Restoring the gut", title="5 steps to healing the gut", html=GUT_HTML)
     yield BOOK1, "calendar", dict(kicker="Your month at a glance", title="Week 1",
@@ -179,6 +197,8 @@ def pages():
     yield BOOK1, "brands", dict(kicker="Make shopping easier", title="Allergy-friendly brands near you",
         intro="Always read the label — brands can change their recipes. Many gluten-free products still contain corn or egg.",
         regions=BRANDS)
+    yield BOOK1, "two", dict(kind="treat", recipes=treats,
+        note="Every Friday is <b>Sweet Treat Day</b> — because healing food should still feel like a celebration.")
     yield BOOK2, "cover", dict(series="Bonus Book 1", title=BOOK2, logo="box",
         subtitle="30 Days of Allergy-Free School Lunches & Snacks Kids Will Actually Eat",
         tagline="Nut-free and school-safe.",

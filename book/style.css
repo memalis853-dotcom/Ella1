@@ -271,3 +271,17 @@ table.tbl { width: 100%; border-collapse: separate; border-spacing: 0; font-size
 /* allergy card (cut-out) */
 .cutcard { border: 2px dashed var(--muted); border-radius: 4mm; padding: 5mm 6mm; background: #fff; margin-bottom: 6mm; }
 .cutcard .fill { display: inline-block; border-bottom: 1px solid var(--ink); min-width: 60mm; height: 5mm; }
+
+/* author photo + letter extras */
+.author-photo { width: 66mm; height: 66mm; margin: -2mm auto 4mm; border-radius: 50%; overflow: hidden; border: 2.2mm solid var(--gold); box-shadow: 0 2mm 6mm rgba(0,0,0,.12); }
+.author-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; display: block; }
+.letter p { font-size: 11.5pt; line-height: 1.6; margin-bottom: 3mm; }
+.letter .hello { font-family: 'Fraunces', serif; font-weight: 600; font-size: 14pt; color: var(--terra); }
+.letter .heart { font-weight: 800; color: var(--green); }
+.role { font-size: 9pt; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); font-weight: 800; }
+
+/* sweet treats */
+.recipe.treat .rh { background: #FBE3E1; }
+.recipe.treat .meal { background: #D9667A; }
+.sweetnote { margin-top: 2mm; text-align: center; font-family: 'Fraunces', serif; font-weight: 600; font-size: 13pt; color: #B8485C;
+  background: #FBE3E1; border-radius: 4mm; padding: 5mm 6mm; }

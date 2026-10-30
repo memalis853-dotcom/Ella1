@@ -83,6 +83,7 @@ PAGES = {
 <section class="page">
   <div class="inner">
     {% for r in p.recipes %}{{ recipe(r, p.kind, r.label, True) }}{% endfor %}
+    {% if p.note %}<div class="sweetnote">{{ p.note }}</div>{% endif %}
   </div>
   {{ footer(book, n) }}
 </section>""",
