@@ -204,7 +204,7 @@ def pages():
         tagline="Nut-free and school-safe.",
         free=FREE + ["Nut"], badge=("30", "lunch<br>boxes"),
         author=AUTHOR)
-    yield BOOK2, "two", dict(kind="box", recipes=lunchboxes)
+    yield BOOK2, "two", dict(kind="lunchbox", recipes=lunchboxes)
     yield BOOK3, "cover", dict(series="Bonus Book 2", title=BOOK3, logo="sips",
         subtitle="The 30-Day Gentle Detox & Juicing Plan for the Whole Family",
         tagline="One gentle glass a day.",

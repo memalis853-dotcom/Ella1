@@ -222,8 +222,8 @@ table.tbl { width: 100%; border-collapse: separate; border-spacing: 0; font-size
 .recipe .goodfor .pill { background: var(--leaf-soft); color: var(--green); }
 .recipe.detox .rh { background: var(--leaf-soft); }
 .recipe.detox .meal { background: var(--leaf); }
-.recipe.box .rh { background: var(--gold-soft); }
-.recipe.box .meal { background: var(--gold); }
+.recipe.lunchbox .rh { background: var(--gold-soft); }
+.recipe.lunchbox .meal { background: var(--gold); }
 
 /* ---------- calendar ---------- */
 .cal { width: 100%; border-collapse: separate; border-spacing: 1.6mm; font-size: 8.3pt; line-height: 1.25; }
@@ -237,10 +237,10 @@ table.tbl { width: 100%; border-collapse: separate; border-spacing: 0; font-size
 .cal td.empty { background: transparent; border: none; }
 
 /* ---------- grocery ---------- */
-.groc { columns: 2; column-gap: 6mm; }
-.groc .cat { break-inside: avoid; margin-bottom: 4mm; background: #fff; border: 1px solid var(--line); border-radius: 3.5mm; padding: 3mm 4mm; }
+.groc { columns: 3; column-gap: 4mm; }
+.groc .cat { break-inside: avoid; margin-bottom: 3.5mm; background: #fff; border: 1px solid var(--line); border-radius: 3.5mm; padding: 3mm 3.5mm; }
 .groc .cat h3 { margin: 0 0 1.5mm; font-size: 11.5pt; }
-.groc ul { list-style: none; padding: 0; margin: 0; font-size: 9.6pt; }
+.groc ul { list-style: none; padding: 0; margin: 0; font-size: 9pt; line-height: 1.35; }
 .groc li { padding-left: 5mm; position: relative; margin-bottom: .8mm; }
 .groc li::before { content: ''; position: absolute; left: 0; top: 1.2mm; width: 2.8mm; height: 2.8mm; border: 1.2px solid var(--muted); border-radius: .6mm; }
 

@@ -79,6 +79,18 @@ PAGES = {
   {{ footer(book, n) }}
 </section>""",
 
+"cards": r"""
+<section class="page">
+  <div class="band"></div>
+  <div class="inner">
+    {% if p.kicker %}<div class="kicker">{{ p.kicker }}</div>{% endif %}
+    {% if p.title %}<h1 style="font-size:24pt">{{ p.title }}</h1>{% endif %}
+    {% if p.intro %}<p class="muted">{{ p.intro }}</p>{% endif %}
+    {% for r in p.recipes %}{{ recipe(r, p.kind, r.label) }}{% endfor %}
+  </div>
+  {{ footer(book, n) }}
+</section>""",
+
 "two": r"""
 <section class="page">
   <div class="inner">
