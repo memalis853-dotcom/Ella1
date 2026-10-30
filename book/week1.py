@@ -29,6 +29,14 @@ BASICS = [
        "Press thin between two sheets of parchment paper.",
        "Cook in a dry hot pan 1–2 min each side until spotty.", "Stack under a clean towel to stay soft."],
       why="A gluten-free, corn-free, egg-free wrap you can trust.", label="Basic"),
+    R("Easy Buckwheat Bread (no yeast, no egg)", "1 hr 10 min · 1 loaf",
+      ["2 cups (240 g) buckwheat flour", "½ cup (60 g) tapioca flour", "2 tbsp psyllium husk powder",
+       "1 tsp baking soda, 1 tsp salt", "1½ cups warm water", "2 tbsp olive oil", "1 tbsp apple cider vinegar"],
+      ["Heat oven to 180 °C / 350 °F. Line a loaf tin with parchment.", "Whisk the dry ingredients together.",
+       "Add water, oil and vinegar. Mix to a thick, sticky dough. Rest 5 min.",
+       "Smooth into the tin with wet hands. Bake 55–60 min.", "Cool completely before slicing — it firms up as it cools."],
+      why="Buckwheat bread is on the author's speech-support list. Psyllium holds it together instead of egg.",
+      tip="Slice, then freeze. Toast straight from the freezer.", tip_label="Time saver", label="Basic"),
     R("Crunchy Nut-Free Granola", "30 min",
       ["2 cups certified gluten-free oats", "½ cup pumpkin seeds", "½ cup sunflower seeds", "¼ cup coconut flakes",
        "3 tbsp melted coconut oil", "3 tbsp maple syrup or honey", "1 tsp cinnamon"],
@@ -59,14 +67,16 @@ DAYS = [
       why="Buckwheat is naturally gluten-free and full of magnesium.",
       tip="Baking soda + lemon makes pancakes rise without corn-starch baking powder.", tip_label="Good to know"),
   l=okro,
-  d=R("Hidden-Veggie Lentil Spaghetti Bolognese", "40 min",
-      ["400 g red lentil pasta", "500 g beef mince", "1 onion, 2 garlic cloves", "1 carrot + 1 courgette, finely grated",
-       "2 tins chopped tomatoes", "1 tsp dried oregano, 1 tsp basil", "1 tbsp olive oil, salt"],
+  d=R("Mama's Pasta with Meat & Tomato Sauce", "40 min",
+      ["400 g rice pasta or gluten-free pasta (or lentil pasta)", "500 g beef mince", "1 onion, 2 garlic cloves",
+       "1 carrot, finely grated (hidden veg)", "2 tins chopped tomatoes or 6 fresh tomatoes, blended",
+       "1 tsp dried thyme or oregano, 1 tsp seasoning mix", "1 tbsp olive oil, salt"],
       ["Soften onion and garlic in olive oil, 3 min.", "Add the mince and brown it, breaking it up.",
-       "Stir in the grated carrot and courgette — they disappear into the sauce.",
-       "Add tomatoes and herbs. Simmer 20 min.", "Cook the pasta as the pack says and serve with the sauce."],
-      why="Lentil pasta is high in protein and fibre — one of the speech-support foods in this book.",
-      tip="Blend the sauce smooth for children who don't like “bits”.", tip_label="Kid tip")),
+       "Stir in the carrot, tomatoes and herbs. Simmer 20 min.",
+       "Cook the pasta as the pack says. Drain.", "Toss the pasta through the sauce and serve."],
+      why="A dinner my son asks for again and again — simple, filling and completely safe.",
+      tip="Blend the sauce smooth if your child doesn't like to see “bits”.", tip_label="Kid tip",
+      region="Author's family favourite")),
  dict(quote="Today's habit: 10 minutes of bouncing or dancing — it gets the lymph system moving.",
   b=R("Boiled Yam with Ugu & Tomato Sauce", "30 min",
       ["½ medium yam, peeled & sliced", "2 cups ugu (or spinach), chopped", "3 fresh tomatoes, chopped",
@@ -201,44 +211,49 @@ DAYS = [
        "Serve with steamed broccoli."],
       why="Rosemary, thyme and garlic are all on the author's gut-friendly list.",
       tip="Gravy granules often contain wheat and corn starch. Tapioca makes a safe gravy.", tip_label="Allergy note"),
-  d=R("Green Plantain Porridge", "40 min",
-      ["4 green (unripe) plantains, cubed", "2 tbsp red palm oil", "1 onion + 2 tomatoes + 1 pepper, blended",
-       "1 tbsp crayfish, 1 tsp seasoning mix", "1 small smoked mackerel, flaked (not tuna)", "1 cup ugu or spinach"],
-      ["Warm the oil, add the blend and cook 5 min.", "Add plantain, crayfish, seasoning and water to just cover.",
-       "Cook 20 min until soft. Mash a little to thicken.", "Stir in the fish and greens. Cook 3 min."],
-      why="Green plantain is full of resistant starch that feeds good gut bacteria.")),
+  d=R("Mama's Chicken, Potato & Carrot Soup", "45 min",
+      ["500 g chicken (breast or thighs)", "4 Irish potatoes, peeled & cubed", "4 carrots, sliced",
+       "1 onion, 2 garlic cloves", "1 tsp dried thyme, 1 tsp seasoning mix, salt", "5 cups water",
+       "Homemade buckwheat bread, to serve"],
+      ["Boil the chicken with onion, garlic, thyme and seasoning for 25 min. Lift out and shred.",
+       "Boil the potatoes and carrots in the same stock for 15 min until soft.",
+       "Blend the vegetables smooth — or blend half and chop the rest very tiny.",
+       "Stir the shredded chicken back in. Simmer 5 min.", "Serve warm with buckwheat bread."],
+      why="My son's favourite. Blending the vegetables means he gets all the goodness without seeing them.",
+      tip="Some days blend it all, some days leave tiny pieces — a gentle way to get used to new textures.",
+      tip_label="Kid tip", region="Author's family favourite")),
 ]
 for i, d in enumerate(DAYS):
     d.update(week=1, day=i + 1)
 
 WEEK1_NAMES = [
-    ("Banana buckwheat pancakes", "Okro soup & pounded yam", "Lentil spaghetti bolognese"),
+    ("Banana buckwheat pancakes", "Okro soup & pounded yam", "Mama's pasta & meat sauce"),
     ("Yam & ugu sauce", "Chicken burrito bowl", "Coriander pepper fish"),
     ("Mango overnight oats", "Jollof rice & chicken", "Chicken nuggets & wedges"),
     ("Millet porridge", "Butternut mac & cheese", "Egusi soup & amala"),
     ("Sweet potato hash", "Thai coconut noodle soup", "Egg-free moi moi"),
     ("Ripe plantain pancakes", "Kenyan beef pilau", "Family pizza night"),
-    ("Coconut yogurt parfait", "Sunday roast chicken", "Green plantain porridge"),
+    ("Coconut yogurt parfait", "Sunday roast chicken", "Mama's chicken & potato soup"),
 ]
 
 GROCERY = [
     ("Vegetables & greens", ["Ugu or spinach — 4 big bunches", "Okro — 15", "Tomatoes — 16", "Red peppers — 6",
                              "Scotch bonnet / ata rodo — 5", "Onions — 10, red onion — 1", "Garlic — 2 bulbs, ginger — 1 large piece",
-                             "Carrots — 6", "Courgette — 1", "Butternut squash — 1", "Broccoli — 2 heads",
-                             "Sweet potatoes — 8", "Potatoes — 1.5 kg", "Cucumber — 3", "Mushrooms — 200 g",
+                             "Carrots — 10", "Courgette — 1", "Butternut squash — 1", "Broccoli — 2 heads",
+                             "Sweet potatoes — 8", "Irish potatoes — 2 kg", "Cucumber — 3", "Mushrooms — 200 g",
                              "Lemongrass — 1 stalk", "Avocados — 5", "Frozen peas — 1 bag"]),
-    ("Fruit & plantain", ["Yam — 1 medium", "Green plantains — 7", "Very ripe plantains — 2", "Ripe bananas — 2",
+    ("Fruit & plantain", ["Yam — 1 medium", "Green plantains — 3", "Very ripe plantains — 2", "Ripe bananas — 2",
                           "Mangoes — 2", "Mixed berries — 3 punnets", "Lemons — 3, limes — 4"]),
-    ("Protein", ["Chicken pieces — 1.5 kg", "Chicken thighs — 1.1 kg", "Chicken breast — 600 g", "Whole chicken — 1.5 kg",
-                 "Beef mince — 500 g", "Beef cubes — 1.1 kg", "Turkey mince — 250 g", "Mackerel or tilapia — 4 small",
-                 "Smoked mackerel — 1", "Black-eyed beans — 2 cups", "Black beans — 1 tin"]),
-    ("Grains & flours", ["Lentil pasta — 2 × 400 g", "Long-grain rice + basmati — 3 cups each", "Rice noodles — 200 g",
+    ("Protein", ["Chicken pieces — 1.5 kg", "Chicken thighs — 1.1 kg", "Chicken breast — 1.1 kg", "Whole chicken — 1.5 kg",
+                 "Beef mince — 750 g", "Beef cubes — 1.1 kg", "Turkey mince — 250 g", "Mackerel or tilapia — 4 small",
+                 "Black-eyed beans — 2 cups", "Black beans — 1 tin"]),
+    ("Grains & flours", ["Rice or gluten-free pasta — 400 g", "Lentil pasta — 400 g", "Long-grain rice + basmati — 3 cups each", "Rice noodles — 200 g",
                          "Buckwheat flour", "Cassava flour", "Pure millet flour", "Certified gluten-free oats",
                          "Amala & pounded yam flour", "Ground egusi — 1 cup"]),
     ("Dairy-free & pantry", ["Coconut milk — 5 tins", "Coconut yogurt — 1 large tub", "Dairy-free cheese — 1 pack",
                              "Chopped tomatoes — 2 tins, passata — 1 jar, tomato paste", "Red palm, olive, avocado & coconut oil",
                              "Chia seeds, ground flaxseed", "Pumpkin & sunflower seeds, coconut flakes",
-                             "Coconut aminos", "Maple syrup or raw honey, dates", "Baking soda, tapioca flour"]),
+                             "Coconut aminos", "Maple syrup or raw honey, dates", "Baking soda, tapioca flour", "Psyllium husk powder, apple cider vinegar"]),
     ("Herbs & spices", ["Fresh coriander — 2 bunches", "Fresh rosemary & thyme", "Dried thyme, oregano, basil, bay leaves",
                         "Pure curry powder, paprika, cumin, turmeric", "Cinnamon, cloves, cardamom, black pepper",
                         "Garlic & onion powder, ground ginger", "Ground crayfish", "Sea salt"]),
@@ -363,6 +378,47 @@ SNACKS_HTML = """
 </div>
 <div class="callout gold"><div class="t">Carob instead of chocolate</div><p>Chocolate and cocoa contain caffeine. Carob tastes chocolatey, is naturally sweet and caffeine-free.</p></div>
 """
+
+NAIJA_HTML = """
+<p class="lead">Our favourite Nigerian snacks — made gluten-free, egg-free, nut-free and baked instead of deep-fried. Familiar tastes from home that are safe for school.</p>
+<div class="grid2">
+ <div class="box"><h3>1. Ipekere (Plantain Chips)</h3><p>Thin green plantain slices, a little oil and salt. Bake 15–20 min at 190 °C until crisp.</p></div>
+ <div class="box"><h3>2. Baked Dodo Bites</h3><p>Ripe plantain cubes tossed in a little coconut oil. Bake 20 min at 200 °C, turning once.</p></div>
+ <div class="box"><h3>3. Cassava Chin Chin</h3><p>Crunchy, egg-free and wheat-free — baked, not fried. Full recipe over the page.</p></div>
+ <div class="box"><h3>4. Baked Akara Bites</h3><p>Fluffy bean balls baked in a mini muffin tin. Full recipe over the page.</p></div>
+ <div class="box"><h3>5. Mini Moi Moi Cups</h3><p>Egg-free moi moi steamed in silicone cupcake cases — the perfect lunch box size.</p></div>
+ <div class="box"><h3>6. Nut-Free Chicken Suya Sticks</h3><p>Chicken strips rubbed with ginger, paprika, garlic and onion powder (no groundnut). Bake 15 min at 220 °C.</p></div>
+ <div class="box"><h3>7. Gizdodo Bites</h3><p>Cooked gizzard and ripe plantain cubes in a light pepper sauce. Pack in a small thermos.</p></div>
+ <div class="box"><h3>8. Dundun Fries</h3><p>Yam sticks tossed in oil and salt, baked 25 min at 200 °C. Crispy outside, soft inside.</p></div>
+ <div class="box"><h3>9. Ofio &amp; Coconut Mix</h3><p>Soaked tiger nuts with toasted coconut chips. Tiger nuts are tubers, not nuts — school-safe.</p></div>
+ <div class="box"><h3>10. Zobo Ice Pops</h3><p>Hibiscus zobo with pineapple and ginger, sweetened with dates. Freeze in moulds — no sugar, no caffeine.</p></div>
+</div>
+<div class="callout terra"><div class="t">Watch out for</div><p>Shop-bought chin chin, puff-puff, meat pie and doughnuts (wheat &amp; egg), kokoro and popcorn (corn), and kuli kuli (groundnut).</p></div>
+"""
+
+NAIJA_RECIPES = [
+    R("Crunchy Cassava Chin Chin", "40 min",
+      ["2 cups cassava flour", "¼ cup coconut sugar", "½ tsp ground nutmeg, pinch of salt",
+       "⅓ cup solid coconut oil", "About ½ cup coconut milk"],
+      ["Heat oven to 180 °C / 350 °F. Line 2 trays with parchment.",
+       "Mix flour, sugar, nutmeg and salt. Rub in the coconut oil with your fingers.",
+       "Add coconut milk a little at a time to make a firm dough.",
+       "Roll out 5 mm thick and cut into small squares.",
+       "Bake 15–20 min, stirring once, until golden. They crisp as they cool."],
+      why="The chin chin every Nigerian child knows — with no wheat, no egg and no deep frying.",
+      tip="Let your child cut the squares with a blunt knife. Kids eat what they make.", tip_label="Picky eater trick",
+      label="Naija snack"),
+    R("Baked Akara Bites", "35 min + soaking",
+      ["2 cups black-eyed beans, soaked & peeled", "1 small onion", "½ scotch bonnet (skip for young kids)",
+       "½ tsp salt", "2–3 tbsp water", "Olive oil, for the tin"],
+      ["Heat oven to 200 °C / 400 °F. Oil a mini muffin tin well.",
+       "Blend beans, onion, pepper and salt with very little water to a thick paste.",
+       "Whisk hard for 3 min until light and fluffy.",
+       "Spoon into the tin and bake 20–25 min until golden.", "Cool and pack with a tomato dip."],
+      why="Akara is naturally gluten-free and egg-free — full of plant protein.",
+      tip="Bake a big batch on Sunday and freeze. Warm for 5 min before packing.", tip_label="Time saver",
+      label="Naija snack"),
+]
 
 ALLERGY_CARD = """
 <p class="muted">Print, cut out and give one to the teacher, nanny, grandparents or party host.</p>
@@ -495,6 +551,8 @@ def pages():
     for pair in chunks(LUNCHBOXES, 2):
         yield BOOK2, "two", dict(kind="lunchbox", recipes=pair)
     yield BOOK2, "text", dict(kicker="Snack attack", title="10 snacks kids can't say no to", html=SNACKS_HTML)
+    yield BOOK2, "text", dict(kicker="Taste of home", title="Naija snack corner", html=NAIJA_HTML)
+    yield BOOK2, "two", dict(kind="lunchbox", recipes=NAIJA_RECIPES)
     yield BOOK2, "text", dict(kicker="Printable", title="Allergy card for school", html=ALLERGY_CARD, white=True)
 
     # ---------------- Healing Sips
