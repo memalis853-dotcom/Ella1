@@ -75,3 +75,87 @@ Side note (top right): *Mould, yeast → spirulina; neuro → black seed oil* **
 - Add squash + leafy greens, broccoli sprouts, kale — sulforaphane supplement; broccoli sprouts, cabbage
 - Lentil pasta
 - Buckwheat flour for bread
+
+---
+
+## Daily Detox Smoothie — measurements (page 6)
+
+- 1 celery stick
+- ½ green apple
+- Handful of blueberries
+- Tablespoon fresh coriander / cilantro
+- Tablespoon fresh parsley
+- 1 cup of water
+
+## Cooking Oil (page 6) — ranked, with author's scores
+
+1. Extra virgin olive oil — 9.6
+2. Cold-pressed avocado oil — 9.6
+3. Traditional unrefined red palm oil — 9.5
+4. Extra virgin coconut oil — 8.9
+5. High-oleic sunflower oil — 8.0
+
+## Food to Avoid (page 6)
+
+- **High fat / high sugar combos** — cookies, cakes and sweets cause the metals to oxidise, that leeches corrosive residue into the brain, worsening the symptoms.
+- **Eggs** — high in fat which oxidises heavy metals and feeds bacteria and viral pathogens.
+- **Eating out of foil** — wrapping food in foil leeches aluminium into food.
+
+---
+
+## Exposures to Avoid (page 7)
+
+- **Cosmetics** — make-up, deodorant, skin creams can be very high in toxic heavy metals, which can worsen the issue.
+- Pesticide fruits and chemicals in food.
+- Heavy metals — cookware, foil.
+- Over-processed food.
+
+---
+
+## Supporting Symptoms with Herbs (page 8)
+
+| # | Symptom | Herbs |
+|---|---|---|
+| 1 | Stimming (including vocal stimming, hand flapping, rocking) | Lion's mane, brahmi, ashwagandha |
+| 2 | Sensory-seeking behaviour | Lion's mane, brahmi |
+| 3 | Sleep | Lemon balm, ashwagandha, lion's mane |
+| 4 | Hyperactivity | Lemon balm, ashwagandha |
+| 5 | Picky eating | Sea moss, lion's mane |
+| 6 | Constipation / diarrhoea | Black seed oil, sea moss, milk thistle |
+| 7 | Vomiting / reflux | Brahmi, ashwagandha, sea moss |
+| 8 | Constant infection | Astragalus, black seed oil, sea moss |
+| 9 | Eczema | Sea moss, black seed oil |
+| 10 | Mould detox | Astragalus, spirulina, black seed oil, sea moss |
+
+---
+
+## Supporting Mitochondria (page 9)
+
+**Lack / drain of mitochondria:** high energy load, nutrient deficiency, oxidative stress, heavy metals…
+
+*Refuelling mitochondria & its quality?*
+
+**Weak mitochondria issues**
+- Bad sleep
+- Bad reaction when detox is tried
+- Regression after illness
+- Speech delay
+- Fatigue…
+
+**Support mitochondria deficiency**
+- Get out in the sun
+- Movement — trampoline — keep them moving
+- Good sleep
+
+---
+
+## Restoring the Gut — New Lifestyle: 5 Steps to Healing the Gut (page 10)
+
+1. **Remove the irritants** — remove dairy, gluten, fried food, cookies, bread, processed food, refined sugar, corn, pap, garri.
+   - Swap dairy with coconut.
+   - Swap (flour) with tapioca flour.
+2. **Support the digestion with healing nutrients** — zinc, magnesium: leafy vegetables, pumpkin seeds.
+3. **Repair the gut** — hydrate the gut with nutriment, getting rid of pathogens that might be in the gut.
+   - Add: more berries, licorice root, psyllium husk, marshmallow root, okro stew, egusi soup (as long as there is no tripe or intestine with it).
+4. **Knock down the pathogens** — add: garlic and onions, rosemary, thyme, black seed oil, sea moss, licorice root, potatoes, carrot, courgette, oats, pumpkin, coconut yogurt, green banana, ripe/unripe banana **[?]**.
+5. *(Step 5 not on this page — still to come?)*
