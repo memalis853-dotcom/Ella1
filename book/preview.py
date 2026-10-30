@@ -5,7 +5,7 @@ BOOK2 = "Healing Lunch Box"
 BOOK3 = "Healing Sips"
 AUTHOR = "Tris Eliverson"
 MARKS = {BOOK1: "plates", BOOK2: "box", BOOK3: "sips"}
-FREE = ["Gluten", "Dairy", "Corn", "Egg", "Caffeine", "Tuna", "Pork"]
+FREE = ["Gluten", "Dairy", "Corn", "Egg", "Caffeine", "Tuna", "Pork", "Processed sugar"]
 
 PHOTO = """<div class="author-photo"><img src="img/author.webp" alt="Tris Eliverson"></div>"""
 
@@ -54,7 +54,7 @@ week1 = [
 ]
 
 FREE_FROM_HTML = """
-<p class="lead">Many “safe-looking” foods hide gluten, dairy, corn or caffeine. Here is where they hide — especially in our African kitchens.</p>
+<p class="lead">Many “safe-looking” foods hide gluten, dairy, corn, caffeine or processed sugar. Here is where they hide — especially in our African kitchens.</p>
 <table class="tbl">
 <tr><th style="width:24%">Avoid</th><th>Where it hides</th></tr>
 <tr><td>Gluten</td><td>Bread, semovita, wheat swallow, chin chin, puff-puff, meat pie, pasta, <b>Milo, Bournvita &amp; Ovaltine</b> (barley malt), soy sauce, many stock cubes</td></tr>
@@ -63,6 +63,7 @@ FREE_FROM_HTML = """
 <tr><td>Egg</td><td>Cakes, mayonnaise, some pasta, egg rolls, meat pies, many “gluten-free” breads and pancake mixes</td></tr>
 <tr><td>Caffeine</td><td>Tea (black &amp; green), coffee, matcha, cola, energy drinks, <b>kola nut</b>, chocolate &amp; cocoa, Milo</td></tr>
 <tr><td>Tuna</td><td>Canned tuna, tuna salad, some sandwiches, sushi and fish pies</td></tr>
+<tr><td>Processed sugar</td><td>White &amp; brown sugar, glucose &amp; corn syrup, fizzy drinks, sweetened juice drinks, biscuits, sweets, breakfast cereals, ketchup, flavoured yogurt, Milo</td></tr>
 <tr><td>Pork</td><td>Bacon, ham, sausages, lard, gelatine (sweets &amp; jelly), some suya</td></tr>
 </table>
 <div class="callout gold"><div class="t">The 10-second label rule</div>
@@ -72,7 +73,7 @@ FREE_FROM_HTML = """
 GUT_HTML = """
 <p class="lead">When the gut is out of balance, everything feels harder — sleep, moods, toilet troubles and picky eating. These 5 steps are the heart of this book.</p>
 <div class="step"><div class="n">1</div><div><h3>Remove the irritants</h3>
-<p>Dairy, gluten, fried food, cookies, bread, processed food, refined sugar, corn, pap and garri. <b>Swap:</b> dairy → coconut; flour → tapioca, potato or buckwheat flour.</p></div></div>
+<p>Dairy, gluten, fried food, cookies, bread, processed food, processed sugar, corn, pap and garri. <b>Swap:</b> dairy → coconut; flour → tapioca, potato or buckwheat flour.</p></div></div>
 <div class="step"><div class="n">2</div><div><h3>Support digestion with healing nutrients</h3>
 <p>Zinc and magnesium from leafy vegetables and pumpkin seeds.</p></div></div>
 <div class="step"><div class="n">3</div><div><h3>Repair the gut</h3>
@@ -114,14 +115,14 @@ BRANDS = [
 ]
 
 treats = [
-    dict(label="Sweet treat", name="Coconut Mango Ice Pops", region="No refined sugar", time="10 min + freezing",
+    dict(label="Sweet treat", name="Coconut Mango Ice Pops", region="No processed sugar", time="10 min + freezing",
          ing=["2 ripe mangoes, peeled & chopped", "1 cup coconut milk", "Juice of ½ lime",
               "1 tbsp honey (optional — not for babies under 1)"],
          steps=["Blend everything until smooth.", "Pour into ice-pop moulds or small cups.",
                 "Freeze for 6 hours or overnight.", "Run the mould under warm water for 10 seconds to pop out."],
-         why="A sweet, cold treat with no dairy, no refined sugar and a big dose of vitamin C.",
+         why="A sweet, cold treat with no dairy, no processed sugar and a big dose of vitamin C.",
          tip="Let your child pour the mix into the moulds — helping makes them want to taste.", tip_label="Sweet moment"),
-    dict(label="Sweet treat", name="Banana Blueberry “Nice-Cream”", region="No refined sugar", time="5 min",
+    dict(label="Sweet treat", name="Banana Blueberry “Nice-Cream”", region="No processed sugar", time="5 min",
          ing=["3 ripe bananas, sliced and frozen", "3 tbsp coconut milk", "Handful of blueberries",
               "Sprinkle of pumpkin seeds (optional)"],
          steps=["Blend the frozen banana and coconut milk until thick and creamy.",
@@ -177,7 +178,7 @@ def pages():
         html=PHOTO + """<div class="letter">
 <p class="hello">Dear Mama, dear Papa,</p>
 <p>If you are holding this book, I already know a little of your story — because it is my story too. <b>I am an autism mum.</b> I know the child who eats only three foods. The nights that don't end. The family members who say “just give them bread, they'll be fine.” The quiet ache when the words haven't come yet.</p>
-<p>When I changed what went on my child's plate — taking out gluten, dairy, corn and eggs, cooking real food from scratch, and adding a gentle detox drink each day — things began to change. Slowly at first. Then I saw a <b>real, significant improvement</b> in my child. I could not keep these recipes to myself.</p>
+<p>When I changed what went on my child's plate — taking out gluten, dairy, corn, eggs and processed sugar, cooking real food from scratch, and adding a gentle detox drink each day — things began to change. Slowly at first. Then I saw a <b>real, significant improvement</b> in my child. I could not keep these recipes to myself.</p>
 <p>This book holds the meals, drinks and routines that helped my family. No long science. No fancy ingredients you can't find. Just real food from our homes — yam, plantain, okro, rice and beans — made safe, one day at a time.</p>
 <p>Every child is different, and food is not a replacement for your doctor. But it is a beautiful place to start — and you don't have to start alone.</p>
 <p class="heart">You don't have to be perfect. You just have to begin. ♥</p>

@@ -20,12 +20,17 @@ BASICS = [
       ["Stir the flaxseed and water together.", "Leave for 5 minutes until thick, like egg white.",
        "Use in pancakes, muffins and meatballs in place of 1 egg."],
       why="Binds food just like egg, and adds fibre and omega-3.", label="Basic"),
-    R("Healing Seasoning Mix (replaces stock cubes)", "5 min",
-      ["2 tbsp onion powder", "1 tbsp garlic powder", "1 tbsp dried thyme", "1 tbsp ground crayfish (optional)",
-       "1 tsp ground ginger", "1 tsp white pepper", "1 tsp pure curry powder", "1 tbsp sea salt"],
-      ["Mix everything in a clean, dry jar.", "Use 1–2 tsp wherever a recipe says “seasoning”.",
-       "Keeps for 2 months with the lid tight."],
-      why="Many stock cubes hide wheat, corn starch and MSG. This one is pure flavour.", label="Basic"),
+    R("Healing Seasoning Mix (replaces stock cubes)", "15 min + 4–6 hrs drying",
+      ["1 cup cooked chicken breast or lean beef, shredded (no skin, no fat)", "2 tbsp onion powder, 1 tbsp garlic powder",
+       "1 tbsp dried thyme, 1 tsp ground ginger", "1 tbsp ground crayfish (optional)",
+       "1 tsp white pepper, 1 tsp pure curry powder", "1 tbsp sea salt"],
+      ["Spread the cooked meat thinly on a parchment-lined tray.",
+       "Dry in the oven on its lowest setting (70–80 °C / 160–175 °F), door slightly open, for 4–6 hrs until completely dry and crumbly.",
+       "Cool, then blend to a fine powder.", "Add all the spices and blend again until even.",
+       "Store in an airtight jar in the fridge for up to 1 month, or freeze for 3 months. Use 1–2 tsp wherever a recipe says “seasoning”."],
+      why="Real chicken or beef flavour like a stock cube — without the hidden wheat, corn starch, MSG or sugar.",
+      tip="Make a chicken jar and a beef jar. Chicken for soups and rice, beef for stews and egusi.", tip_label="Good idea",
+      label="Basic"),
     R("Soft Cassava Flatbread (wraps, pizza & pinwheels)", "20 min · makes 6",
       ["1 cup (130 g) cassava flour", "¾ cup warm water", "2 tbsp olive oil", "½ tsp salt"],
       ["Mix everything into a soft dough. Rest 5 min.", "Divide into 6 balls (or 2 for pizza bases).",
@@ -265,13 +270,13 @@ GROCERY = [
 # ---------------------------------------------------------------- celebration cake & party guide
 CAKE = R("Celebration Vanilla Berry Cake", "1 hr + cooling · one 20 cm / 8 in cake",
          ["1 cup (140 g) brown rice flour", "½ cup (60 g) tapioca flour + ½ cup (80 g) potato starch",
-          "1 tsp psyllium husk powder", "¾ cup coconut sugar", "1 tsp baking soda, ¼ tsp salt",
-          "1 cup coconut milk or water", "⅓ cup light olive or avocado oil", "1 tbsp apple cider vinegar + 1 tsp pure vanilla powder"],
+          "1 tsp psyllium husk powder", "½ cup pure maple syrup", "1 tsp baking soda, ¼ tsp salt",
+          "¾ cup coconut milk or water", "⅓ cup light olive or avocado oil", "1 tbsp apple cider vinegar + 1 tsp pure vanilla powder"],
          ["Heat oven to 180 °C / 350 °F. Line a round tin with parchment.",
           "Whisk all the dry ingredients together.", "Add the milk, oil, vinegar and vanilla. Mix just until smooth.",
           "Bake 30–35 min until a skewer comes out clean. Cool completely.",
           "Frost with chilled whipped coconut cream + 1 tbsp maple syrup. Top with berries and candles!"],
-         why="No egg, dairy, gluten, corn or nuts — every child at the party can have a slice.",
+         why="No egg, dairy, gluten, corn, nuts or processed sugar — every child at the party can have a slice.",
          tip="Many vanilla extracts use corn alcohol. Pure vanilla powder or seeds are safe.", tip_label="Allergy note",
          label="Birthday",
          ) | dict(tip="Makes 12 cupcakes too — bake 18–20 min. Many vanilla extracts use corn alcohol, so use pure vanilla powder.",
@@ -320,10 +325,10 @@ CAKE_TIPS = """
 PARTY = [
     R("Baked Plantain Puff-Puff Bites", "30 min · makes 24",
       ["2 very ripe plantains", "1 cup cassava flour", "½ cup coconut milk", "½ tsp nutmeg, pinch of salt",
-       "½ tsp baking soda + 1 tsp lemon juice", "Coconut oil, for the tin", "Coconut sugar, for dusting"],
+       "½ tsp baking soda + 1 tsp lemon juice", "Coconut oil, for the tin", "Cinnamon, for dusting"],
       ["Heat oven to 200 °C / 400 °F. Oil a mini muffin tin well.", "Blend plantain and coconut milk until smooth.",
        "Stir in flour, nutmeg, salt and baking soda, then the lemon juice.",
-       "Spoon into the tin. Bake 15–18 min until golden.", "Roll in a little coconut sugar while warm."],
+       "Spoon into the tin. Bake 15–18 min until golden.", "Dust with a little cinnamon while warm — the plantain is sweet enough."],
       why="Puff-puff without wheat, egg or deep frying — so your child can join the party plate.",
       label="Party"),
     R("Zobo Party Punch", "20 min + chilling",
@@ -356,7 +361,7 @@ SWAPS = [("Wheat flour", "Cassava, buckwheat, tapioca or rice flour"), ("Bread",
          ("Baking powder", "Baking soda + lemon juice or vinegar"), ("Cornflour (to thicken)", "Tapioca flour"),
          ("Stock cubes", "Healing Seasoning Mix"), ("Soy sauce", "Coconut aminos"),
          ("Tea, coffee, energy drinks", "Rooibos, ginger, lemon balm, zobo"), ("Chocolate, Milo", "Carob"),
-         ("Sugar", "Dates, ripe banana or plantain, maple, honey (age 1+)"), ("Tuna", "Mackerel, sardines, salmon, tilapia"),
+         ("Sugar, sweets", "Dates, ripe banana or plantain, pure maple syrup, honey (age 1+)"), ("Tuna", "Mackerel, sardines, salmon, tilapia"),
          ("Pork, bacon, ham", "Chicken, turkey, beef"), ("Peanut butter (school)", "Sunflower-seed butter"),
          ("Deep frying", "Baking, steaming, boiling"), ("Foil", "Parchment paper")]
 SWAP_HTML = ('<table class="tbl"><tr><th style="width:38%">Instead of…</th><th>Use…</th></tr>'
@@ -452,7 +457,7 @@ LUNCHBOXES = [
 ]
 
 SNACKS_HTML = """
-<p class="lead">Bright, crunchy, dippable and fun. These snacks are made for even the pickiest eaters — all nut-free and free from every food in this book.</p>
+<p class="lead">Bright, crunchy, dippable and fun. These snacks are made for even the pickiest eaters — nut-free, processed-sugar-free and free from every food in this book.</p>
 <div class="grid2">
  <div class="box"><h3>1. Veggie Tots</h3><p>Mash 1 sweet potato with ½ grated courgette and 3 tbsp tapioca flour. Shape into little logs, bake 20 min at 200 °C.</p></div>
  <div class="box"><h3>2. Fruit Nachos</h3><p>Thin apple slices on a plate, drizzled with warm sunflower-seed butter and carob syrup. Sprinkle coconut.</p></div>
@@ -469,7 +474,7 @@ SNACKS_HTML = """
 """
 
 NAIJA_HTML = """
-<p class="lead">Our favourite Nigerian snacks — made gluten-free, egg-free, nut-free and baked instead of deep-fried. Familiar tastes from home that are safe for school.</p>
+<p class="lead">Our favourite Nigerian snacks — made gluten-free, egg-free, nut-free, processed-sugar-free and baked instead of deep-fried. Familiar tastes from home that are safe for school.</p>
 <div class="grid2">
  <div class="box"><h3>1. Ipekere (Plantain Chips)</h3><p>Thin green plantain slices, a little oil and salt. Bake 15–20 min at 190 °C until crisp.</p></div>
  <div class="box"><h3>2. Baked Dodo Bites</h3><p>Ripe plantain cubes tossed in a little coconut oil. Bake 20 min at 200 °C, turning once.</p></div>
@@ -487,14 +492,14 @@ NAIJA_HTML = """
 
 NAIJA_RECIPES = [
     R("Crunchy Cassava Chin Chin", "40 min",
-      ["2 cups cassava flour", "¼ cup coconut sugar", "½ tsp ground nutmeg, pinch of salt",
-       "⅓ cup solid coconut oil", "About ½ cup coconut milk"],
+      ["2 cups cassava flour", "3 tbsp pure maple syrup", "½ tsp ground nutmeg, pinch of salt",
+       "⅓ cup solid coconut oil", "About ⅓ cup coconut milk"],
       ["Heat oven to 180 °C / 350 °F. Line 2 trays with parchment.",
-       "Mix flour, sugar, nutmeg and salt. Rub in the coconut oil with your fingers.",
-       "Add coconut milk a little at a time to make a firm dough.",
+       "Mix flour, nutmeg and salt. Rub in the coconut oil with your fingers.",
+       "Add the maple syrup, then coconut milk a little at a time, to make a firm dough.",
        "Roll out 5 mm thick and cut into small squares.",
        "Bake 15–20 min, stirring once, until golden. They crisp as they cool."],
-      why="The chin chin every Nigerian child knows — with no wheat, no egg and no deep frying.",
+      why="The chin chin every Nigerian child knows — with no wheat, no egg, no processed sugar and no deep frying.",
       tip="Let your child cut the squares with a blunt knife. Kids eat what they make.", tip_label="Picky eater trick",
       label="Naija snack"),
     R("Baked Akara Bites", "35 min + soaking",
@@ -610,7 +615,7 @@ def chunks(xs, n):
 def pages():
     # ---------------- Healing Plates
     yield BOOK1, "cover", dict(series="The 30-Day Allergy-Free Family Meal Plan", title=BOOK1, logo="plates",
-        subtitle="Breakfast, lunch & dinner free from gluten, dairy, corn, egg, caffeine & tuna",
+        subtitle="Breakfast, lunch & dinner free from gluten, dairy, corn, egg, caffeine, tuna & processed sugar",
         tagline="Finally… food the whole family can eat.", free=FREE, badge=("90", "family<br>meals"), author=AUTHOR)
     yield BOOK1, "text", WELCOME
     yield BOOK1, "text", dict(kicker="Know before you shop", title="Where allergens hide", html=FREE_FROM_HTML)
