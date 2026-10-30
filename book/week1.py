@@ -1,7 +1,10 @@
 """Week 1 draft of all three books (for approval before writing weeks 2-5)."""
 import preview
-from preview import (AUTHOR, BOOK1, BOOK2, BOOK3, BRANDS, FREE, FREE_FROM_HTML, GUT_HTML, MARKS,  # noqa: F401
-                     treats)
+from preview import AUTHOR, BOOK1, BOOK2, BOOK3, BRANDS, FREE, FREE_FROM_HTML, GUT_HTML, treats
+
+BOOK4 = "Healing Printables"
+BOOK5 = "Healing Celebrations"
+MARKS = {BOOK1: "plates", BOOK2: "box", BOOK3: "sips", BOOK4: "print", BOOK5: "party"}
 
 WELCOME = next(d for b, k, d in preview.pages() if k == "text" and d.get("title") == "You are not alone")
 
@@ -270,7 +273,9 @@ CAKE = R("Celebration Vanilla Berry Cake", "1 hr + cooling · one 20 cm / 8 in c
           "Frost with chilled whipped coconut cream + 1 tbsp maple syrup. Top with berries and candles!"],
          why="No egg, dairy, gluten, corn or nuts — every child at the party can have a slice.",
          tip="Many vanilla extracts use corn alcohol. Pure vanilla powder or seeds are safe.", tip_label="Allergy note",
-         label="Birthday")
+         label="Birthday",
+         ) | dict(tip="Makes 12 cupcakes too — bake 18–20 min. Many vanilla extracts use corn alcohol, so use pure vanilla powder.",
+                  tip_label="Cupcakes")
 
 PARTY_HTML = """
 <p class="lead">Parties, owambes, church events and school trips can feel scary. With a little planning, your child can join in — and feel included.</p>
@@ -295,6 +300,90 @@ PARTY_HTML = """
 <div class="callout"><div class="t">Sensory overwhelm is real</div>
 <p>Loud music and crowds can be a lot. Arrive early when it's quiet, find a calm corner, and plan a gentle exit time. Leaving happy is a win.</p></div>
 """
+
+CAKE_TIPS = """
+<div class="grid2">
+ <div class="box"><h3>Fluffy coconut frosting</h3><ul>
+  <li>Chill 2 tins of full-fat coconut milk overnight.</li>
+  <li>Scoop out only the thick cream on top.</li>
+  <li>Whisk 2 min with 1 tbsp maple syrup until fluffy.</li>
+  <li>Keep the cake in the fridge until party time.</li></ul></div>
+ <div class="box"><h3>Decorate without food colouring</h3><ul>
+  <li><b>Pink:</b> a spoon of beetroot juice or blended strawberries.</li>
+  <li><b>Yellow:</b> a pinch of turmeric.</li>
+  <li><b>Purple:</b> blended blueberries.</li>
+  <li>Top with fresh berries, mango stars and coconut flakes.</li></ul></div>
+</div>
+<div class="sweetnote">Freeze slices for school birthdays — your child will always have their own cake when classmates celebrate.</div>
+"""
+
+PARTY = [
+    R("Baked Plantain Puff-Puff Bites", "30 min · makes 24",
+      ["2 very ripe plantains", "1 cup cassava flour", "½ cup coconut milk", "½ tsp nutmeg, pinch of salt",
+       "½ tsp baking soda + 1 tsp lemon juice", "Coconut oil, for the tin", "Coconut sugar, for dusting"],
+      ["Heat oven to 200 °C / 400 °F. Oil a mini muffin tin well.", "Blend plantain and coconut milk until smooth.",
+       "Stir in flour, nutmeg, salt and baking soda, then the lemon juice.",
+       "Spoon into the tin. Bake 15–18 min until golden.", "Roll in a little coconut sugar while warm."],
+      why="Puff-puff without wheat, egg or deep frying — so your child can join the party plate.",
+      label="Party"),
+    R("Zobo Party Punch", "20 min + chilling",
+      ["1 cup dried hibiscus (zobo) leaves", "8 cups water", "1 thumb ginger, sliced, 4 cloves",
+       "½ pineapple, peeled (keep the peel too)", "6 dates (to sweeten)", "Orange slices, to serve"],
+      ["Rinse the zobo. Boil with water, ginger, cloves and pineapple peel for 15 min.",
+       "Add the dates, turn off the heat and steep 30 min.", "Strain well. Blend the pineapple flesh and stir it in.",
+       "Chill and serve with orange slices and ice."],
+      why="Bright red, fruity and naturally caffeine-free — a party drink everyone can share.", label="Party"),
+    R("Nut-Free Chicken Suya Skewers", "30 min + marinating",
+      ["600 g chicken breast, cut into strips", "2 tsp paprika, 1 tsp ground ginger", "1 tsp garlic powder, 1 tsp onion powder",
+       "½ tsp cayenne (less for kids), 1 tsp salt", "2 tbsp olive oil", "Sliced onion, tomato & cucumber"],
+      ["Mix spices, salt and oil. Rub over the chicken. Rest 30 min.", "Thread onto soaked wooden skewers.",
+       "Bake at 220 °C / 425 °F for 12–15 min, turning once.", "Serve with fresh onion, tomato and cucumber."],
+      why="Classic suya spice uses groundnut (kuli kuli). This version is nut-free and party-safe.", label="Party"),
+    R("Rainbow Fruit Wands", "15 min",
+      ["Strawberries, pineapple, mango, kiwi, grapes, blueberries", "Watermelon slices",
+       "Paper straws or blunt skewers", "Star cookie cutter"],
+      ["Cut fruit into chunks, in rainbow order.", "Cut stars from the watermelon slices.",
+       "Thread the fruit onto straws and top each with a star.", "Chill until party time."],
+      why="Children who won't touch a fruit bowl will happily eat a magic wand.", label="Party"),
+]
+
+TRACK_ROWS = "".join
+SWAPS = [("Wheat flour", "Cassava, buckwheat, tapioca or rice flour"), ("Bread", "Easy Buckwheat Bread, cassava flatbread"),
+         ("Pasta", "Rice, lentil or chickpea pasta"), ("Semovita, wheat swallow", "Pounded yam, amala, plantain fufu"),
+         ("Pap / ogi / akamu", "Pure millet porridge"), ("Cow's milk", "Coconut, rice or tiger nut milk"),
+         ("Butter", "Coconut oil or olive oil"), ("Cheese", "Dairy-free cheese, nutritional yeast"),
+         ("Yogurt", "Coconut yogurt"), ("Egg", "Flax egg (1 tbsp ground flax + 3 tbsp water)"),
+         ("Baking powder", "Baking soda + lemon juice or vinegar"), ("Cornflour (to thicken)", "Tapioca flour"),
+         ("Stock cubes", "Healing Seasoning Mix"), ("Soy sauce", "Coconut aminos"),
+         ("Tea, coffee, energy drinks", "Rooibos, ginger, lemon balm, zobo"), ("Chocolate, Milo", "Carob"),
+         ("Sugar", "Dates, ripe banana or plantain, maple, honey (age 1+)"), ("Tuna", "Mackerel, sardines, salmon, tilapia"),
+         ("Pork, bacon, ham", "Chicken, turkey, beef"), ("Peanut butter (school)", "Sunflower-seed butter"),
+         ("Deep frying", "Baking, steaming, boiling"), ("Foil", "Parchment paper")]
+SWAP_HTML = ('<table class="tbl"><tr><th style="width:38%">Instead of…</th><th>Use…</th></tr>'
+             + "".join(f"<tr><td>{a}</td><td>{b}</td></tr>" for a, b in SWAPS) + "</table>")
+
+
+def tracker(first, last):
+    rows = "".join(f"<tr><td>{d}</td><td></td><td></td><td></td><td></td><td></td></tr>" for d in range(first, last + 1))
+    return f"""<p class="muted small">Tick or score 1–5. After 2 weeks, look back — patterns jump out.</p>
+<table class="track tall"><tr><th style="width:9%">Day</th><th>Sleep</th><th>Mood</th><th>Tummy &amp; poo</th><th>New food tried</th><th style="width:28%">Notes</th></tr>{rows}</table>"""
+
+
+REWARD_HTML = """<p class="lead">Every time your child tries a new food — even one tiny lick — they get a sticker or a star. 30 tries = a big celebration!</p>
+<div class="reward">""" + "".join(f'<div class="cell"><b>{i}</b><span>Food:</span></div>' for i in range(1, 31)) + """</div>
+<p class="sign" style="text-align:center;font-size:15pt">Every try counts! ★</p>"""
+
+PLANNER_HTML = """<p class="muted small">Plan the week, then write your shopping list on the next page.</p>
+<table class="track tall plan"><tr><th style="width:12%">Day</th><th>Breakfast</th><th>Lunch</th><th>Dinner</th><th>Snack / lunch box</th></tr>""" + "".join(
+    f"<tr><td>{d}</td><td></td><td></td><td></td><td></td></tr>" for d in ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]) + "</table>"
+
+SHOP_HTML = '<div class="groc blank">' + "".join(
+    f'<div class="cat"><h3>{c}</h3><ul>' + "<li></li>" * 7 + "</ul></div>"
+    for c in ["Vegetables", "Fruit", "Protein", "Grains & flours", "Dairy-free", "Pantry & spices"]) + "</div>"
+
+SAFE_HTML = """<p class="lead">Write down the foods your child loves today — and the ones you're working on. Share it with anyone who cooks for them.</p>
+<div class="grid2"><div class="box"><h3>Safe foods — always yes</h3><div class="lines" style="height:150mm"></div></div>
+<div class="box"><h3>Foods we're trying</h3><div class="lines" style="height:150mm"></div></div></div>"""
 
 # ---------------------------------------------------------------- lunch box book
 LUNCH_RULES = """
@@ -536,9 +625,6 @@ def pages():
         yield BOOK1, "day", d
     yield BOOK1, "two", dict(kind="treat", recipes=treats,
         note="Every Friday is <b>Sweet Treat Day</b> — because healing food should still feel like a celebration.")
-    yield BOOK1, "cards", dict(kicker="Bonus: celebrations", title="A real birthday cake", kind="treat", recipes=[CAKE],
-        intro="Every child deserves to blow out candles on a cake they can actually eat.")
-    yield BOOK1, "text", dict(kicker="Bonus: celebrations", title="Party survival guide", html=PARTY_HTML)
     yield BOOK1, "brands", dict(kicker="Make shopping easier", title="Allergy-friendly brands near you",
         intro="Always read the label — brands can change their recipes. Many gluten-free products still contain corn or egg.",
         regions=BRANDS)
@@ -553,7 +639,6 @@ def pages():
     yield BOOK2, "text", dict(kicker="Snack attack", title="10 snacks kids can't say no to", html=SNACKS_HTML)
     yield BOOK2, "text", dict(kicker="Taste of home", title="Naija snack corner", html=NAIJA_HTML)
     yield BOOK2, "two", dict(kind="lunchbox", recipes=NAIJA_RECIPES)
-    yield BOOK2, "text", dict(kicker="Printable", title="Allergy card for school", html=ALLERGY_CARD, white=True)
 
     # ---------------- Healing Sips
     yield BOOK3, "cover", dict(series="Bonus Book 2", title=BOOK3, logo="sips",
@@ -562,3 +647,26 @@ def pages():
     yield BOOK3, "text", dict(kicker="Before you start", title="The gentle way to detox", html=DETOX_RULES)
     for pair in chunks(DETOX, 2):
         yield BOOK3, "two", dict(kind="detox", recipes=pair)
+
+    # ---------------- Healing Printables
+    yield BOOK4, "cover", dict(series="Bonus Book 3", title=BOOK4, logo="print",
+        subtitle="Allergy cards, trackers, charts & planners to make every day easier",
+        tagline="Print. Stick on the fridge. Breathe.", free=FREE, badge=("8", "pages<br>to print"), author=AUTHOR)
+    yield BOOK4, "text", dict(kicker="Printable 1", title="Allergy cards", html=ALLERGY_CARD, white=True)
+    yield BOOK4, "text", dict(kicker="Printable 2", title="Food & mood tracker · Days 1–15", html=tracker(1, 15), white=True)
+    yield BOOK4, "text", dict(kicker="Printable 2", title="Food & mood tracker · Days 16–30", html=tracker(16, 30), white=True)
+    yield BOOK4, "text", dict(kicker="Printable 3 · Stick it on the fridge", title="Smart swaps cheat sheet", html=SWAP_HTML, white=True)
+    yield BOOK4, "text", dict(kicker="Printable 4", title="I tried it!", html=REWARD_HTML, white=True)
+    yield BOOK4, "text", dict(kicker="Printable 5", title="Weekly meal planner", html=PLANNER_HTML, white=True)
+    yield BOOK4, "text", dict(kicker="Printable 6", title="My shopping list", html=SHOP_HTML, white=True)
+    yield BOOK4, "text", dict(kicker="Printable 7", title="My child's safe foods", html=SAFE_HTML, white=True)
+
+    # ---------------- Healing Celebrations
+    yield BOOK5, "cover", dict(series="Bonus Book 4", title=BOOK5, logo="party",
+        subtitle="A real birthday cake, party food & a survival guide for parties, church events and eating out",
+        tagline="Every child deserves a slice.", free=FREE + ["Nut"], badge=("5", "party<br>recipes"), author=AUTHOR)
+    yield BOOK5, "cards", dict(kicker="The star of the party", title="A real birthday cake", kind="treat", recipes=[CAKE],
+        intro="Every child deserves to blow out candles on a cake they can actually eat.", after=CAKE_TIPS)
+    for pair in chunks(PARTY, 2):
+        yield BOOK5, "two", dict(kind="treat", recipes=pair)
+    yield BOOK5, "text", dict(kicker="Be prepared", title="Party survival guide", html=PARTY_HTML)

@@ -87,6 +87,7 @@ PAGES = {
     {% if p.title %}<h1 style="font-size:24pt">{{ p.title }}</h1>{% endif %}
     {% if p.intro %}<p class="muted">{{ p.intro }}</p>{% endif %}
     {% for r in p.recipes %}{{ recipe(r, p.kind, r.label) }}{% endfor %}
+    {% if p.after %}{{ p.after }}{% endif %}
   </div>
   {{ footer(book, n) }}
 </section>""",

@@ -285,3 +285,14 @@ table.tbl { width: 100%; border-collapse: separate; border-spacing: 0; font-size
 .recipe.treat .meal { background: #D9667A; }
 .sweetnote { margin-top: 2mm; text-align: center; font-family: 'Fraunces', serif; font-weight: 600; font-size: 13pt; color: #B8485C;
   background: #FBE3E1; border-radius: 4mm; padding: 5mm 6mm; }
+
+/* printables */
+.track.tall td { height: 12.4mm; }
+.track.plan td { height: 27mm; }
+.reward { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2.5mm; margin: 2mm 0 5mm; }
+.reward .cell { border: 1.5px dashed var(--gold); border-radius: 3mm; height: 30mm; padding: 2mm; position: relative; background: #FFFBF2; }
+.reward .cell b { font-family: 'Fraunces', serif; font-size: 13pt; color: var(--terra); }
+.reward .cell span { position: absolute; left: 2mm; bottom: 2mm; font-size: 7.5pt; color: var(--muted); }
+.groc.blank { columns: 2; }
+.groc.blank li { height: 8mm; border-bottom: 1px solid var(--line); margin: 0; }
+.groc.blank li::before { top: 3.4mm; }
