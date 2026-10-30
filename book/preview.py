@@ -3,7 +3,7 @@
 BOOK1 = "Healing Plates"
 BOOK2 = "Healing Lunch Box"
 BOOK3 = "Healing Sips"
-AUTHOR = "Stella Efionayi"
+AUTHOR = "Tris Eliverson"
 MARKS = {BOOK1: "plates", BOOK2: "box", BOOK3: "sips"}
 FREE = ["Gluten", "Dairy", "Corn", "Egg", "Caffeine", "Tuna", "Pork"]
 
@@ -163,7 +163,7 @@ def pages():
 <p>I have stood in that kitchen too. <b>[ Your story goes here — a few lines in your own words. ]</b></p>
 <p>This book is the one I wish I had. No long science. No fancy ingredients you can't find. Just real food from our homes — yam, plantain, okro, rice, beans — made safe for your family, one day at a time.</p>
 <p>You don't have to be perfect. You just have to start.</p>
-<div class="sign">With love, Stella Efionayi</div></div>""")
+<div class="sign">With love, Tris Eliverson</div></div>""")
     yield BOOK1, "text", dict(kicker="Know before you shop", title="Where allergens hide", html=FREE_FROM_HTML)
     yield BOOK1, "text", dict(kicker="Restoring the gut", title="5 steps to healing the gut", html=GUT_HTML)
     yield BOOK1, "calendar", dict(kicker="Your month at a glance", title="Week 1",

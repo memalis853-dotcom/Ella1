@@ -2,7 +2,7 @@
 
 MACROS = r"""
 {% macro footer(book, n) -%}
-<div class="footer"><span class="fl">{{ mark }}{{ book }} · Stella Efionayi</span><span class="pn">{{ n }}</span></div>
+<div class="footer"><span class="fl">{{ mark }}{{ book }} · Tris Eliverson</span><span class="pn">{{ n }}</span></div>
 {%- endmacro %}
 
 {% macro recipe(r, kind, label, big=False) -%}
