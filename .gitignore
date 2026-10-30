@@ -1,0 +1,3 @@
+book/out/*/
+book/*.html
+__pycache__/

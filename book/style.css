@@ -1,0 +1,269 @@
+@import url('fonts/fonts.css');
+
+:root {
+  --green: #2E5E4E;
+  --leaf: #6FA37A;
+  --leaf-soft: #E4EFE3;
+  --terra: #C8643B;
+  --terra-soft: #F8E3D6;
+  --gold: #E3A12F;
+  --gold-soft: #FBEFD3;
+  --cream: #FBF6EC;
+  --sand: #F2E6D2;
+  --ink: #2B2722;
+  --muted: #6E665B;
+  --line: #E3D6C0;
+}
+
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #fff; }
+body {
+  font-family: 'Nunito', 'DejaVu Sans', sans-serif;
+  color: var(--ink);
+  font-size: 10.5pt;
+  line-height: 1.45;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* ---------- page frame ---------- */
+.page {
+  width: 210mm;
+  height: 297mm;
+  position: relative;
+  overflow: hidden;
+  page-break-after: always;
+  break-after: page;
+  background: var(--cream);
+  padding: 16mm 15mm 20mm;
+}
+.page:last-child { page-break-after: auto; break-after: auto; }
+.page.white { background: #fff; }
+.page .inner { height: 100%; display: flex; flex-direction: column; }
+
+.footer {
+  position: absolute;
+  left: 15mm; right: 15mm; bottom: 9mm;
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 8pt; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--muted);
+  border-top: 1.2px solid var(--line);
+  padding-top: 2.5mm;
+}
+.footer .pn {
+  font-weight: 800; color: #fff; background: var(--green);
+  border-radius: 99px; min-width: 8mm; text-align: center; padding: .6mm 2.5mm;
+  letter-spacing: 0;
+}
+
+/* kente-style band used on chapter tops */
+.band {
+  height: 5mm; margin: -16mm -15mm 10mm;
+  background:
+    repeating-linear-gradient(90deg,
+      var(--green) 0 14mm, var(--gold) 14mm 17mm,
+      var(--terra) 17mm 31mm, var(--gold) 31mm 34mm,
+      var(--leaf) 34mm 48mm, var(--gold) 48mm 51mm);
+}
+
+/* ---------- type ---------- */
+h1, h2, h3, .serif { font-family: 'Fraunces', 'DejaVu Serif', serif; font-weight: 800; }
+h1 { font-size: 30pt; line-height: 1.05; margin: 0 0 4mm; color: var(--green); }
+h2 { font-size: 17pt; line-height: 1.15; margin: 6mm 0 2.5mm; color: var(--green); }
+h3 { font-size: 12.5pt; margin: 4mm 0 1.5mm; color: var(--terra); }
+.kicker {
+  font-size: 9pt; font-weight: 800; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--terra); margin-bottom: 2mm;
+}
+p { margin: 0 0 2.6mm; }
+.lead { font-size: 12.5pt; line-height: 1.5; color: #3b352e; }
+.small { font-size: 9pt; }
+.muted { color: var(--muted); }
+ul, ol { margin: 0 0 2.6mm; padding-left: 5.5mm; }
+li { margin-bottom: 1mm; }
+strong { font-weight: 800; }
+
+/* ---------- blocks ---------- */
+.callout {
+  border-radius: 4mm; padding: 4mm 5mm; margin: 3mm 0;
+  background: var(--leaf-soft); border-left: 2mm solid var(--leaf);
+}
+.callout.gold { background: var(--gold-soft); border-left-color: var(--gold); }
+.callout.terra { background: var(--terra-soft); border-left-color: var(--terra); }
+.callout .t { font-weight: 900; margin-bottom: 1mm; color: var(--green); }
+.callout.terra .t { color: var(--terra); }
+.callout.gold .t { color: #9a6a12; }
+.callout p:last-child, .callout ul:last-child { margin-bottom: 0; }
+
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+.grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3.5mm; }
+.box {
+  background: #fff; border: 1px solid var(--line); border-radius: 4mm; padding: 4mm 4.5mm;
+}
+.box h3 { margin-top: 0; }
+.box ul { margin-bottom: 0; }
+
+.step {
+  display: grid; grid-template-columns: 11mm 1fr; gap: 3mm; align-items: start;
+  background: #fff; border: 1px solid var(--line); border-radius: 4mm; padding: 3.5mm 4mm; margin-bottom: 3mm;
+}
+.step .n {
+  width: 11mm; height: 11mm; border-radius: 50%; background: var(--terra); color: #fff;
+  font-family: 'Fraunces', serif; font-weight: 800; font-size: 15pt;
+  display: flex; align-items: center; justify-content: center;
+}
+.step h3 { margin: .5mm 0 1mm; color: var(--green); }
+.step p:last-child, .step ul:last-child { margin-bottom: 0; }
+
+table.tbl { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 9.4pt; background: #fff; border-radius: 3mm; overflow: hidden; border: 1px solid var(--line); }
+.tbl th { background: var(--green); color: #fff; text-align: left; padding: 2.2mm 3mm; font-weight: 800; }
+.tbl td { padding: 2mm 3mm; border-top: 1px solid var(--line); vertical-align: top; }
+.tbl tr:nth-child(even) td { background: #FCF9F3; }
+.tbl td:first-child { font-weight: 800; color: var(--green); }
+
+.pill {
+  display: inline-block; font-size: 8pt; font-weight: 800; letter-spacing: .04em;
+  padding: .5mm 2.4mm; border-radius: 99px; background: var(--sand); color: var(--ink); margin: 0 1mm 1mm 0;
+}
+.pill.no { background: var(--terra); color: #fff; }
+
+.disclaimer { font-size: 8.3pt; color: var(--muted); line-height: 1.4; }
+
+/* ---------- cover ---------- */
+.cover { padding: 0; background: var(--green); color: #fff; }
+.cover .top {
+  height: 22mm;
+  background:
+    repeating-linear-gradient(90deg,
+      var(--gold) 0 8mm, var(--terra) 8mm 22mm, var(--cream) 22mm 24mm,
+      var(--leaf) 24mm 38mm, var(--cream) 38mm 40mm, var(--terra) 40mm 54mm);
+}
+.cover .body { padding: 14mm 16mm 0; text-align: center; }
+.cover .series { font-size: 10pt; letter-spacing: .3em; text-transform: uppercase; color: var(--gold); font-weight: 900; }
+.cover h1 { color: #fff; font-size: 40pt; margin: 4mm 0 3mm; }
+.cover .sub { font-size: 14pt; color: #F4EBDD; line-height: 1.4; margin: 0 auto; max-width: 160mm; }
+.cover .plate { margin: 9mm auto 7mm; width: 98mm; height: 98mm; }
+.cover .free { display: flex; flex-wrap: wrap; justify-content: center; gap: 2mm; max-width: 170mm; margin: 0 auto; }
+.cover .free span {
+  border: 1.4px solid rgba(255,255,255,.55); border-radius: 99px; padding: 1.2mm 3.6mm;
+  font-weight: 800; font-size: 9.5pt; letter-spacing: .03em;
+}
+.cover .regions { margin-top: 6mm; font-size: 10pt; color: #DCE8DF; }
+.cover .author {
+  position: absolute; left: 0; right: 0; bottom: 14mm; text-align: center;
+  font-family: 'Fraunces', serif; font-size: 14pt; font-weight: 600; color: var(--gold);
+}
+.cover .badge {
+  position: absolute; right: 12mm; top: 118mm; width: 30mm; height: 30mm; border-radius: 50%;
+  background: var(--gold); color: var(--green); display: flex; flex-direction: column;
+  align-items: center; justify-content: center; text-align: center; transform: rotate(10deg);
+  font-weight: 900; line-height: 1.05; font-size: 9pt; box-shadow: 0 2mm 5mm rgba(0,0,0,.2);
+}
+.cover .badge b { font-family: 'Fraunces', serif; font-size: 20pt; }
+
+/* ---------- letter ---------- */
+.letter p { font-size: 11.5pt; line-height: 1.6; }
+.sign { font-family: 'Fraunces', serif; font-size: 18pt; color: var(--terra); margin-top: 4mm; }
+
+/* ---------- day pages ---------- */
+.dayhead { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 3.5mm; }
+.dayhead .d { font-family: 'Fraunces', serif; font-weight: 800; font-size: 28pt; color: var(--green); line-height: 1; }
+.dayhead .d small { font-size: 11pt; color: var(--terra); letter-spacing: .15em; text-transform: uppercase; font-family: 'Nunito', sans-serif; font-weight: 900; display: block; margin-bottom: 1mm; }
+.dayhead .q { max-width: 98mm; text-align: right; font-style: italic; color: var(--muted); font-size: 9.5pt; }
+
+.recipe {
+  background: #fff; border-radius: 4mm; border: 1px solid var(--line);
+  margin-bottom: 3.2mm; overflow: hidden; break-inside: avoid;
+}
+.recipe .rh {
+  display: flex; align-items: center; gap: 3mm; padding: 2.3mm 4mm;
+  background: var(--gold-soft); border-bottom: 1px solid var(--line);
+}
+.recipe.lunch .rh { background: var(--terra-soft); }
+.recipe.dinner .rh { background: var(--leaf-soft); }
+.recipe .meal {
+  font-size: 7.5pt; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; color: #fff;
+  background: var(--gold); border-radius: 99px; padding: .7mm 2.6mm; white-space: nowrap;
+}
+.recipe.lunch .meal { background: var(--terra); }
+.recipe.dinner .meal { background: var(--green); }
+.recipe .rn { font-family: 'Fraunces', serif; font-weight: 800; font-size: 13pt; color: var(--ink); flex: 1; line-height: 1.15; }
+.recipe .meta { font-size: 8pt; color: var(--muted); font-weight: 700; white-space: nowrap; text-align: right; }
+.recipe .rb { display: grid; grid-template-columns: 38% 1fr; gap: 4mm; padding: 2.6mm 4mm 2mm; font-size: 9.2pt; line-height: 1.38; }
+.recipe .lbl { font-size: 7.5pt; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 1mm; }
+.recipe ul.ing { list-style: none; padding: 0; margin: 0; }
+.recipe ul.ing li { padding-left: 4.6mm; position: relative; margin-bottom: .6mm; }
+.recipe ul.ing li::before {
+  content: ''; position: absolute; left: 0; top: 1.1mm; width: 2.6mm; height: 2.6mm;
+  border: 1.2px solid var(--muted); border-radius: .6mm;
+}
+.recipe ol.steps { margin: 0; padding-left: 4.6mm; }
+.recipe ol.steps li { margin-bottom: .7mm; }
+.recipe ol.steps li::marker { font-weight: 900; color: var(--terra); }
+.recipe .rf { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; padding: 0 4mm 2.6mm; font-size: 8.6pt; line-height: 1.35; }
+.recipe .rf.one { grid-template-columns: 1fr; }
+.recipe .why, .recipe .tip { border-radius: 2.5mm; padding: 1.6mm 2.6mm; }
+.recipe .why { background: var(--leaf-soft); }
+.recipe .tip { background: var(--sand); }
+.recipe .why b, .recipe .tip b { color: var(--green); }
+.recipe .tip b { color: var(--terra); }
+
+/* big recipe cards (2 per page) */
+.recipe.big .rh { padding: 3mm 5mm; }
+.recipe.big .rn { font-size: 15pt; }
+.recipe.big .rb { font-size: 10pt; padding: 3.5mm 5mm 2.5mm; gap: 5mm; }
+.recipe.big .rf { font-size: 9.3pt; padding: 0 5mm 3.5mm; }
+.recipe .goodfor { padding: 0 5mm 2.5mm; }
+.recipe .goodfor .pill { background: var(--leaf-soft); color: var(--green); }
+.recipe.detox .rh { background: var(--leaf-soft); }
+.recipe.detox .meal { background: var(--leaf); }
+.recipe.box .rh { background: var(--gold-soft); }
+.recipe.box .meal { background: var(--gold); }
+
+/* ---------- calendar ---------- */
+.cal { width: 100%; border-collapse: separate; border-spacing: 1.6mm; font-size: 8.3pt; line-height: 1.25; }
+.cal td { background: #fff; border: 1px solid var(--line); border-radius: 2.5mm; padding: 1.8mm 2mm; vertical-align: top; width: 14.28%; height: 37mm; }
+.cal td .dn { font-family: 'Fraunces', serif; font-weight: 800; font-size: 12pt; color: var(--green); margin-bottom: 1mm; }
+.cal td .m { margin-bottom: 1.1mm; }
+.cal td .m i { font-style: normal; font-weight: 900; font-size: 6.8pt; letter-spacing: .08em; color: #fff; border-radius: 99px; padding: .2mm 1.4mm; margin-right: .8mm; }
+.cal td .m.b i { background: var(--gold); }
+.cal td .m.l i { background: var(--terra); }
+.cal td .m.d i { background: var(--green); }
+.cal td.empty { background: transparent; border: none; }
+
+/* ---------- grocery ---------- */
+.groc { columns: 2; column-gap: 6mm; }
+.groc .cat { break-inside: avoid; margin-bottom: 4mm; background: #fff; border: 1px solid var(--line); border-radius: 3.5mm; padding: 3mm 4mm; }
+.groc .cat h3 { margin: 0 0 1.5mm; font-size: 11.5pt; }
+.groc ul { list-style: none; padding: 0; margin: 0; font-size: 9.6pt; }
+.groc li { padding-left: 5mm; position: relative; margin-bottom: .8mm; }
+.groc li::before { content: ''; position: absolute; left: 0; top: 1.2mm; width: 2.8mm; height: 2.8mm; border: 1.2px solid var(--muted); border-radius: .6mm; }
+
+/* ---------- brands ---------- */
+.brands { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5mm; }
+.brands .box { padding: 3mm 4mm; }
+.brands h3 { margin: 0 0 1mm; font-size: 11pt; color: var(--green); }
+.brands .row { font-size: 8.9pt; margin-bottom: 1.1mm; line-height: 1.35; }
+.brands .row b { color: var(--terra); }
+
+/* ---------- notes ---------- */
+.lines { flex: 1; background: repeating-linear-gradient(to bottom, transparent 0 9.5mm, var(--line) 9.5mm 10mm); border-radius: 2mm; }
+
+/* ---------- tracker ---------- */
+.track { width: 100%; border-collapse: collapse; font-size: 9pt; background: #fff; }
+.track th, .track td { border: 1px solid var(--line); padding: 1.6mm 2mm; text-align: center; }
+.track th { background: var(--green); color: #fff; }
+.track td:first-child { font-weight: 800; color: var(--green); }
+
+/* ---------- part divider ---------- */
+.divider { background: var(--green); color: #fff; padding: 0; }
+.divider .band { margin: 0 0 0; height: 8mm; }
+.divider .c { position: absolute; left: 18mm; right: 18mm; top: 92mm; }
+.divider .c .kicker { color: var(--gold); font-size: 11pt; }
+.divider h1 { color: #fff; font-size: 40pt; }
+.divider p { font-size: 13pt; color: #E5EEE7; max-width: 150mm; line-height: 1.55; }
+
+/* allergy card (cut-out) */
+.cutcard { border: 2px dashed var(--muted); border-radius: 4mm; padding: 5mm 6mm; background: #fff; margin-bottom: 6mm; }
+.cutcard .fill { display: inline-block; border-bottom: 1px solid var(--ink); min-width: 60mm; height: 5mm; }
