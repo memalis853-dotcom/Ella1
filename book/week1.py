@@ -74,7 +74,7 @@ DAYS = [
       ["Soften onion and garlic in olive oil, 3 min.", "Add the mince and brown it, breaking it up.",
        "Stir in the carrot, tomatoes and herbs. Simmer 20 min.",
        "Cook the pasta as the pack says. Drain.", "Toss the pasta through the sauce and serve."],
-      why="A dinner my son asks for again and again — simple, filling and completely safe.",
+      why="A dinner my child asks for again and again — simple, filling and completely safe.",
       tip="Blend the sauce smooth if your child doesn't like to see “bits”.", tip_label="Kid tip",
       region="Author's family favourite")),
  dict(quote="Today's habit: 10 minutes of bouncing or dancing — it gets the lymph system moving.",
@@ -219,7 +219,7 @@ DAYS = [
        "Boil the potatoes and carrots in the same stock for 15 min until soft.",
        "Blend the vegetables smooth — or blend half and chop the rest very tiny.",
        "Stir the shredded chicken back in. Simmer 5 min.", "Serve warm with buckwheat bread."],
-      why="My son's favourite. Blending the vegetables means he gets all the goodness without seeing them.",
+      why="My child's favourite. Blending the vegetables means all the goodness goes in — without them seeing it.",
       tip="Some days blend it all, some days leave tiny pieces — a gentle way to get used to new textures.",
       tip_label="Kid tip", region="Author's family favourite")),
 ]
