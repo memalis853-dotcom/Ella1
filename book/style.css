@@ -277,7 +277,7 @@ table.tbl { width: 100%; border-collapse: separate; border-spacing: 0; font-size
 .author-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; display: block; }
 .letter p { font-size: 11.5pt; line-height: 1.6; margin-bottom: 3mm; }
 .letter .hello { font-family: 'Fraunces', serif; font-weight: 600; font-size: 14pt; color: var(--terra); }
-.letter .heart { font-weight: 800; color: var(--green); }
+.heart { font-weight: 800; color: var(--green); }
 .role { font-size: 9pt; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); font-weight: 800; }
 
 /* sweet treats */
@@ -296,3 +296,30 @@ table.tbl { width: 100%; border-collapse: separate; border-spacing: 0; font-size
 .groc.blank { columns: 2; }
 .groc.blank li { height: 8mm; border-bottom: 1px solid var(--line); margin: 0; }
 .groc.blank li::before { top: 3.4mm; }
+
+/* contents */
+.toc { margin-top: 2mm; }
+.toc .ti { display: flex; align-items: baseline; gap: 2mm; padding: 1.55mm 0; font-size: 11pt; }
+.toc .ti span { font-weight: 700; }
+.toc .ti i { flex: 1; border-bottom: 1.5px dotted var(--line); transform: translateY(-1mm); }
+.toc .ti b { font-family: 'Fraunces', serif; color: var(--terra); min-width: 8mm; text-align: right; }
+
+/* oil scorecard */
+.oils { background: #fff; border: 1px solid var(--line); border-radius: 4mm; padding: 3mm 5mm; }
+.oil { display: grid; grid-template-columns: 62mm 1fr 10mm; align-items: center; gap: 3mm; padding: 1.4mm 0; font-size: 10pt; }
+.oil .on { font-weight: 700; }
+.oil .bar { height: 3.5mm; background: var(--sand); border-radius: 99px; overflow: hidden; }
+.oil .bar i { display: block; height: 100%; background: linear-gradient(90deg, var(--leaf), var(--green)); border-radius: 99px; }
+.oil b { font-family: 'Fraunces', serif; color: var(--green); text-align: right; }
+
+ul.ticks { list-style: none; padding: 0; }
+ul.ticks li { padding-left: 6mm; position: relative; }
+ul.ticks li::before { content: '✓'; position: absolute; left: 0; color: var(--leaf); font-weight: 900; }
+
+/* month calendar */
+.cal.month td { height: 41mm; font-size: 7.6pt; padding: 1.5mm 1.6mm; }
+.cal.month td .dn { font-size: 11pt; margin-bottom: .6mm; }
+.cal.month td .m { margin-bottom: .9mm; }
+.divider .band { height: 12mm; background:
+    repeating-linear-gradient(90deg, var(--gold) 0 8mm, var(--terra) 8mm 22mm, var(--cream) 22mm 24mm,
+      var(--leaf) 24mm 38mm, var(--cream) 38mm 40mm, var(--terra) 40mm 54mm); }

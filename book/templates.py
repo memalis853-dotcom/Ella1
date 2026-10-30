@@ -79,6 +79,17 @@ PAGES = {
   {{ footer(book, n) }}
 </section>""",
 
+"toc": r"""
+<section class="page">
+  <div class="band"></div>
+  <div class="kicker">{{ p.kicker }}</div>
+  <h1>{{ p.title }}</h1>
+  <div class="toc">
+  {% for t, pg in p["items"] %}<div class="ti"><span>{{ t }}</span><i></i><b>{{ pg }}</b></div>{% endfor %}
+  </div>
+  {{ footer(book, n) }}
+</section>""",
+
 "cards": r"""
 <section class="page">
   <div class="band"></div>
@@ -106,7 +117,7 @@ PAGES = {
   <div class="band"></div>
   <div class="kicker">{{ p.kicker }}</div>
   <h1 style="font-size:24pt">{{ p.title }}</h1>
-  <table class="cal">
+  <table class="cal{% if p.month %} month{% endif %}">
   {% for week in p.weeks %}<tr>
     {% for c in week %}{% if c %}<td><div class="dn">{{ c.day }}</div>
       {% for m in c.meals %}<div class="m {{ m[0] }}"><i>{{ m[1] }}</i>{{ m[2] }}</div>{% endfor %}</td>
