@@ -13,11 +13,14 @@ fbq('track', 'ViewContent', { value: 14.99, currency: 'USD', content_name: 'The 
 <script>
 window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date()); gtag('config', 'G-XXXXXXXXXX');
+var HC_SELAR = 'https://selar.com/1o1yv2t74f';
 document.addEventListener('click', function (e) {
 var a = e.target.closest && e.target.closest('.hcx .btn'); if (!a) return;
+e.preventDefault(); e.stopPropagation();
 if (window.fbq) fbq('track', 'InitiateCheckout', { value: 14.99, currency: 'USD' });
 if (window.gtag) gtag('event', 'begin_checkout', { value: 14.99, currency: 'USD' });
-});
+setTimeout(function () { window.location.href = HC_SELAR; }, 150);
+}, true);
 </script>
 <!-- ================= END TRACKING ================= -->
 <style>
