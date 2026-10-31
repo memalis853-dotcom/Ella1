@@ -89,6 +89,8 @@ def page_md(kind, p, mod_name):
         out += "\n".join(recipe_md(r, r.get("label")) for r in p["recipes"])
         if p.get("note"):
             out += "\n" + html_to_md(p["note"])
+        if p.get("after"):
+            out += "\n" + html_to_md(p["after"])
         return out
     if kind == "calendar":
         rows = [c for week in p["weeks"] for c in week if c]

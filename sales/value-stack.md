@@ -5,8 +5,8 @@
 | **Healing Plates** — The 30-Day Allergy-Free Family Meal Plan (90 breakfasts, lunches & dinners — gluten, dairy, corn, egg, caffeine, tuna & processed-sugar free) | $12.99 |
 | **Bonus 1: Healing Lunch Box** — 30 days of school lunches & snacks kids can't say no to | $9.99 |
 | **Bonus 2: Healing Sips** — The 30-Day Gentle Detox & Juicing Plan | $9.99 |
-| **Bonus 3: Printables Pack** — allergy cards for school, 30-day food & mood tracker, fridge swap cheat sheet, "I tried it!" reward chart | $5.99 |
-| **Bonus 4: Birthday Cake & Party Survival Guide** — a real allergy-free celebration cake + how to handle parties, church events & eating out | $5.99 |
+| **Bonus 3: Healing Printables** — 12 pages: allergy cards, label decoder cards, 30-day food & mood tracker, fridge swap cheat sheet, "I tried it!" reward chart, meal & lunch box planners, supplement log, doctor visit notes | $5.99 |
+| **Bonus 4: Healing Celebrations** — a real allergy-free birthday cake, cupcakes, 12 party recipes, 3 party menus, party survival guide & letter to the party host | $5.99 |
 | **Total value** | **$44.95** |
 | **Your price today** | **$12.99** |
 
