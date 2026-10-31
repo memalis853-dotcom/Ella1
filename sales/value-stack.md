@@ -9,8 +9,10 @@
 | **Bonus 4: Healing Celebrations** — a real allergy-free birthday cake, cupcakes, 12 party recipes, 3 party menus, party survival guide & letter to the party host | $5.99 |
 | **Bonus 5: Healing Words** — What God Says About Your Child: 31 days of Bible declarations (KJV) with simple explanations and daily declarations for parents | $6.99 |
 | **Total value** | **$51.94** |
-| **Your price today** | **$12.99** |
+| **Your price today** | **$15.99** |
 
-**Headline line:** *Over $51 of help — yours today for just $12.99.*
+**Headline line:** *Over $51 of help — yours today for just $15.99.*
 
 Prices appear on the sales page only, not inside the books.
+
+**Wording tip:** say "Total value $51.94" (each book's value), not "Was $51.94", because the bundle was never sold at that price. Advertising rules in the UK, US and EU treat a made-up "was" price as misleading, and Meta can reject ads that use one.
