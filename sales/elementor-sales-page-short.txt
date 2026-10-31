@@ -135,6 +135,15 @@ border:5px dashed rgba(255,255,255,.7); }
 .hcx .imgph span{ color:#C8643B; font-weight:800; font-size:14px; line-height:1.4; padding:8px; }
 .hcx .imgph span b{ color:#2E5E4E; }
 @media(max-width:640px){ .hcx .bookcard .top .imgph{ width:150px !important; margin:0 auto; } }
+/* drawn book covers */
+.hcx .mc{ width:130px; height:184px; flex-shrink:0; background:#2E5E4E; border-radius:10px; box-shadow:0 10px 22px rgba(0,0,0,.25); overflow:hidden; text-align:center; position:relative; }
+.hcx .mc-s{ height:12px; background:repeating-linear-gradient(90deg,#E3A12F 0 6px,#C8643B 6px 18px,#FBF6EC 18px 20px,#6FA37A 20px 32px,#FBF6EC 32px 34px,#C8643B 34px 46px); }
+.hcx .mc-t{ font-family:'Fraunces',serif; font-weight:800; color:#fff !important; font-size:15px; line-height:1.1; padding:10px 8px 2px; }
+.hcx .mc-b{ color:#E3A12F !important; font-size:7.5px; font-weight:900; letter-spacing:.12em; text-transform:uppercase; }
+.hcx .mc-l{ display:flex; justify-content:center; margin:10px 0 6px; }
+.hcx .mc-l svg{ display:block; }
+.hcx .mc-a{ position:absolute; left:0; right:0; bottom:9px; color:#fff !important; font-family:'Fraunces',serif; font-weight:800; font-size:10px; }
+@media(max-width:640px){ .hcx .mc{ width:150px; height:212px; margin:0 auto; } .hcx .mc-t{ font-size:17px; } .hcx .mc-l svg{ width:86px; height:86px; } }
 </style>
 <div class="hcx">
 <div class="stripe"></div>
@@ -233,8 +242,8 @@ border:5px dashed rgba(255,255,255,.7); }
 <h2 style="font-size:34px; margin-bottom:10px; color:#2E5E4E !important;">The Healing Collection</h2>
 <p class="lede" style="color:#4B453D !important;">6 beautifully designed books · 164 pages · everything you need for the next 30 days — and beyond.</p>
 <div class="bookcard" style="--c:#2E5E4E; --soft:#E4EFE3;">
-<div class="top"><!-- PICTURE 3: Healing Plates cover (built in) -->
-<img src="https://hindsfeetglobal.com/wp-content/uploads/2026/10/hc-cover1.jpg" alt="Healing Plates cover" style="width:130px;flex-shrink:0;border-radius:10px;box-shadow:0 10px 22px rgba(0,0,0,.22);"><div><span class="tag">Main book</span><h3>Healing Plates — The 30-Day Allergy-Free Family Meal Plan</h3><span class="val">Estimated value: $12.99</span></div></div>
+<div class="top"><!-- PICTURE 3: Healing Plates cover (drawn in code, no upload needed) -->
+<div class="mc"><div class="mc-s"></div><div class="mc-t">Healing Plates</div><div class="mc-b">The 30-Day Family Meal Plan</div><div class="mc-l"><svg viewBox="0 0 100 100" width="74" height="74"><circle cx="50" cy="50" r="46" fill="none" stroke="#E3A12F" stroke-width="5"/><circle cx="50" cy="50" r="36" fill="#FBF6EC"/><path d="M50 44 C50 30 58 22 70 20 C70 33 62 42 50 44 Z" fill="#6FA37A"/><path d="M50 44 C50 34 44 27 34 25 C34 35 41 42 50 44 Z" fill="#2E5E4E"/><path d="M26 54 H74 C72 66 62 74 50 74 C38 74 28 66 26 54 Z" fill="#C8643B"/><rect x="22" y="50" width="56" height="5" rx="2.5" fill="#2E5E4E"/></svg></div><div class="mc-a">Tris Eliverson</div></div><div><span class="tag">Main book</span><h3>Healing Plates — The 30-Day Allergy-Free Family Meal Plan</h3><span class="val">Estimated value: $12.99</span></div></div>
 <ul>
 <li><b>90 breakfasts, lunches &amp; dinners</b> for the whole family — one meal everyone can eat</li>
 <li>African favourites (jollof, egusi, okro, moi moi, red red, pilau) <b>and</b> international meals (pancakes, pasta, pizza night, nuggets, tacos)</li>
@@ -255,29 +264,29 @@ border:5px dashed rgba(255,255,255,.7); }
 <div class="eyebrow">Your 5 bonus books</div>
 <h2 style="font-size:32px; margin-bottom:26px; color:#2E5E4E !important;">Not extra chapters — complete books you'll use every day</h2>
 <div class="bookcard" style="--c:#C8643B; --soft:#F8E3D6;">
-<div class="top"><!-- PICTURE 4: Healing Lunch Box cover (built in) -->
-<img src="https://hindsfeetglobal.com/wp-content/uploads/2026/10/hc-cover2.jpg" alt="Healing Lunch Box cover" style="width:130px;flex-shrink:0;border-radius:10px;box-shadow:0 10px 22px rgba(0,0,0,.22);"><div><span class="tag">🎁 Bonus 1</span><h3>Healing Lunch Box</h3><span class="val">Estimated value: $9.99</span></div></div>
+<div class="top"><!-- PICTURE 4: Healing Lunch Box cover (drawn in code, no upload needed) -->
+<div class="mc"><div class="mc-s"></div><div class="mc-t">Healing Lunch Box</div><div class="mc-b">Bonus Book 1</div><div class="mc-l"><svg viewBox="0 0 100 100" width="74" height="74"><circle cx="50" cy="50" r="46" fill="none" stroke="#E3A12F" stroke-width="5"/><circle cx="50" cy="50" r="36" fill="#FBF6EC"/><path d="M50 44 C50 30 58 22 70 20 C70 33 62 42 50 44 Z" fill="#6FA37A"/><path d="M50 44 C50 34 44 27 34 25 C34 35 41 42 50 44 Z" fill="#2E5E4E"/><path d="M40 52 V48 A4 4 0 0 1 44 44 H56 A4 4 0 0 1 60 48 V52" fill="none" stroke="#2E5E4E" stroke-width="3"/><rect x="27" y="52" width="46" height="24" rx="5" fill="#C8643B"/><rect x="27" y="60" width="46" height="3" fill="#E3A12F"/></svg></div><div class="mc-a">Tris Eliverson</div></div><div><span class="tag">🎁 Bonus 1</span><h3>Healing Lunch Box</h3><span class="val">Estimated value: $9.99</span></div></div>
 <ul><li>30 nut-free, school-safe lunch boxes children are proud to open</li><li>Chicken Nugget Happy Box, pizza pinwheels, jollof thermos, akara bites, rice paper rolls</li>
 <li>10 snacks kids can't say no to + a Naija snack corner (chin chin, puff-puff, plantain chips — made safe)</li><li>The picky eater playbook: gentle tricks that really work</li></ul>
 </div>
 <div class="bookcard" style="--c:#6FA37A; --soft:#E4EFE3;">
-<div class="top"><!-- PICTURE 5: Healing Sips cover (built in) -->
-<img src="https://hindsfeetglobal.com/wp-content/uploads/2026/10/hc-cover3.jpg" alt="Healing Sips cover" style="width:130px;flex-shrink:0;border-radius:10px;box-shadow:0 10px 22px rgba(0,0,0,.22);"><div><span class="tag">🎁 Bonus 2</span><h3>Healing Sips — 30-Day Gentle Detox &amp; Juicing</h3><span class="val">Estimated value: $9.99</span></div></div>
+<div class="top"><!-- PICTURE 5: Healing Sips cover (drawn in code, no upload needed) -->
+<div class="mc"><div class="mc-s"></div><div class="mc-t">Healing Sips</div><div class="mc-b">Bonus Book 2</div><div class="mc-l"><svg viewBox="0 0 100 100" width="74" height="74"><circle cx="50" cy="50" r="46" fill="none" stroke="#E3A12F" stroke-width="5"/><circle cx="50" cy="50" r="36" fill="#FBF6EC"/><path d="M50 44 C50 30 58 22 70 20 C70 33 62 42 50 44 Z" fill="#6FA37A"/><path d="M50 44 C50 34 44 27 34 25 C34 35 41 42 50 44 Z" fill="#2E5E4E"/><path d="M35 46 H65 L61 78 H39 Z" fill="#fff" stroke="#2E5E4E" stroke-width="3" stroke-linejoin="round"/><path d="M37 56 H63 L61 76 H39 Z" fill="#6FA37A"/><circle cx="46" cy="66" r="2.2" fill="#fff"/><circle cx="54" cy="70" r="1.6" fill="#fff"/></svg></div><div class="mc-a">Tris Eliverson</div></div><div><span class="tag">🎁 Bonus 2</span><h3>Healing Sips — 30-Day Gentle Detox &amp; Juicing</h3><span class="val">Estimated value: $9.99</span></div></div>
 <ul><li>30 juices, smoothies &amp; tonics — each one tells you what it's good for</li><li>My Daily Detox Smoothie, zobo, tiger nut milk, moringa, lemon balm bedtime tea</li><li>How to detox gently and safely with children</li></ul>
 </div>
 <div class="bookcard" style="--c:#E3A12F; --soft:#FBEFD3;">
-<div class="top"><!-- PICTURE 6: Healing Printables cover (built in) -->
-<img src="https://hindsfeetglobal.com/wp-content/uploads/2026/10/hc-cover4.jpg" alt="Healing Printables cover" style="width:130px;flex-shrink:0;border-radius:10px;box-shadow:0 10px 22px rgba(0,0,0,.22);"><div><span class="tag">🎁 Bonus 3</span><h3>Healing Printables</h3><span class="val">Estimated value: $5.99</span></div></div>
+<div class="top"><!-- PICTURE 6: Healing Printables cover (drawn in code, no upload needed) -->
+<div class="mc"><div class="mc-s"></div><div class="mc-t">Healing Printables</div><div class="mc-b">Bonus Book 3</div><div class="mc-l"><svg viewBox="0 0 100 100" width="74" height="74"><circle cx="50" cy="50" r="46" fill="none" stroke="#E3A12F" stroke-width="5"/><circle cx="50" cy="50" r="36" fill="#FBF6EC"/><path d="M50 44 C50 30 58 22 70 20 C70 33 62 42 50 44 Z" fill="#6FA37A"/><path d="M50 44 C50 34 44 27 34 25 C34 35 41 42 50 44 Z" fill="#2E5E4E"/><rect x="31" y="46" width="38" height="32" rx="4" fill="#fff" stroke="#2E5E4E" stroke-width="3"/><path d="M37 55 l3 3 6-6" stroke="#C8643B" stroke-width="3" fill="none" stroke-linecap="round"/><rect x="49" y="54" width="14" height="3" rx="1.5" fill="#2E5E4E"/><path d="M37 67 l3 3 6-6" stroke="#C8643B" stroke-width="3" fill="none" stroke-linecap="round"/><rect x="49" y="66" width="14" height="3" rx="1.5" fill="#2E5E4E"/></svg></div><div class="mc-a">Tris Eliverson</div></div><div><span class="tag">🎁 Bonus 3</span><h3>Healing Printables</h3><span class="val">Estimated value: $5.99</span></div></div>
 <ul><li>12 pages to print: allergy cards for school, label decoder cards, food &amp; mood tracker</li><li>Smart swaps cheat sheet, “I tried it!” reward chart, meal &amp; lunch box planners</li><li>Supplement log and doctor visit notes</li></ul>
 </div>
 <div class="bookcard" style="--c:#D9667A; --soft:#FBE3E1;">
-<div class="top"><!-- PICTURE 7: Healing Celebrations cover (built in) -->
-<img src="https://hindsfeetglobal.com/wp-content/uploads/2026/10/hc-cover5.jpg" alt="Healing Celebrations cover" style="width:130px;flex-shrink:0;border-radius:10px;box-shadow:0 10px 22px rgba(0,0,0,.22);"><div><span class="tag">🎁 Bonus 4</span><h3>Healing Celebrations</h3><span class="val">Estimated value: $5.99</span></div></div>
+<div class="top"><!-- PICTURE 7: Healing Celebrations cover (drawn in code, no upload needed) -->
+<div class="mc"><div class="mc-s"></div><div class="mc-t">Healing Celebrations</div><div class="mc-b">Bonus Book 4</div><div class="mc-l"><svg viewBox="0 0 100 100" width="74" height="74"><circle cx="50" cy="50" r="46" fill="none" stroke="#E3A12F" stroke-width="5"/><circle cx="50" cy="50" r="36" fill="#FBF6EC"/><rect x="49" y="26" width="3" height="12" rx="1.5" fill="#C8643B"/><path d="M50.5 18 C47 23 47 26 50.5 27 C54 26 54 23 50.5 18 Z" fill="#E3A12F"/><rect x="30" y="40" width="40" height="14" rx="4" fill="#FBE3E1" stroke="#2E5E4E" stroke-width="2.5"/><rect x="25" y="54" width="50" height="22" rx="4" fill="#C8643B"/><path d="M25 60 q6 5 12.5 0 t12.5 0 t12.5 0 t12.5 0" stroke="#FBE3E1" stroke-width="3" fill="none"/><circle cx="38" cy="47" r="2" fill="#6FA37A"/><circle cx="50" cy="47" r="2" fill="#E3A12F"/><circle cx="62" cy="47" r="2" fill="#6FA37A"/></svg></div><div class="mc-a">Tris Eliverson</div></div><div><span class="tag">🎁 Bonus 4</span><h3>Healing Celebrations</h3><span class="val">Estimated value: $5.99</span></div></div>
 <ul><li>A real birthday cake every child can eat — plus cupcakes</li><li>12 party recipes, 3 party menus and a make-ahead plan</li><li>Party survival guide + a ready-made letter to the party host</li></ul>
 </div>
 <div class="bookcard" style="--c:#1F4136; --soft:#E4EFE3;">
-<div class="top"><!-- PICTURE 8: Healing Words cover (built in) -->
-<img src="https://hindsfeetglobal.com/wp-content/uploads/2026/10/hc-cover6.jpg" alt="Healing Words cover" style="width:130px;flex-shrink:0;border-radius:10px;box-shadow:0 10px 22px rgba(0,0,0,.22);"><div><span class="tag">🎁 Bonus 5</span><h3>Healing Words — What God Says About Your Child</h3><span class="val">Estimated value: $6.99</span></div></div>
+<div class="top"><!-- PICTURE 8: Healing Words cover (drawn in code, no upload needed) -->
+<div class="mc"><div class="mc-s"></div><div class="mc-t">Healing Words</div><div class="mc-b">Bonus Book 5</div><div class="mc-l"><svg viewBox="0 0 100 100" width="74" height="74"><circle cx="50" cy="50" r="46" fill="none" stroke="#E3A12F" stroke-width="5"/><circle cx="50" cy="50" r="36" fill="#FBF6EC"/><path d="M50 44 C50 30 58 22 70 20 C70 33 62 42 50 44 Z" fill="#6FA37A"/><path d="M50 44 C50 34 44 27 34 25 C34 35 41 42 50 44 Z" fill="#2E5E4E"/><path d="M50 52 C42 47 32 47 24 50 V76 C32 73 42 73 50 78 Z" fill="#fff" stroke="#2E5E4E" stroke-width="2.5" stroke-linejoin="round"/><path d="M50 52 C58 47 68 47 76 50 V76 C68 73 58 73 50 78 Z" fill="#fff" stroke="#2E5E4E" stroke-width="2.5" stroke-linejoin="round"/><path d="M50 70 C46 66 42 63 42 60 C42 57 46 56 50 59 C54 56 58 57 58 60 C58 63 54 66 50 70 Z" fill="#C8643B"/></svg></div><div class="mc-a">Tris Eliverson</div></div><div><span class="tag">🎁 Bonus 5</span><h3>Healing Words — What God Says About Your Child</h3><span class="val">Estimated value: $6.99</span></div></div>
 <ul><li>31 days of Bible verses on healing, speech, understanding, peace and restoration (KJV)</li><li>A simple explanation of what God is saying, every day</li><li>A declaration to speak over your child: <i>“The Word says it — and I say Amen.”</i></li></ul>
 </div>
 </div>
