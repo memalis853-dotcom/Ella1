@@ -153,6 +153,12 @@
     .hcx .bar{ display:flex; } .hcx .bar .btn{ width:auto; }
     .hcx footer.foot{ padding-bottom:90px; }
   }
+.hcx .tgrid{ grid-template-columns:1fr 1fr; }
+.hcx .t-top{ display:flex; justify-content:space-between; align-items:center; gap:10px; margin-bottom:4px; }
+.hcx .t-lbl{ font-size:12px; font-weight:900; letter-spacing:.1em; text-transform:uppercase; color:#C8643B !important; }
+.hcx .t-score{ font-size:13px; font-weight:900; color:#2E5E4E !important; background:#FBEFD3; border-radius:99px; padding:2px 10px; white-space:nowrap; }
+.hcx .tcard .who{ color:#2E5E4E !important; }
+@media(max-width:640px){ .hcx .tgrid{ grid-template-columns:1fr; } }
 </style>
 </head>
 <body style="margin:0">
@@ -246,13 +252,13 @@
     <div class="eyebrow">Real parent feedback</div>
     <h2 style="font-size:30px; margin-bottom:22px; color:#2E5E4E !important;">What parents are saying</h2>
     <div class="tgrid">
-      <div class="tcard"><div class="stars">★★★★★</div><div class="quote">“[Replace with a real review from a parent who has used the books.]”</div><div class="who">First name · Country</div></div>
-      <div class="tcard"><div class="stars">★★★★★</div><div class="quote">“[Replace with a real review from a parent who has used the books.]”</div><div class="who">First name · Country</div></div>
-      <div class="tcard"><div class="stars">★★★★★</div><div class="quote">“[Replace with a real review from a parent who has used the books.]”</div><div class="who">First name · Country</div></div>
-    </div>
-  </div>
+<div class="tcard"><div class="t-top"><span class="t-lbl">A grateful mother · United Kingdom</span><span class="t-score">5.0 / 5</span></div><div class="stars">★★★★★</div><div class="quote">“Finding food my child would actually eat while managing allergies and sensory challenges had become exhausting. This book gave me a fresh perspective. I especially appreciated that it went beyond recipes and included helpful ideas around sleep, communication and behaviour. The practical suggestions made me feel less overwhelmed and more confident supporting my child. I wish I had found it sooner!”</div><div class="who">— Sarah M., United Kingdom</div></div>
+<div class="tcard"><div class="t-top"><span class="t-lbl">A father · Canada</span><span class="t-score">5.0 / 5</span></div><div class="stars">★★★★★</div><div class="quote">“What I love most about this book is that it looks at the child as a whole, not just what they eat. The allergy-friendly food ideas are useful, but the additional guidance on bedtime routines, communication and managing difficult behaviours really stood out to me. Some of the suggestions gave us new things to try at home. It is practical, compassionate and easy to follow.”</div><div class="who">— Daniel R., Canada</div></div>
+<div class="tcard"><div class="t-top"><span class="t-lbl">A mother · United States</span><span class="t-score">5.0 / 5</span></div><div class="stars">★★★★★</div><div class="quote">“As a parent raising a child with additional developmental and sensory needs, I am always looking for practical resources that understand our everyday struggles. This book was a pleasant surprise. The food ideas helped me think differently about allergy-friendly meals, and I particularly valued the sections on sleep, speech and behaviour. I appreciate having several areas of support brought together in one accessible guide.”</div><div class="who">— Michelle T., United States</div></div>
+<div class="tcard"><div class="t-top"><span class="t-lbl">A parent · Nigeria</span><span class="t-score">5.0 / 5</span></div><div class="stars">★★★★★</div><div class="quote">“This is more than a children's allergy-friendly food book. I found the combination of nutrition ideas, sleep support, speech encouragement and behavioural guidance especially valuable. I liked that the advice felt approachable rather than overwhelming. Every child is different, but having practical ideas to explore and adapt to my child's needs has been incredibly encouraging.”</div><div class="who">— Emma Udoka, Nigeria</div></div>
+</div>
+</div>
 </section>
-
 <!-- ============ PRODUCT REVEAL ============ -->
 <section class="band" style="background:#FBF6EC;">
   <div class="wrap">
