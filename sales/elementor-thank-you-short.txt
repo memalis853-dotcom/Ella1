@@ -6,7 +6,6 @@ THE HEALING COLLECTION — THANK-YOU PAGE FOR ELEMENTOR
 3. Find & Replace before publishing:
 YOUR_PIXEL_ID                         → your Meta Pixel ID (or delete the Meta script)
 G-XXXXXXXXXX                          → your Google Analytics ID (or delete the Google scripts)
-https://chat.whatsapp.com/YOUR-GROUP-LINK → your WhatsApp group link (or delete that box)
 https://YOUR-SALES-PAGE-LINK          → your Healing Collection sales page link (used by the 3 share buttons)
 4. Copy this page's link and paste it in Selar as the "redirect after purchase" link.
 =====================================================================
@@ -85,6 +84,7 @@ color:#fff; font-family:'Fraunces',serif; font-weight:800; font-size:22px; }
 .hc .share .grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:22px; }
 .hc .share .box { background:#fff; border-radius:20px; padding:26px; border:1px solid var(--sand); text-align:center; }
 .hc .share .box p { font-size:16.5px; }
+.hc .share .grid.one { grid-template-columns:1fr; max-width:560px; margin-left:auto; margin-right:auto; }
 .hc .sharebtns { display:flex; flex-direction:column; gap:10px; align-items:center; }
 .hc .sharebtns .btn { width:100%; max-width:300px; text-align:center; font-size:17px; padding:13px 22px; }
 .hc .btn.fb { background:#1877F2; color:#fff !important; box-shadow:0 10px 24px rgba(24,119,242,.3); }
@@ -173,10 +173,8 @@ color:#fff; font-family:'Fraunces',serif; font-weight:800; font-size:22px; }
 </section>
 <section class="share">
 <div class="wrap">
-<div class="center"><div class="kicker">Stay connected</div><h2>Let's keep going together</h2></div>
-<div class="grid">
-<div class="box"><h3>Join our parents' community</h3><p>Tips, encouragement and new recipes — with parents who understand.</p>
-<a class="btn green" href="https://chat.whatsapp.com/YOUR-GROUP-LINK">Join on WhatsApp</a></div>
+<div class="center"><div class="kicker">Pass on the hope</div><h2>Share it with a parent who needs it</h2></div>
+<div class="grid one">
 <div class="box"><h3>Know a parent who needs this?</h3><p>Share the Healing Collection with a friend, church group or school community. You could change a family's life.</p>
 <div class="sharebtns">
 <a class="btn" id="hc-wa" href="#" target="_blank" rel="noopener">Share on WhatsApp</a>
