@@ -51,7 +51,7 @@ With love, Tris Eliverson
 ---
 
 **Settings to check:**
-- **Redirect after purchase / Thank-you page URL:** your Thank You page link (for example `https://hindsfeetglobal.com/thank-you`)
+- **Redirect after purchase / Thank-you page URL:** `https://hindsfeetglobal.com/?page_id=42` (your Thank You page)
 - **Facebook Pixel in Selar:** leave it OFF if you use the tracking on the thank-you page (otherwise each sale counts twice)
 - **Affiliates:** turn ON, 30–40% commission, so other parents and pages can sell for you
 - **Refund policy text:** "7-day money-back promise — email support.hindsfeetglobal@gmail.com"
