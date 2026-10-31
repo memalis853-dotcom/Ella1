@@ -6,7 +6,8 @@ THE HEALING COLLECTION — THANK-YOU PAGE FOR ELEMENTOR
 3. Find & Replace before publishing:
 YOUR_PIXEL_ID                         → your Meta Pixel ID (or delete the Meta script)
 G-XXXXXXXXXX                          → your Google Analytics ID (or delete the Google scripts)
-(Sales page link for the share buttons is already set: https://hindsfeetglobal.com/?page_id=42)
+https://YOUR-SALES-PAGE-LINK          → your Healing Collection sales page link (used by the 3 share buttons)
+(This page is https://hindsfeetglobal.com/?page_id=42 — paste that link in Selar as the "redirect after purchase" link.)
 4. Copy this page's link and paste it in Selar as the "redirect after purchase" link.
 =====================================================================
 -->
@@ -186,7 +187,7 @@ color:#fff; font-family:'Fraunces',serif; font-weight:800; font-size:22px; }
 </section>
 <script>
 (function(){
-  var link = 'https://hindsfeetglobal.com/?page_id=42';
+  var link = 'https://YOUR-SALES-PAGE-LINK';
   var msg = 'I found this and thought of you 💛 The Healing Collection — 90 allergy-free family meals, lunch boxes, detox drinks, party recipes and Bible declarations, made by an autism mum. Free from gluten, dairy, egg, corn and processed sugar. ' + link;
   document.getElementById('hc-wa').href = 'https://wa.me/?text=' + encodeURIComponent(msg);
   document.getElementById('hc-fb').href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(link);
