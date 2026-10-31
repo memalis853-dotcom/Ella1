@@ -31,7 +31,7 @@ TOC_FIELD = '''
 
 
 def html_to_md(html):
-    html = re.sub(r'<div class="(author-photo|lines)".*?</div>', "", html, flags=re.S)
+    html = re.sub(r'<div class="(author-photo|lines)[^"]*".*?</div>', "", html, flags=re.S)
     oils = re.findall(r'<div class="oil"><span class="on">(.*?)</span>.*?<b>(.*?)</b></div>', html)
     if oils:
         table = "<table><tr><th>Oil</th><th>Score (out of 10)</th></tr>" + "".join(
@@ -92,8 +92,10 @@ def page_md(kind, p, mod_name):
         return out
     if kind == "calendar":
         rows = [c for week in p["weeks"] for c in week if c]
-        t = "| Day | Breakfast | Lunch | Dinner |\n|---|---|---|---|\n"
-        t += "".join(f"| **{c['day']}** | {c['meals'][0][2]} | {c['meals'][1][2]} | {c['meals'][2][2]} |\n" for c in rows)
+        heads = {"B": "Breakfast", "L": "Lunch", "D": "Dinner"}
+        cols = [heads[m[1]] for m in rows[0]["meals"]] if len(rows[0]["meals"]) > 1 else ["Lunch box"]
+        t = "| Day | " + " | ".join(cols) + " |\n|---|" + "---|" * len(cols) + "\n"
+        t += "".join(f"| **{c['day']}** | " + " | ".join(m[2] for m in c["meals"]) + " |\n" for c in rows)
         return head + f"## {p['title']}\n\n" + t
     if kind == "grocery":
         out = head + f"## {p['title']}\n\n{p['intro']}\n\n"

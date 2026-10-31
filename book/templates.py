@@ -106,7 +106,7 @@ PAGES = {
 "two": r"""
 <section class="page">
   <div class="inner">
-    {% for r in p.recipes %}{{ recipe(r, p.kind, r.label, True) }}{% endfor %}
+    {% for r in p.recipes %}{{ recipe(r, p.kind, r.label, not p.small) }}{% endfor %}
     {% if p.note %}<div class="sweetnote">{{ p.note }}</div>{% endif %}
   </div>
   {{ footer(book, n) }}
@@ -117,7 +117,7 @@ PAGES = {
   <div class="band"></div>
   <div class="kicker">{{ p.kicker }}</div>
   <h1 style="font-size:24pt">{{ p.title }}</h1>
-  <table class="cal{% if p.month %} month{% endif %}">
+  <table class="cal{% if p.month %} month{% endif %}{% if p.one %} one{% endif %}">
   {% for week in p.weeks %}<tr>
     {% for c in week %}{% if c %}<td><div class="dn">{{ c.day }}</div>
       {% for m in c.meals %}<div class="m {{ m[0] }}"><i>{{ m[1] }}</i>{{ m[2] }}</div>{% endfor %}</td>

@@ -323,3 +323,5 @@ ul.ticks li::before { content: '✓'; position: absolute; left: 0; color: var(--
 .divider .band { height: 12mm; background:
     repeating-linear-gradient(90deg, var(--gold) 0 8mm, var(--terra) 8mm 22mm, var(--cream) 22mm 24mm,
       var(--leaf) 24mm 38mm, var(--cream) 38mm 40mm, var(--terra) 40mm 54mm); }
+.author-photo.small { width: 44mm; height: 44mm; }
+.cal.month.one td { height: 30mm; }
