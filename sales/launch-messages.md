@@ -1,7 +1,7 @@
 # Launch messages — The Healing Collection
 
-Link used everywhere: https://selar.com/1o1yv2t74f
-(If you later want people to see your sales page first, swap in that link instead.)
+Sales page (use in posts): https://hindsfeetglobal.com/healing-collection/
+Selar checkout (send to people who already said "I want it"): https://selar.com/1o1yv2t74f
 
 ---
 
@@ -25,14 +25,14 @@ It's here! 🎉 **The Healing Collection**
 🙏 31 days of Bible declarations for your child
 
 Free from gluten, dairy, egg, corn, pork, caffeine, tuna & processed sugar.
-All 6 books for just **$14.99** 👉 https://selar.com/1o1yv2t74f
+All 6 books for just **$14.99** 👉 https://hindsfeetglobal.com/healing-collection/
 
 **Day 3 — Reminder** (post with a testimonial screenshot or the cake photo)
 
 Thank you to every mum who has already got the Healing Collection 💛
 If you've been cooking two or three different dinners every night, this is for you.
 One plan. One shopping list. Food the whole family can eat.
-👉 https://selar.com/1o1yv2t74f
+👉 https://hindsfeetglobal.com/healing-collection/
 
 ---
 
@@ -47,7 +47,7 @@ I wanted to share something close to my heart. As an autism mum, I spent years l
 I've put everything I learned into **The Healing Collection**: a 30-day family meal plan with 90 meals, plus 5 bonus books — lunch boxes, detox drinks, printables, a birthday cake & party guide, and 31 days of Bible declarations.
 
 It's an instant download, works on your phone, and it's just **$14.99** for all 6 books.
-👉 https://selar.com/1o1yv2t74f
+👉 https://hindsfeetglobal.com/healing-collection/
 
 If it's not for you, I'd be so grateful if you could pass it on to a parent who needs it. 🙏
 
@@ -75,7 +75,7 @@ So I've put everything into **The Healing Collection** — 6 books for families 
 Instant download · PDF & Word · works on any phone
 All 6 books for **$14.99** — with a 7-day money-back promise.
 
-👉 https://selar.com/1o1yv2t74f
+👉 https://hindsfeetglobal.com/healing-collection/
 
 Please share this with a mum who needs it. You never know whose dinner table it could change. 🙏
 
@@ -98,7 +98,7 @@ Save this for later and share it with a mum who needs it 🙏
 
 #autismmom #autismfamily #allergyfriendly #glutenfreedairyfree #glutenfreekids #dairyfreekids #specialneedsparenting #allergymom #lunchboxideas #kidsmealideas #healthyfamilymeals #naijamums #faithandfamily #autismawareness #eggfree
 
-**Remember:** put https://selar.com/1o1yv2t74f in your Instagram bio.
+**Remember:** put https://hindsfeetglobal.com/healing-collection/ in your Instagram bio.
 
 ---
 
@@ -109,7 +109,7 @@ Save this for later and share it with a mum who needs it 🙏
 Sister Tris Eliverson has written **The Healing Collection** — a 30-day allergy-free family meal plan with 90 meals, lunch box ideas, gentle detox drinks, party recipes, and 31 days of Bible declarations to speak over your child.
 
 Every recipe is free from gluten, dairy, egg, corn and processed sugar.
-Available now as an instant download for $14.99: https://selar.com/1o1yv2t74f
+Available now as an instant download for $14.99: https://hindsfeetglobal.com/healing-collection/
 
 *"I will praise thee; for I am fearfully and wonderfully made." — Psalm 139:14*
 
@@ -122,7 +122,7 @@ Available now as an instant download for $14.99: https://selar.com/1o1yv2t74f
 **If selling is allowed:**
 
 Hi everyone 💛 I'm an autism mum, and for years dinner time was the hardest part of my day. I've put together the meal plan I wish I'd had: 30 days, 90 family meals, all free from gluten, dairy, egg, corn and processed sugar — plus lunch boxes, detox drinks and a real allergy-free birthday cake. Admin, I hope it's okay to share 🙏
-https://selar.com/1o1yv2t74f
+https://hindsfeetglobal.com/healing-collection/
 
 **If selling isn't allowed — helpful tip post:**
 
