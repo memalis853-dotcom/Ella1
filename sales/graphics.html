@@ -1,0 +1,68 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Sales graphics</title>
+<style>
+@import url('../book/fonts/fonts.css');
+* { box-sizing: border-box; margin: 0; }
+body { font-family: 'Nunito', sans-serif; background: #ddd; }
+.g { width: 1080px; position: relative; overflow: hidden; margin-bottom: 40px; }
+/* ---------- bundle mockup ---------- */
+#bundle { height: 1080px; background: radial-gradient(circle at 50% 40%, #FBF6EC 0, #F2E6D2 70%); }
+#bundle .stripe { position: absolute; left: 0; right: 0; top: 0; height: 26px;
+  background: repeating-linear-gradient(90deg, #E3A12F 0 22px, #C8643B 22px 62px, #FBF6EC 62px 68px, #6FA37A 68px 108px, #FBF6EC 108px 114px, #2E5E4E 114px 154px); }
+#bundle h1 { position: absolute; top: 64px; width: 100%; text-align: center; font-family: 'Fraunces', serif; font-weight: 800;
+  font-size: 66px; color: #2E5E4E; line-height: 1; }
+#bundle .sub { position: absolute; top: 146px; width: 100%; text-align: center; font-size: 27px; color: #6E665B; font-weight: 700; }
+.cv { position: absolute; width: 300px; height: 424px; border-radius: 8px; box-shadow: 0 18px 40px rgba(0,0,0,.28); background-size: cover; }
+#bundle .tag { position: absolute; bottom: 52px; width: 100%; text-align: center; font-family: 'Fraunces', serif; font-weight: 600;
+  font-style: italic; font-size: 36px; color: #C8643B; }
+#bundle .badge { position: absolute; right: 70px; top: 200px; width: 190px; height: 190px; border-radius: 50%; background: #E3A12F;
+  color: #2E5E4E; display: flex; flex-direction: column; align-items: center; justify-content: center; transform: rotate(10deg);
+  box-shadow: 0 10px 24px rgba(0,0,0,.2); font-weight: 900; font-size: 22px; text-align: center; line-height: 1.1; z-index: 20; }
+#bundle .badge b { font-family: 'Fraunces', serif; font-size: 62px; }
+/* ---------- value stack ---------- */
+#stack { height: 1350px; background: #2E5E4E; color: #fff; padding: 70px 70px 0; }
+#stack .stripe { position: absolute; left: 0; right: 0; top: 0; height: 26px;
+  background: repeating-linear-gradient(90deg, #E3A12F 0 22px, #C8643B 22px 62px, #FBF6EC 62px 68px, #6FA37A 68px 108px, #FBF6EC 108px 114px, #E3A12F 114px 154px); }
+#stack .k { color: #E3A12F; font-weight: 900; letter-spacing: .25em; font-size: 22px; text-transform: uppercase; margin-top: 10px; }
+#stack h1 { font-family: 'Fraunces', serif; font-weight: 800; font-size: 64px; line-height: 1.05; margin: 12px 0 34px; }
+.row { display: grid; grid-template-columns: 1fr 150px; align-items: center; background: rgba(255,255,255,.07);
+  border-radius: 18px; padding: 20px 28px; margin-bottom: 14px; }
+.row .n { font-weight: 800; font-size: 29px; } .row .d { font-size: 20px; color: #DCE8DF; margin-top: 3px; }
+.row .v { text-align: right; font-family: 'Fraunces', serif; font-weight: 800; font-size: 34px; color: #F2C566; }
+.total { display: flex; justify-content: space-between; font-size: 32px; font-weight: 800; padding: 18px 28px 6px; color: #DCE8DF; }
+.price { margin: 18px 0 0; background: #E3A12F; color: #2E5E4E; border-radius: 24px; padding: 26px 28px;
+  display: flex; justify-content: space-between; align-items: center; }
+.price .l { font-weight: 900; font-size: 32px; } .price .l small { display: block; font-size: 22px; font-weight: 800; opacity: .8; }
+.price .p { font-family: 'Fraunces', serif; font-weight: 800; font-size: 96px; line-height: 1; }
+#stack .foot { text-align: center; margin-top: 26px; font-size: 22px; color: #DCE8DF; }
+</style></head>
+<body>
+<div class="g" id="bundle">
+  <div class="stripe"></div>
+  <h1>The Healing Collection</h1>
+  <div class="sub">6 books · allergy-free family meals, lunch boxes, detox, printables, parties &amp; prayer</div>
+  <div class="badge"><b>6</b>books in<br>1 bundle</div>
+  <div class="cv" style="left:70px;  top:330px; transform:rotate(-9deg); background-image:url(img/c5.png); z-index:1"></div>
+  <div class="cv" style="left:230px; top:300px; transform:rotate(-5deg); background-image:url(img/c3.png); z-index:2"></div>
+  <div class="cv" style="left:550px; top:300px; transform:rotate(5deg);  background-image:url(img/c4.png); z-index:2"></div>
+  <div class="cv" style="left:710px; top:330px; transform:rotate(9deg);  background-image:url(img/c6.png); z-index:1"></div>
+  <div class="cv" style="left:250px; top:400px; transform:rotate(-2deg); background-image:url(img/c2.png); z-index:3"></div>
+  <div class="cv" style="left:470px; top:380px; transform:rotate(2deg);  background-image:url(img/c1.png); z-index:4; width:330px; height:467px"></div>
+  <div class="tag">Finally… food the whole family can eat.</div>
+</div>
+
+<div class="g" id="stack">
+  <div class="stripe"></div>
+  <div class="k">Everything you get</div>
+  <h1>The Healing Collection</h1>
+  <div class="row"><div><div class="n">Healing Plates</div><div class="d">30-day family meal plan · 90 meals</div></div><div class="v">$12.99</div></div>
+  <div class="row"><div><div class="n">Bonus 1: Healing Lunch Box</div><div class="d">30 school lunches &amp; snacks</div></div><div class="v">$9.99</div></div>
+  <div class="row"><div><div class="n">Bonus 2: Healing Sips</div><div class="d">30-day gentle detox &amp; juicing</div></div><div class="v">$9.99</div></div>
+  <div class="row"><div><div class="n">Bonus 3: Healing Printables</div><div class="d">12 cards, trackers &amp; planners</div></div><div class="v">$5.99</div></div>
+  <div class="row"><div><div class="n">Bonus 4: Healing Celebrations</div><div class="d">Birthday cake, party food &amp; guide</div></div><div class="v">$5.99</div></div>
+  <div class="row"><div><div class="n">Bonus 5: Healing Words</div><div class="d">31 days of Bible declarations</div></div><div class="v">$6.99</div></div>
+  <div class="total"><span>Total value</span><span>$51.94</span></div>
+  <div class="price"><div class="l">Your price today<small>All 6 books · instant download</small></div><div class="p">$14.99</div></div>
+  <div class="foot">Gluten · Dairy · Corn · Egg · Caffeine · Tuna · Pork · Processed-sugar free</div>
+</div>
+</body></html>
