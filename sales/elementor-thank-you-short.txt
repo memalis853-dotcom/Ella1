@@ -199,8 +199,11 @@ color:#fff; font-family:'Fraunces',serif; font-weight:800; font-size:22px; }
   document.getElementById('hc-copy').onclick = function(e){
     e.preventDefault(); var b = this;
     function done(){ b.textContent = 'Link copied ✓'; setTimeout(function(){ b.textContent = 'Copy the link'; }, 2500); }
-    if (navigator.clipboard) navigator.clipboard.writeText(msg).then(done, function(){ prompt('Copy this link:', link); });
-    else prompt('Copy this link:', link);
+    function fallback(){ var t = document.createElement('textarea'); t.value = link; t.style.position = 'fixed'; t.style.opacity = '0';
+      document.body.appendChild(t); t.select(); var ok = false; try { ok = document.execCommand('copy'); } catch (x) {}
+      document.body.removeChild(t); if (ok) done(); else prompt('Copy this link:', link); }
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(link).then(done, fallback);
+    else fallback();
   };
 })();
 </script>
