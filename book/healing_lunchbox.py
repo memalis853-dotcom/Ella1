@@ -225,7 +225,7 @@ def pages():
     cells = [dict(day=i + 1, meals=[("l", "L", n)]) for i, n in enumerate(CAL)]
     weeks = [cells[i:i + 7] for i in range(0, 30, 7)]
     weeks[-1] += [None] * (7 - len(weeks[-1]))
-    add("calendar", dict(kicker="Your month at a glance", title="30 lunch boxes", weeks=weeks, month=True, one=True),
+    add("calendar", dict(kicker="Your month at a glance", title="30 lunch boxes", weeks=weeks, month=True, one=True, col="Lunch box"),
         "Your month at a glance")
     boxes = LUNCHBOXES + MORE
     for i, trio in enumerate(chunks(boxes, 3)):

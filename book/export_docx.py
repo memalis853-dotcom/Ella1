@@ -93,7 +93,7 @@ def page_md(kind, p, mod_name):
     if kind == "calendar":
         rows = [c for week in p["weeks"] for c in week if c]
         heads = {"B": "Breakfast", "L": "Lunch", "D": "Dinner"}
-        cols = [heads[m[1]] for m in rows[0]["meals"]] if len(rows[0]["meals"]) > 1 else ["Lunch box"]
+        cols = [heads[m[1]] for m in rows[0]["meals"]] if len(rows[0]["meals"]) > 1 else [p.get("col", "Item")]
         t = "| Day | " + " | ".join(cols) + " |\n|---|" + "---|" * len(cols) + "\n"
         t += "".join(f"| **{c['day']}** | " + " | ".join(m[2] for m in c["meals"]) + " |\n" for c in rows)
         return head + f"## {p['title']}\n\n" + t
@@ -101,6 +101,8 @@ def page_md(kind, p, mod_name):
         out = head + f"## {p['title']}\n\n{p['intro']}\n\n"
         for cat, items in p["cats"]:
             out += f"#### {cat}\n\n" + "".join(f"- ☐ {esc(i)}\n" for i in items) + "\n"
+        if p.get("after"):
+            out += html_to_md(p["after"])
         return out
     if kind == "brands":
         out = head + f"## {p['title']}\n\n*{p['intro']}*\n\n"

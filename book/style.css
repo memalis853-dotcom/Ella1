@@ -325,3 +325,5 @@ ul.ticks li::before { content: '✓'; position: absolute; left: 0; color: var(--
       var(--leaf) 24mm 38mm, var(--cream) 38mm 40mm, var(--terra) 40mm 54mm); }
 .author-photo.small { width: 44mm; height: 44mm; }
 .cal.month.one td { height: 30mm; }
+.track.sip td { height: 6.6mm; padding: 0 2mm; }
+.track.sip th { padding: 1.4mm 2mm; }

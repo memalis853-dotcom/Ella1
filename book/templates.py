@@ -136,6 +136,7 @@ PAGES = {
   <div class="groc">
     {% for cat, items in p.cats %}<div class="cat"><h3>{{ cat }}</h3><ul>{% for i in items %}<li>{{ i }}</li>{% endfor %}</ul></div>{% endfor %}
   </div>
+  {% if p.after %}{{ p.after }}{% endif %}
   {{ footer(book, n) }}
 </section>""",
 
