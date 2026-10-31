@@ -136,6 +136,8 @@ The books are for your family's personal use. If a friend would love them, pleas
 ### Your child deserves food that loves them back.
 ### And you deserve a plan that makes it easy.
 
+**My 7-day money-back promise:** take 7 days to look through all 6 books. If they're not right for your family, email support.hindsfeetglobal@gmail.com for a full refund. No argument, no drama.
+
 👉 **Get all 6 books today for just $14.99**
 
 *With love, Tris Eliverson — autism mum & recipe creator*
@@ -144,7 +146,7 @@ The books are for your family's personal use. If a friend would love them, pleas
 
 ## Notes for you (don't paste these)
 
-- **Refund promise:** if you decide to offer one (for example “7-day money-back promise”), add a line just above the final button. It increases sales.
+- **Refund promise:** the 7-day money-back promise is now in the description. Reply to refund emails quickly and kindly.
 - **Testimonials:** give 10–20 free copies to parents you trust before running ads, and ask for honest feedback.
 - **Ads:** don't say the books treat or cure autism or any illness. Say “helped my family” and talk about meals, picky eating and allergies. Meta rejects health-cure claims.
 - **Selar affiliates:** switch on affiliates (30–40% commission) so autism mums and parenting pages can sell for you.
