@@ -189,8 +189,13 @@ color:#fff; font-family:'Fraunces',serif; font-weight:800; font-size:22px; }
 (function(){
   var link = 'https://selar.com/1o1yv2t74f';
   var msg = 'I found this and thought of you 💛 The Healing Collection — 90 allergy-free family meals, lunch boxes, detox drinks, party recipes and Bible declarations, made by an autism mum. Free from gluten, dairy, egg, corn and processed sugar. ' + link;
-  document.getElementById('hc-wa').href = 'https://wa.me/?text=' + encodeURIComponent(msg);
-  document.getElementById('hc-fb').href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(link);
+  var wa = 'https://wa.me/?text=' + encodeURIComponent(msg);
+  var fb = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(link);
+  document.getElementById('hc-wa').href = wa;
+  document.getElementById('hc-fb').href = fb;
+  function go(url){ return function(e){ e.preventDefault(); e.stopPropagation(); var w = window.open(url, '_blank'); if (!w) window.location.href = url; }; }
+  document.getElementById('hc-wa').addEventListener('click', go(wa), true);
+  document.getElementById('hc-fb').addEventListener('click', go(fb), true);
   document.getElementById('hc-copy').onclick = function(e){
     e.preventDefault(); var b = this;
     function done(){ b.textContent = 'Link copied ✓'; setTimeout(function(){ b.textContent = 'Copy the link'; }, 2500); }
