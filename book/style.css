@@ -334,3 +334,20 @@ ul.ticks li::before { content: '✓'; position: absolute; left: 0; color: var(--
 ul.checks { list-style: none; padding: 0; columns: 2; column-gap: 6mm; margin: 0; font-size: 9.6pt; }
 ul.checks li { padding-left: 5.5mm; position: relative; margin-bottom: 1.4mm; break-inside: avoid; }
 ul.checks li::before { content: ''; position: absolute; left: 0; top: 1.1mm; width: 3mm; height: 3mm; border: 1.3px solid var(--muted); border-radius: .6mm; }
+
+/* Healing Words */
+.verse-quote { font-family: 'Fraunces', serif; font-weight: 600; font-size: 15.5pt; line-height: 1.45; color: var(--green);
+  background: #fff; border: 1px solid var(--line); border-left: 2.2mm solid var(--gold); border-radius: 4mm; padding: 6mm 7mm; margin: 1mm 0 4mm; }
+.verse-quote span { display: block; margin-top: 3mm; font-family: 'Nunito', sans-serif; font-size: 9.5pt; font-weight: 900;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--terra); }
+.vbox { border-radius: 4mm; padding: 4mm 5mm; margin-bottom: 3.5mm; }
+.vbox .t { font-weight: 900; font-size: 9pt; letter-spacing: .16em; text-transform: uppercase; margin-bottom: 1.5mm; }
+.vbox p { margin-bottom: 2mm; font-size: 11pt; line-height: 1.55; }
+.vbox p:last-child { margin-bottom: 0; }
+.vbox.says { background: var(--leaf-soft); } .vbox.says .t { color: var(--green); }
+.vbox.declare { background: var(--gold-soft); } .vbox.declare .t { color: #9a6a12; }
+.vbox.declare .amen { font-family: 'Fraunces', serif; font-weight: 800; font-size: 13pt; color: var(--terra); margin-top: 2mm; }
+.vbox.notes { flex: 1; display: flex; flex-direction: column; background: #fff; border: 1px solid var(--line); margin-bottom: 0; }
+.vbox.notes .t { color: var(--muted); }
+.vbox.notes .lines { min-height: 20mm; }
+.fill { display: inline-block; border-bottom: 1px solid var(--ink); min-width: 60mm; height: 5mm; vertical-align: bottom; }

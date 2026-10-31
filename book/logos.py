@@ -46,3 +46,8 @@ LOGOS["party"] = _mark(f"""
   <rect x="25" y="54" width="50" height="22" rx="4" fill="{TERRA}"/>
   <path d="M25 60 q6 5 12.5 0 t12.5 0 t12.5 0 t12.5 0" stroke="#FBE3E1" stroke-width="3" fill="none"/>
   <circle cx="38" cy="47" r="2" fill="{LEAF}"/><circle cx="50" cy="47" r="2" fill="{GOLD}"/><circle cx="62" cy="47" r="2" fill="{LEAF}"/>""")
+
+LOGOS["words"] = _mark(LEAF_SPRIG + f"""
+  <path d="M50 52 C42 47 32 47 24 50 V76 C32 73 42 73 50 78 Z" fill="#fff" stroke="#2E5E4E" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M50 52 C58 47 68 47 76 50 V76 C68 73 58 73 50 78 Z" fill="#fff" stroke="#2E5E4E" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M50 70 C46 66 42 63 42 60 C42 57 46 56 50 59 C54 56 58 57 58 60 C58 63 54 66 50 70 Z" fill="{TERRA}"/>""")

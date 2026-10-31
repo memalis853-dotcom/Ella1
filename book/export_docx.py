@@ -92,6 +92,13 @@ def page_md(kind, p, mod_name):
         if p.get("after"):
             out += "\n" + html_to_md(p["after"])
         return out
+    if kind == "verse":
+        return (f"::: {{custom-style=\"Kicker\"}}\nDay {p['day']} · {p['group']}\n:::\n\n## {p['theme']}\n\n"
+                f"> **“{p['text']}”**\n>\n> *{p['ref']} · {p['version']}*\n\n"
+                f"#### What God is saying\n\n{html_to_md(p['says'])}\n"
+                f"#### Today's declaration\n\nFather, Your Word says **{p['word_says']}**.\n\n"
+                f"Over \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ *(my child's name)*:\n\n{p['declare']}\n\n"
+                f"**The Word says it — and I say Amen.**\n\n#### My prayer notes\n\n")
     if kind == "calendar":
         rows = [c for week in p["weeks"] for c in week if c]
         heads = {"B": "Breakfast", "L": "Lunch", "D": "Dinner"}

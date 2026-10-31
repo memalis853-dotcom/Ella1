@@ -90,6 +90,24 @@ PAGES = {
   {{ footer(book, n) }}
 </section>""",
 
+"verse": r"""
+<section class="page">
+  <div class="band"></div>
+  <div class="inner">
+    <div class="kicker">Day {{ p.day }} · {{ p.group }}</div>
+    <h1 style="font-size:26pt">{{ p.theme }}</h1>
+    <div class="verse-quote">“{{ p.text }}”<span>{{ p.ref }} · {{ p.version }}</span></div>
+    <div class="vbox says"><div class="t">What God is saying</div><p>{{ p.says }}</p></div>
+    <div class="vbox declare"><div class="t">Today's declaration</div>
+      <p>Father, Your Word says <b>{{ p.word_says }}</b>.</p>
+      <p>Over <span class="fill" style="min-width:55mm"></span> <i class="muted small">(my child's name)</i>:</p>
+      <p>{{ p.declare }}</p>
+      <p class="amen">The Word says it — and I say Amen.</p></div>
+    <div class="vbox notes"><div class="t">My prayer notes</div><div class="lines"></div></div>
+  </div>
+  {{ footer(book, n) }}
+</section>""",
+
 "cards": r"""
 <section class="page">
   <div class="band"></div>
