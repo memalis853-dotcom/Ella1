@@ -134,7 +134,7 @@ def set_font(style, name, size=None, color=None, bold=None, italic=None):
         style.font.italic = italic
 
 
-def make_reference(book_title):
+def make_reference(book_title, footer=True):
     ref = BUILD / "reference.docx"
     subprocess.run(["pandoc", "-o", str(ref), "--print-default-data-file", "reference.docx"], check=True)
     doc = Document(ref)
@@ -154,6 +154,9 @@ def make_reference(book_title):
     k.paragraph_format.space_after = Pt(0)
     # footer with book name and page number
     sec = doc.sections[0]
+    if not footer:
+        doc.save(ref)
+        return ref
     fp = sec.footer.paragraphs[0] if sec.footer.paragraphs else sec.footer.add_paragraph()
     fp.alignment = WD_ALIGN_PARAGRAPH.CENTER
     run = fp.add_run(f"{book_title} · Tris Eliverson · ")
@@ -180,10 +183,19 @@ def main(mod_name):
     Image.open(HERE / "img" / "author.webp").convert("RGB").save(BUILD / "author.jpg", quality=90)
     pages = list(mod.pages())
     book_title = pages[0][0]
-    md = PAGEBREAK.join(page_md(kind, data, mod_name) for _, kind, data in pages)
+    if getattr(mod, "DOCX_AS_IMAGES", False):
+        # forms and charts: each page goes in as the designed page image, so it prints exactly like the PDF
+        imgs = []
+        for i in range(1, len(pages) + 1):
+            dst = BUILD / f"page{i:02d}.png"
+            Image.open(OUT / mod_name / f"p{i:02d}.png").convert("RGB").save(dst)
+            imgs.append(f"![]({dst.as_posix()}){{width=6.3in}}\n")
+        md = PAGEBREAK.join(imgs)
+    else:
+        md = PAGEBREAK.join(page_md(kind, data, mod_name) for _, kind, data in pages)
     src = BUILD / f"{mod_name}.md"
     src.write_text(md, encoding="utf-8")
-    ref = make_reference(book_title)
+    ref = make_reference(book_title, footer=not getattr(mod, "DOCX_AS_IMAGES", False))
     dest = OUT / f"{mod_name}.docx"
     subprocess.run(["pandoc", str(src), "-f", "markdown", "-o", str(dest), f"--reference-doc={ref}",
                     "--resource-path", str(BUILD)], check=True)

@@ -327,3 +327,10 @@ ul.ticks li::before { content: '✓'; position: absolute; left: 0; color: var(--
 .cal.month.one td { height: 30mm; }
 .track.sip td { height: 6.6mm; padding: 0 2mm; }
 .track.sip th { padding: 1.4mm 2mm; }
+.minicards { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+.mini { border: 2px dashed var(--muted); border-radius: 3mm; padding: 3.5mm 4mm; background: #fff; min-height: 46mm; }
+.mini b { display: block; font-family: 'Fraunces', serif; font-size: 13pt; color: var(--terra); margin-bottom: 1.5mm; }
+.mini span { font-size: 9.6pt; line-height: 1.45; }
+ul.checks { list-style: none; padding: 0; columns: 2; column-gap: 6mm; margin: 0; font-size: 9.6pt; }
+ul.checks li { padding-left: 5.5mm; position: relative; margin-bottom: 1.4mm; break-inside: avoid; }
+ul.checks li::before { content: ''; position: absolute; left: 0; top: 1.1mm; width: 3mm; height: 3mm; border: 1.3px solid var(--muted); border-radius: .6mm; }
