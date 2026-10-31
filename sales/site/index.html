@@ -7,6 +7,31 @@
 <meta name="description" content="90 allergy-free family meals, 30 lunch boxes, 30 detox drinks, printables, party recipes and 31 days of Bible declarations. Made by an autism mum. All 6 books for $14.99.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- ================= TRACKING (sales page) =================
+  Replace YOUR_PIXEL_ID and G-XXXXXXXXXX with your own IDs (same as on thank-you.html).
+  Counts page visits (PageView, ViewContent) and button clicks (InitiateCheckout), so you can see which ads bring buyers.
+-->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'YOUR_PIXEL_ID');
+  fbq('track', 'PageView');
+  fbq('track', 'ViewContent', { value: 14.99, currency: 'USD', content_name: 'The Healing Collection' });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date()); gtag('config', 'G-XXXXXXXXXX');
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href*="selar"]');
+    if (!a) return;
+    if (window.fbq) fbq('track', 'InitiateCheckout', { value: 14.99, currency: 'USD' });
+    if (window.gtag) gtag('event', 'begin_checkout', { value: 14.99, currency: 'USD' });
+  });
+</script>
+<!-- ================= END TRACKING ================= -->
 <style>
 /* Everything is scoped under .hc so the page can be pasted into an Elementor HTML widget. */
 .hc { --green:#2E5E4E; --green2:#244B3F; --leaf:#6FA37A; --leafs:#E4EFE3; --terra:#C8643B; --terras:#F8E3D6;
@@ -49,7 +74,7 @@
 
 /* story */
 .hc .story .grid { display:grid; grid-template-columns:320px 1fr; gap:44px; align-items:start; }
-.hc .story img { border-radius:50%; border:10px solid var(--gold); box-shadow:0 18px 36px rgba(0,0,0,.15); }
+.hc .story img { border-radius:50%; border:10px solid var(--gold); box-shadow:0 18px 36px rgba(0,0,0,.15); aspect-ratio:1; object-fit:cover; object-position:50% 20%; width:100%; }
 .hc .story .sig { font-family:'Fraunces',serif; font-size:28px; color:var(--terra); font-weight:800; margin-top:8px; }
 .hc .story .role { font-size:13px; letter-spacing:.2em; text-transform:uppercase; font-weight:900; color:var(--muted); }
 .hc .quote { font-family:'Fraunces',serif; font-weight:600; font-size:24px; color:var(--green); border-left:6px solid var(--gold); padding:6px 0 6px 20px; margin:22px 0; }
