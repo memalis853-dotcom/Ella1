@@ -6,7 +6,6 @@ THE HEALING COLLECTION — THANK-YOU PAGE FOR ELEMENTOR
 3. Find & Replace before publishing:
 YOUR_PIXEL_ID                         → your Meta Pixel ID (or delete the Meta script)
 G-XXXXXXXXXX                          → your Google Analytics ID (or delete the Google scripts)
-YOUR-EMAIL@hindsfeetglobal.com        → support.hindsfeetglobal@gmail.com (or your email)
 https://chat.whatsapp.com/YOUR-GROUP-LINK → your WhatsApp group link (or delete that box)
 https://YOUR-SALES-PAGE-LINK          → your Healing Collection sales page link
 4. Copy this page's link and paste it in Selar as the "redirect after purchase" link.
