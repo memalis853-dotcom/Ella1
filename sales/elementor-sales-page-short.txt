@@ -1,4 +1,4 @@
-<!-- THE HEALING COLLECTION — SALES PAGE (paste into an Elementor HTML widget). Buttons: replace href="#" with your Selar link. -->
+<!-- THE HEALING COLLECTION — SALES PAGE (paste into an Elementor HTML widget). Buttons already link to Selar: https://selar.com/1o1yv2t74f -->
 <!-- ================= TRACKING =================
 Replace YOUR_PIXEL_ID and G-XXXXXXXXXX with your own IDs (the same ones as on thank-you.html).
 -->
@@ -208,7 +208,7 @@ border:5px dashed rgba(255,255,255,.7); }
 <p style="color:#E7EFE9 !important;">It's 6:15pm. You open the fridge for the third time.</p>
 <p style="color:#E7EFE9 !important;">You already know what's going to happen. You'll cook something new, your child will push the plate away, and you'll end up making the same three “safe” foods again. Then you'll cook a separate dinner for everyone else. And tomorrow, you'll do it all again.</p>
 <p style="color:#E7EFE9 !important;">Here's what nobody tells you: <b style="color:#F2C566 !important;">you're not failing.</b> You're trying to cook allergy-free without a plan — reading labels alone, guessing what's safe, and hoping tonight will be different. That's not a parenting problem. It's a <b style="color:#F2C566 !important;">plan problem</b>. And plan problems have simple fixes.</p>
-<div class="btn-row"><a href="#" target="_blank" rel="noopener" class="btn">Yes! Give me the Healing Collection<small>All 6 books · just $14.99</small></a></div>
+<div class="btn-row"><a href="https://selar.com/1o1yv2t74f" target="_blank" rel="noopener" class="btn">Yes! Give me the Healing Collection<small>All 6 books · just $14.99</small></a></div>
 <p class="trust" style="color:#B9CBBF !important;">✓ Instant download &nbsp; ✓ Phone, tablet or print &nbsp; ✓ Buy from anywhere</p>
 </div>
 </section>
@@ -370,7 +370,7 @@ border:5px dashed rgba(255,255,255,.7); }
 <div class="offer-price"><div class="label">TODAY'S PRICE</div><div class="big">$14.99</div><div class="save">You save $65.95</div></div>
 </div>
 <p style="font-size:13px; color:#B9CBBF !important; margin-top:16px; text-align:center;">Estimated values reflect what this scope of content is reasonably worth — not prior individual sale prices. No fake countdown, no “only X left”.</p>
-<div class="btn-row"><a href="#" target="_blank" rel="noopener" class="btn">Get Instant Access — $14.99<small>All 6 books · PDF &amp; Word · yours to keep</small></a></div>
+<div class="btn-row"><a href="https://selar.com/1o1yv2t74f" target="_blank" rel="noopener" class="btn">Get Instant Access — $14.99<small>All 6 books · PDF &amp; Word · yours to keep</small></a></div>
 <p class="trust" style="color:#B9CBBF !important;">Instant digital download · Works on any device · 7-day money-back promise</p>
 </div>
 </section>
@@ -417,7 +417,7 @@ border:5px dashed rgba(255,255,255,.7); }
 <div class="opt no"><h4>Option 1 — Close this page</h4><p>Tomorrow probably looks like today. The same three foods, the same separate dinners, the same worry. Nothing changes unless something changes.</p></div>
 <div class="opt yes"><h4>Option 2 — Start tonight</h4><p>Open Healing Plates. Read my letter. Write your Week 1 shopping list. Cook Day 1 — and watch your family share the same plate.</p></div>
 </div>
-<div class="btn-row"><a href="#" target="_blank" rel="noopener" class="btn">Get the Healing Collection — $14.99<small>All 6 books · instant download</small></a></div>
+<div class="btn-row"><a href="https://selar.com/1o1yv2t74f" target="_blank" rel="noopener" class="btn">Get the Healing Collection — $14.99<small>All 6 books · instant download</small></a></div>
 </div>
 </section>
 <!-- ============ PS ============ -->
@@ -430,8 +430,8 @@ border:5px dashed rgba(255,255,255,.7); }
 </section>
 <footer class="foot">
 <div class="t">The Healing Collection — 6 Books — $14.99</div>
-<div class="btn-row" style="margin-top:14px;"><a href="#" target="_blank" rel="noopener" class="btn">Get Instant Access</a></div>
+<div class="btn-row" style="margin-top:14px;"><a href="https://selar.com/1o1yv2t74f" target="_blank" rel="noopener" class="btn">Get Instant Access</a></div>
 <small>Secure checkout · Instant digital access · PDF &amp; Word · 7-day money-back promise<br>© Tris Eliverson · Hinds Feet Global. This collection shares food, lifestyle and faith ideas from personal experience. It is not medical advice and does not diagnose, treat or cure any condition. Always consult a qualified health professional before changing your child's diet or giving herbs or supplements. Scripture quotations are from the King James Version (KJV).</small>
 </footer>
-<div class="bar"><div class="t">All 6 books<br><b>$14.99</b></div><a class="btn" href="#" target="_blank" rel="noopener">Get it now</a></div>
+<div class="bar"><div class="t">All 6 books<br><b>$14.99</b></div><a class="btn" href="https://selar.com/1o1yv2t74f" target="_blank" rel="noopener">Get it now</a></div>
 </div>

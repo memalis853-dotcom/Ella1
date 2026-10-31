@@ -60,6 +60,6 @@ With love, Tris Eliverson
 
 **After you publish:**
 1. Copy the product link (it looks like `https://selar.com/xxxxxxx`).
-2. In your Elementor sales page code, use Find & Replace: change `href="#"` to `href="YOUR-SELAR-LINK"` — this updates all 5 buttons.
+2. Done: all 5 buttons on the sales page now link to https://selar.com/1o1yv2t74f
 3. Click Update, then test one button: it should open your Selar checkout at $14.99.
 4. Make a test purchase (or ask Selar for a test mode) to check the download and the thank-you page.
