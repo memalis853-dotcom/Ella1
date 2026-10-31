@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Healing Collection — Allergy-Free Family Meal Plan by Tris Eliverson</title>
+<meta name="description" content="90 allergy-free family meals, 30 lunch boxes, 30 detox drinks, printables, party recipes and 31 days of Bible declarations. Made by an autism mum. All 6 books for $14.99.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* Everything is scoped under .hc so the page can be pasted into an Elementor HTML widget. */
+.hc { --green:#2E5E4E; --green2:#244B3F; --leaf:#6FA37A; --leafs:#E4EFE3; --terra:#C8643B; --terras:#F8E3D6;
+      --gold:#E3A12F; --golds:#FBEFD3; --pink:#D9667A; --pinks:#FBE3E1; --cream:#FBF6EC; --sand:#F2E6D2; --ink:#2B2722; --muted:#6E665B;
+      font-family:'Nunito',system-ui,sans-serif; color:var(--ink); background:var(--cream); line-height:1.6; font-size:18px; }
+.hc * { box-sizing:border-box; }
+.hc img { max-width:100%; display:block; }
+.hc h1,.hc h2,.hc h3 { font-family:'Fraunces',Georgia,serif; font-weight:800; line-height:1.12; margin:0 0 .5em; color:var(--green); }
+.hc h1 { font-size:clamp(34px,6vw,62px); } .hc h2 { font-size:clamp(28px,4.4vw,46px); } .hc h3 { font-size:23px; }
+.hc p { margin:0 0 1em; }
+.hc .wrap { max-width:1100px; margin:0 auto; padding:0 20px; }
+.hc .narrow { max-width:760px; margin:0 auto; padding:0 20px; }
+.hc section { padding:72px 0; }
+.hc .kicker { display:inline-block; font-weight:900; font-size:14px; letter-spacing:.2em; text-transform:uppercase; color:var(--terra); margin-bottom:12px; }
+.hc .center { text-align:center; }
+.hc .stripe { height:14px; background:repeating-linear-gradient(90deg,var(--gold) 0 18px,var(--terra) 18px 52px,var(--cream) 52px 56px,var(--leaf) 56px 90px,var(--cream) 90px 94px,var(--green) 94px 128px); }
+.hc .btn { display:inline-block; background:linear-gradient(180deg,#F0B23F,#DE931C); color:#2B1D05 !important; text-decoration:none; font-weight:900;
+  font-size:21px; padding:20px 36px; border-radius:999px; box-shadow:0 10px 24px rgba(222,147,28,.38), inset 0 -3px 0 rgba(0,0,0,.12);
+  transition:transform .15s ease; text-align:center; }
+.hc .btn:hover { transform:translateY(-2px); }
+.hc .btn small { display:block; font-size:14px; font-weight:800; opacity:.8; }
+.hc .trust { display:flex; flex-wrap:wrap; gap:10px 22px; justify-content:center; margin-top:18px; font-weight:800; font-size:15px; color:var(--muted); }
+.hc .trust span::before { content:'✓'; color:var(--leaf); margin-right:6px; font-weight:900; }
+
+/* hero */
+.hc .hero { background:radial-gradient(circle at 80% 10%,#FFF6E3 0,var(--cream) 45%,var(--sand) 100%); padding:56px 0 64px; }
+.hc .hero .grid { display:grid; grid-template-columns:1.05fr .95fr; gap:40px; align-items:center; }
+.hc .hero .lead { font-size:21px; color:#3b352e; }
+.hc .pills { display:flex; flex-wrap:wrap; gap:8px; margin:18px 0 26px; }
+.hc .pills span { background:#fff; border:1.5px solid var(--sand); border-radius:999px; padding:6px 14px; font-weight:800; font-size:14px; color:var(--green); }
+.hc .hero img { border-radius:22px; box-shadow:0 24px 50px rgba(46,94,78,.22); }
+
+/* pain */
+.hc .pain { background:var(--green); color:#fff; }
+.hc .pain h2 { color:#fff; }
+.hc .pain .list { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:30px 0; }
+.hc .pain .list div { background:rgba(255,255,255,.08); border-radius:16px; padding:18px 20px; font-size:17px; }
+.hc .pain .list div b { color:var(--gold); }
+.hc .pain .big { font-family:'Fraunces',serif; font-size:clamp(24px,3.4vw,34px); font-weight:600; color:var(--gold); text-align:center; margin-top:10px; }
+
+/* story */
+.hc .story .grid { display:grid; grid-template-columns:320px 1fr; gap:44px; align-items:start; }
+.hc .story img { border-radius:50%; border:10px solid var(--gold); box-shadow:0 18px 36px rgba(0,0,0,.15); }
+.hc .story .sig { font-family:'Fraunces',serif; font-size:28px; color:var(--terra); font-weight:800; margin-top:8px; }
+.hc .story .role { font-size:13px; letter-spacing:.2em; text-transform:uppercase; font-weight:900; color:var(--muted); }
+.hc .quote { font-family:'Fraunces',serif; font-weight:600; font-size:24px; color:var(--green); border-left:6px solid var(--gold); padding:6px 0 6px 20px; margin:22px 0; }
+
+/* imagine */
+.hc .imagine { background:linear-gradient(180deg,var(--golds),#FFF8EA); }
+.hc .cards3 { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:28px; }
+.hc .card { background:#fff; border-radius:20px; padding:24px; box-shadow:0 8px 24px rgba(0,0,0,.06); border:1px solid var(--sand); }
+.hc .card .ic { font-size:34px; margin-bottom:8px; }
+.hc .card h3 { margin-bottom:6px; }
+.hc .card p { margin:0; font-size:16.5px; }
+
+/* books */
+.hc .book { display:grid; grid-template-columns:230px 1fr; gap:30px; align-items:center; background:#fff; border-radius:24px; padding:26px;
+  margin-bottom:22px; box-shadow:0 10px 30px rgba(0,0,0,.06); border-top:8px solid var(--c,#2E5E4E); }
+.hc .book img { border-radius:12px; box-shadow:0 12px 26px rgba(0,0,0,.2); }
+.hc .book .tag { display:inline-block; background:var(--c); color:#fff; font-weight:900; font-size:13px; letter-spacing:.14em; text-transform:uppercase;
+  border-radius:999px; padding:5px 14px; margin-bottom:10px; }
+.hc .book ul { margin:10px 0 0; padding:0; list-style:none; }
+.hc .book li { padding-left:30px; position:relative; margin-bottom:8px; font-size:17px; }
+.hc .book li::before { content:'✓'; position:absolute; left:0; top:0; width:22px; height:22px; border-radius:50%; background:var(--c); color:#fff;
+  font-size:13px; font-weight:900; display:flex; align-items:center; justify-content:center; margin-top:3px; }
+.hc .book .val { font-weight:900; color:var(--muted); font-size:15px; margin-top:8px; }
+
+/* free-from band */
+.hc .free { background:var(--terra); color:#fff; padding:34px 0; text-align:center; }
+.hc .free h3 { color:#fff; margin-bottom:14px; }
+.hc .free .pills { justify-content:center; margin:0; }
+.hc .free .pills span { background:rgba(255,255,255,.14); border-color:rgba(255,255,255,.35); color:#fff; }
+
+/* peek */
+.hc .peek { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:28px; }
+.hc .peek figure { margin:0; background:#fff; border-radius:16px; padding:10px; box-shadow:0 10px 26px rgba(0,0,0,.1); }
+.hc .peek img { border-radius:8px; }
+.hc .peek figcaption { text-align:center; font-weight:800; font-size:15px; color:var(--green); padding:10px 4px 4px; }
+
+/* stack */
+.hc .stack { background:var(--green); color:#fff; }
+.hc .stack h2 { color:#fff; }
+.hc .stack .box { max-width:760px; margin:0 auto; }
+.hc .stack .row { display:flex; justify-content:space-between; gap:16px; align-items:center; background:rgba(255,255,255,.08); border-radius:16px; padding:16px 22px; margin-bottom:10px; }
+.hc .stack .row b { font-size:18px; } .hc .stack .row small { display:block; color:#DCE8DF; font-size:15px; }
+.hc .stack .row span { font-family:'Fraunces',serif; font-weight:800; font-size:24px; color:#F2C566; white-space:nowrap; }
+.hc .stack .total { display:flex; justify-content:space-between; font-weight:800; font-size:22px; padding:12px 22px; color:#DCE8DF; }
+.hc .stack .price { background:linear-gradient(135deg,#F2C566,var(--gold)); color:var(--green2); border-radius:24px; padding:26px; text-align:center; margin:12px 0 24px; }
+.hc .stack .price .l { font-weight:900; letter-spacing:.14em; text-transform:uppercase; font-size:15px; }
+.hc .stack .price .p { font-family:'Fraunces',serif; font-weight:800; font-size:clamp(64px,10vw,96px); line-height:1; margin:6px 0; }
+.hc .stack .price .s { font-weight:800; }
+
+/* for you */
+.hc .yes { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:26px; }
+.hc .yes div { background:#fff; border-radius:16px; padding:18px 20px 18px 56px; position:relative; border:1px solid var(--sand); font-size:17px; }
+.hc .yes div::before { content:'♥'; position:absolute; left:20px; top:16px; color:var(--pink); font-size:22px; }
+
+/* testimonials */
+.hc .testi { background:var(--pinks); }
+.hc .tgrid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:26px; }
+.hc .tcard { background:#fff; border-radius:20px; padding:24px; box-shadow:0 8px 24px rgba(0,0,0,.06); }
+.hc .tcard .stars { color:var(--gold); font-size:20px; letter-spacing:2px; }
+.hc .tcard p { font-style:italic; font-size:16.5px; margin:10px 0; }
+.hc .tcard .who { font-weight:900; color:var(--green); font-size:15px; }
+.hc .note { font-size:13px; color:var(--muted); text-align:center; margin-top:14px; }
+
+/* faq */
+.hc details { background:#fff; border-radius:16px; padding:18px 22px; margin-bottom:12px; border:1px solid var(--sand); }
+.hc summary { font-weight:900; font-size:18px; cursor:pointer; color:var(--green); list-style:none; }
+.hc summary::after { content:'+'; float:right; color:var(--terra); font-size:24px; line-height:1; }
+.hc details[open] summary::after { content:'–'; }
+.hc details p { margin:12px 0 0; font-size:17px; }
+
+/* final */
+.hc .final { background:radial-gradient(circle at 50% 0,#3C7563 0,var(--green) 60%); color:#fff; text-align:center; }
+.hc .final h2 { color:#fff; }
+.hc .final p { font-size:20px; color:#E6EFE8; }
+.hc .final .sig { font-family:'Fraunces',serif; font-size:26px; color:var(--gold); font-weight:800; margin-top:20px; }
+.hc footer { background:#1F3F35; color:#B9CBBF; font-size:13px; padding:28px 0; text-align:center; }
+.hc footer p { margin:0 0 6px; }
+
+/* sticky mobile buy bar */
+.hc .bar { position:fixed; left:0; right:0; bottom:0; z-index:99; background:rgba(31,63,53,.97); padding:10px 14px; display:none; align-items:center; justify-content:space-between; gap:12px; }
+.hc .bar .t { color:#fff; font-weight:800; font-size:15px; line-height:1.2; } .hc .bar .t b { color:var(--gold); font-size:20px; }
+.hc .bar .btn { font-size:16px; padding:12px 20px; }
+
+@media (max-width:860px){
+  .hc { font-size:17px; }
+  .hc section { padding:54px 0; }
+  .hc .hero .grid,.hc .story .grid,.hc .book { grid-template-columns:1fr; }
+  .hc .hero .grid { gap:26px; } .hc .hero .img { order:-1; }
+  .hc .story img { max-width:240px; margin:0 auto; }
+  .hc .book img { max-width:220px; margin:0 auto; }
+  .hc .pain .list,.hc .cards3,.hc .yes,.hc .tgrid { grid-template-columns:1fr; }
+  .hc .peek { grid-template-columns:1fr 1fr; }
+  .hc .btn { font-size:18px; padding:18px 26px; width:100%; }
+  .hc .bar { display:flex; }
+  .hc footer { padding-bottom:90px; }
+}
+</style>
+</head>
+<body style="margin:0">
+<div class="hc">
+
+<div class="stripe"></div>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap grid">
+    <div>
+      <div class="kicker">For parents of children with autism, special needs &amp; food allergies</div>
+      <h1>Finally… food the whole family can eat.</h1>
+      <p class="lead">90 allergy-free family meals, 30 lunch boxes, 30 gentle detox drinks, printables, party recipes and 31 days of Bible declarations — lovingly made by an autism mum who has walked this road.</p>
+      <div class="pills"><span>Gluten-free</span><span>Dairy-free</span><span>Corn-free</span><span>Egg-free</span><span>Caffeine-free</span><span>Processed-sugar-free</span></div>
+      <a class="btn" href="https://selar.co/YOUR-LINK">Yes! I want the Healing Collection<small>All 6 books · just $14.99</small></a>
+      <div class="trust"><span>Instant download</span><span>Phone, tablet or print</span><span>Buy from anywhere</span></div>
+    </div>
+    <div class="img"><img src="img/hc-bundle.jpg" alt="The Healing Collection — 6 books"></div>
+  </div>
+</section>
+
+<!-- ============ PAIN ============ -->
+<section class="pain">
+  <div class="narrow center">
+    <div class="kicker" style="color:var(--gold)">Mama, Papa — I see you</div>
+    <h2>You love your child more than words can say.<br>But some days, food feels like a battle you can't win.</h2>
+  </div>
+  <div class="wrap">
+    <div class="list">
+      <div>Your child eats <b>only three foods</b> — and you lie awake wondering if they're getting enough.</div>
+      <div>You stand in the supermarket <b>reading every label</b>, and still don't know what's safe.</div>
+      <div>You cook <b>one meal for your child</b> and another for everyone else. Every single day.</div>
+      <div>Family members say <b>“just give them bread, they'll be fine”</b> — and you feel so alone.</div>
+      <div>The lunch box <b>comes home untouched</b>, and your heart sinks a little more.</div>
+      <div>Birthday parties end in <b>tears</b> — because there's nothing your child can eat.</div>
+      <div>The <b>meltdowns</b>, the tummy aches, the nights that never seem to end.</div>
+      <div>You've searched Google at 2am, joined every group… and you're <b>exhausted</b>.</div>
+    </div>
+    <p class="big">You don't need more information. You need a plan — from someone who truly understands.</p>
+  </div>
+</section>
+
+<!-- ============ STORY ============ -->
+<section class="story">
+  <div class="wrap grid">
+    <img src="img/hc-tris.jpg" alt="Tris Eliverson, autism mum">
+    <div>
+      <div class="kicker">My story</div>
+      <h2>I have stood in that kitchen too.</h2>
+      <p>Hi, I'm Tris — and I'm an autism mum. I know the child who eats only three foods. The sleepless nights. The quiet ache when the words haven't come yet. The prayers whispered over a sleeping child.</p>
+      <p>When I changed what went on my child's plate — taking out gluten, dairy, corn, eggs and processed sugar, cooking real food from scratch, and adding one gentle detox drink each day — things began to change. Slowly at first. And then I saw a <b>real, significant improvement in my child</b>.</p>
+      <div class="quote">“I couldn't keep these recipes to myself. If they can help one more family, every late night was worth it.”</div>
+      <p>So I put everything I learned into one simple, beautiful collection. No long science. No fancy ingredients you can't find. Just real food — yam, plantain, rice, beans, chicken, pasta, pancakes — made safe for your family, one day at a time.</p>
+      <div class="sig">With love, Tris Eliverson</div>
+      <div class="role">Autism mum · Recipe creator</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ IMAGINE ============ -->
+<section class="imagine">
+  <div class="wrap center">
+    <div class="kicker">Imagine this, just a few weeks from now</div>
+    <h2>What if mealtimes felt calm again?</h2>
+    <div class="cards3" style="text-align:left">
+      <div class="card"><div class="ic">🛒</div><h3>No more guessing</h3><p>Your shopping list is ready every week. You know exactly what to buy — and what to leave on the shelf.</p></div>
+      <div class="card"><div class="ic">🍽️</div><h3>One meal for everyone</h3><p>The whole family sits down to the same plate — jollof, pasta, pizza night — and it's safe for your child.</p></div>
+      <div class="card"><div class="ic">🎒</div><h3>An empty lunch box</h3><p>It comes home empty — and your child asks for the nugget box again tomorrow.</p></div>
+      <div class="card"><div class="ic">😴</div><h3>Calmer evenings</h3><p>A gentle bedtime drink, a calm routine, and nights that feel a little more peaceful.</p></div>
+      <div class="card"><div class="ic">🎂</div><h3>Candles on a real cake</h3><p>At the next birthday party, your child blows out candles on a cake they can actually eat.</p></div>
+      <div class="card"><div class="ic">🙏</div><h3>Hope every morning</h3><p>You start each day speaking God's promises over your child — and you feel strong again.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOKS ============ -->
+<section>
+  <div class="wrap">
+    <div class="center"><div class="kicker">Introducing</div><h2>The Healing Collection</h2>
+      <p style="max-width:720px;margin:0 auto 34px">6 beautifully designed books · 164 pages · everything you need for the next 30 days — and beyond.</p></div>
+
+    <div class="book" style="--c:#2E5E4E"><img src="img/hc-cover1.jpg" alt="Healing Plates"><div>
+      <span class="tag">Main book</span><h3>Healing Plates — The 30-Day Allergy-Free Family Meal Plan</h3>
+      <ul><li>90 breakfasts, lunches &amp; dinners for the whole family</li>
+      <li>African favourites — jollof, egusi, okro, moi moi, red red, pilau — <b>and</b> international meals like pancakes, pasta, pizza night and nuggets</li>
+      <li>Weekly tick-box shopping lists and a 30-day calendar</li>
+      <li>Simple chapters on healing the gut, foods to enjoy, sleep and speech support</li>
+      <li>Allergy-friendly brands for Nigeria, Ghana, Kenya, South Africa, the UK, USA &amp; Canada</li></ul>
+      <div class="val">Value: $12.99</div></div></div>
+
+    <div class="book" style="--c:#C8643B"><img src="img/hc-cover2.jpg" alt="Healing Lunch Box"><div>
+      <span class="tag">Bonus 1</span><h3>Healing Lunch Box</h3>
+      <ul><li>30 nut-free, school-safe lunch boxes kids are proud to open</li>
+      <li>Chicken Nugget Happy Box, pizza pinwheels, jollof thermos, akara bites and more</li>
+      <li>10 snacks kids can't say no to + a Naija snack corner</li>
+      <li>The picky eater playbook — gentle tricks that really work</li></ul>
+      <div class="val">Value: $9.99</div></div></div>
+
+    <div class="book" style="--c:#6FA37A"><img src="img/hc-cover3.jpg" alt="Healing Sips"><div>
+      <span class="tag">Bonus 2</span><h3>Healing Sips — 30-Day Gentle Detox &amp; Juicing</h3>
+      <ul><li>30 juices, smoothies and tonics — each one tells you what it's good for</li>
+      <li>My own Daily Detox Smoothie, zobo, tiger nut milk, moringa, lemon balm bedtime tea</li>
+      <li>How to detox gently and safely with children</li></ul>
+      <div class="val">Value: $9.99</div></div></div>
+
+    <div class="book" style="--c:#E3A12F"><img src="img/hc-cover4.jpg" alt="Healing Printables"><div>
+      <span class="tag">Bonus 3</span><h3>Healing Printables</h3>
+      <ul><li>12 pages to print: allergy cards for school, label decoder cards, food &amp; mood tracker</li>
+      <li>Smart swaps cheat sheet, “I tried it!” reward chart, meal and lunch box planners</li>
+      <li>Supplement log and doctor visit notes</li></ul>
+      <div class="val">Value: $5.99</div></div></div>
+
+    <div class="book" style="--c:#D9667A"><img src="img/hc-cover5.jpg" alt="Healing Celebrations"><div>
+      <span class="tag">Bonus 4</span><h3>Healing Celebrations</h3>
+      <ul><li>A real birthday cake every child can eat — plus cupcakes</li>
+      <li>12 party recipes, 3 party menus and a make-ahead plan</li>
+      <li>Party survival guide and a ready-made letter to the party host</li></ul>
+      <div class="val">Value: $5.99</div></div></div>
+
+    <div class="book" style="--c:#244B3F"><img src="img/hc-cover6.jpg" alt="Healing Words"><div>
+      <span class="tag">Bonus 5</span><h3>Healing Words — What God Says About Your Child</h3>
+      <ul><li>31 days of Bible verses on healing, speech, understanding, peace and restoration</li>
+      <li>A simple explanation of what God is saying, every day</li>
+      <li>A daily declaration to speak over your child: <i>“The Word says it — and I say Amen.”</i></li></ul>
+      <div class="val">Value: $6.99</div></div></div>
+  </div>
+</section>
+
+<div class="free"><div class="wrap"><h3>Every single recipe is free from</h3>
+  <div class="pills"><span>Gluten</span><span>Dairy</span><span>Corn</span><span>Egg</span><span>Caffeine</span><span>Tuna</span><span>Pork</span><span>Processed sugar</span></div>
+  <p style="margin:14px 0 0;font-weight:700">…and baked, boiled or steamed — never deep-fried.</p></div></div>
+
+<!-- ============ PEEK ============ -->
+<section>
+  <div class="wrap center">
+    <div class="kicker">Take a peek inside</div>
+    <h2>Simple. Beautiful. Easy to follow.</h2>
+    <div class="peek">
+      <figure><img src="img/hc-peek-day.jpg" alt="Day page"><figcaption>3 meals a day, tick-box ingredients</figcaption></figure>
+      <figure><img src="img/hc-peek-lunch.jpg" alt="Lunch box page"><figcaption>30 school-safe lunch boxes</figcaption></figure>
+      <figure><img src="img/hc-peek-sips.jpg" alt="Detox page"><figcaption>What every drink is good for</figcaption></figure>
+      <figure><img src="img/hc-peek-cake.jpg" alt="Birthday cake"><figcaption>A real birthday cake</figcaption></figure>
+      <figure><img src="img/hc-peek-print.jpg" alt="Printables"><figcaption>Printable label decoder cards</figcaption></figure>
+      <figure><img src="img/hc-peek-words.jpg" alt="Bible declaration"><figcaption>31 days of declarations</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STACK ============ -->
+<section class="stack" id="buy">
+  <div class="wrap center"><div class="kicker" style="color:var(--gold)">Everything you get today</div><h2>All 6 books. One small price.</h2></div>
+  <div class="box wrap">
+    <div class="row"><div><b>Healing Plates</b><small>30-day family meal plan · 90 meals</small></div><span>$12.99</span></div>
+    <div class="row"><div><b>Bonus 1: Healing Lunch Box</b><small>30 school lunches &amp; snacks</small></div><span>$9.99</span></div>
+    <div class="row"><div><b>Bonus 2: Healing Sips</b><small>30-day gentle detox &amp; juicing</small></div><span>$9.99</span></div>
+    <div class="row"><div><b>Bonus 3: Healing Printables</b><small>12 cards, trackers &amp; planners</small></div><span>$5.99</span></div>
+    <div class="row"><div><b>Bonus 4: Healing Celebrations</b><small>Birthday cake, party food &amp; guide</small></div><span>$5.99</span></div>
+    <div class="row"><div><b>Bonus 5: Healing Words</b><small>31 days of Bible declarations</small></div><span>$6.99</span></div>
+    <div class="total"><span>Total value</span><span>$51.94</span></div>
+    <div class="price"><div class="l">Your price today</div><div class="p">$14.99</div><div class="s">All 6 books · instant download · PDF &amp; Word</div></div>
+    <div class="center"><a class="btn" href="https://selar.co/YOUR-LINK">Get the Healing Collection now<small>Less than the cost of one takeaway meal</small></a>
+    <div class="trust" style="color:#DCE8DF"><span>Secure checkout</span><span>Instant access</span><span>Yours to keep forever</span></div></div>
+  </div>
+</section>
+
+<!-- ============ FOR YOU ============ -->
+<section>
+  <div class="wrap center"><div class="kicker">This is for you if…</div><h2>You're ready for a real difference.</h2>
+    <div class="yes" style="text-align:left">
+      <div>Your child has autism, ADHD, special needs or food allergies</div>
+      <div>You're avoiding gluten, dairy, corn, eggs or processed sugar — and running out of ideas</div>
+      <div>You want simple recipes with ingredients you can actually find</div>
+      <div>You love African home cooking <b>and</b> international family favourites</div>
+      <div>You're tired of piecing together recipes from a hundred websites</div>
+      <div>You believe in the power of prayer and want to speak life over your child</div>
+    </div></div>
+</section>
+
+<!-- ============ TESTIMONIALS (replace with real ones) ============ -->
+<section class="testi">
+  <div class="wrap center"><div class="kicker">From parents like you</div><h2>Real families. Real relief.</h2>
+    <div class="tgrid" style="text-align:left">
+      <div class="tcard"><div class="stars">★★★★★</div><p>“[Replace with a real testimonial from a parent.]”</p><div class="who">— Name, Country</div></div>
+      <div class="tcard"><div class="stars">★★★★★</div><p>“[Replace with a real testimonial from a parent.]”</p><div class="who">— Name, Country</div></div>
+      <div class="tcard"><div class="stars">★★★★★</div><p>“[Replace with a real testimonial from a parent.]”</p><div class="who">— Name, Country</div></div>
+    </div>
+    <p class="note">Only use real reviews from real buyers or readers.</p></div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section>
+  <div class="narrow"><div class="center"><div class="kicker">Questions</div><h2>Frequently asked questions</h2></div>
+    <details><summary>How do I get the books?</summary><p>Straight after payment you'll receive a download link for all 6 books. Read them on your phone, tablet or computer — or print them.</p></details>
+    <details><summary>What format are the books in?</summary><p>Beautifully designed PDFs, plus Word versions so you can make notes. There's also one all-in-one PDF with all 6 books together.</p></details>
+    <details><summary>I don't live in Nigeria — will I find the ingredients?</summary><p>Yes. Recipes include simple swaps, and there's a brands guide for Nigeria, Ghana, Kenya, South Africa, the UK, the USA and Canada. Half of the meals are international family favourites.</p></details>
+    <details><summary>My child is a very picky eater. Will this work for us?</summary><p>This collection was made with picky eaters in mind — hidden vegetables, blended soups, dips, fun shapes and a gentle picky eater playbook. Go slowly, one new food at a time, next to a food your child already loves.</p></details>
+    <details><summary>Are the recipes nut-free?</summary><p>All lunch box and party recipes are nut-free and school-safe. The family meals use seeds like pumpkin and sunflower instead of nuts.</p></details>
+    <details><summary>Is this a cure for autism?</summary><p>No. Food is not a cure, and this collection is not medical advice. It shares what helped one family. Many parents find a calmer gut helps with sleep, mood and picky eating. Please keep working with your child's doctor, and check with them before giving herbs or supplements.</p></details>
+    <details><summary>Can I share the books?</summary><p>The books are for your family's personal use. If a friend would love them, please share this page — it helps me keep creating.</p></details>
+  </div>
+</section>
+
+<!-- ============ FINAL ============ -->
+<section class="final">
+  <div class="narrow">
+    <h2>Your child deserves food that loves them back.</h2>
+    <p>A month from now, you could still be standing in the kitchen wondering what to cook. Or you could be watching your family share the same plate — calmer, happier, and full of hope.</p>
+    <p><b style="color:#fff">You don't have to be perfect. You just have to begin.</b></p>
+    <a class="btn" href="https://selar.co/YOUR-LINK" style="margin-top:12px">Yes, I'm ready to begin — $14.99<small>All 6 books · instant download</small></a>
+    <div class="sig">With love, Tris</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© Tris Eliverson · The Healing Collection. All rights reserved.</p>
+    <p>This collection shares food, lifestyle and faith ideas from personal experience. It is not medical advice and does not diagnose, treat or cure any condition. Always consult a qualified health professional before changing your child's diet or giving herbs or supplements. Scripture quotations are from the King James Version (KJV).</p>
+  </div>
+</footer>
+
+<div class="bar"><div class="t">All 6 books<br><b>$14.99</b></div><a class="btn" href="https://selar.co/YOUR-LINK">Get it now</a></div>
+
+</div>
+</body>
+</html>
